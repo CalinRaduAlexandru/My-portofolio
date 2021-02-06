@@ -12,7 +12,7 @@ export const AboutContainer = styled.div`
 export const AboutWrapper = styled.div`
   display: grid;
   z-index: 1;
-  height: 101vh;
+  height: 100vh;
   width: 100%;
   max-width: 1100px;
   margin-right: auto;

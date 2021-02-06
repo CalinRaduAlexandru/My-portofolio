@@ -29,10 +29,11 @@ const AboutSection = ({
   alt,
   primary,
   dark,
+  toggleResume,
 }) => {
   return (
     <>
-      <AboutContainer lightBg={lightBg} id={id}>
+      <AboutContainer lightBg={lightBg} id="about">
         <AboutWrapper>
           <AboutRow imgStart={imgStart}>
             <Column1>
@@ -41,18 +42,7 @@ const AboutSection = ({
                 <Heading lightText={lightText}>{headline}</Heading>
                 <Subtitle darkText={darkText}>{description}</Subtitle>
                 <BtnWrap>
-                  <Button
-                    to="home"
-                    smooth={true}
-                    duration={500}
-                    spy={true}
-                    exact="true"
-                    offset={-80}
-                    primary={primary ? 1 : 0}
-                    dark={dark ? 1 : 0}
-                  >
-                    {buttonLabel}
-                  </Button>
+                  <Button onClick={toggleResume}>{buttonLabel}</Button>
                 </BtnWrap>
               </TextWrapper>
             </Column1>

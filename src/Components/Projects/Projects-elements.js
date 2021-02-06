@@ -6,14 +6,14 @@ export const ProjectsContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: #81829a;
+  background: #38cfd9;
 
   @media screen and (max-width: 768px) {
     height: 1400px;
   }
 
   @media screen and (max-width: 480px) {
-    height: 1300px;
+    height: 1400px;
   }
 `;
 
@@ -37,7 +37,7 @@ export const ProjectsWrapper = styled.div`
 `;
 
 export const ProjectCard = styled.div`
-  background: #83c5be;
+  background: #136c72;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;

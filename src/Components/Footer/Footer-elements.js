@@ -4,7 +4,7 @@ import { BiArrowFromBottom } from "react-icons/bi";
 import { FaGithub, FaFacebook, FaLinkedin } from "react-icons/fa";
 
 export const FooterContainer = styled.div`
-  background: #010606;
+  background: #23424a;
   display: flex;
   flex-direction: column;
   align-items: center;

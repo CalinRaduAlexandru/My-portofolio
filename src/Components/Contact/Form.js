@@ -16,7 +16,7 @@ const Form = () => {
   }
   return (
     <>
-      <div className="form-container">
+      <div className="form-container" id="contact">
         <div className="form-content-left">
           <img className="form-img" src={spaceship} alt="spaceship" />
         </div>

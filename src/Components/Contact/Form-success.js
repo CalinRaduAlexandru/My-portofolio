@@ -5,10 +5,10 @@ import success from "./../../Assets/img-3.svg";
 const FormSuccess = ({ toggleForm }) => {
   return (
     <div className="form-content-right">
-      <h1 className="form-success">I have received your request!</h1>
+      <h1 className="form-success">I have received your message!</h1>
       <img className="form-img-2" src={success} alt="success" />
       <span className="close-btn" onClick={toggleForm}>
-        Go back!
+        Return
       </span>
     </div>
   );
