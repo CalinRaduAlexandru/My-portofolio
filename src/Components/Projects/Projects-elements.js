@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const ProjectsContainer = styled.div`
-  height: 800px;
+  height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -11,14 +11,6 @@ export const ProjectsContainer = styled.div`
     rgba(34, 193, 195, 1) 0%,
     rgba(45, 112, 253, 1) 100%
   );
-
-  @media screen and (max-width: 768px) {
-    height: 1400px;
-  }
-
-  @media screen and (max-width: 480px) {
-    height: 1300px;
-  }
 `;
 
 export const ProjectWrapper = styled.div`
