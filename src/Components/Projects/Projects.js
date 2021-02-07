@@ -1,6 +1,7 @@
 import React from "react";
 import { FaGithub } from "react-icons/fa";
-import { Card } from "../Card";
+import { CardCrown } from "./Cards/CardCrown";
+import { CardFilter } from "./Cards/CardFilter";
 
 import {
   ProjectsContainer,
@@ -42,7 +43,33 @@ const Projects = () => {
             </BtnProjectRight>
           </Buttons>
         </ProjectInfo>
-        <Card />
+        <CardCrown />
+      </ProjectWrapper>
+      <ProjectWrapper>
+        <ProjectInfo>
+          <ProjectTitle>Search friends</ProjectTitle>
+          <ProjectSubTitle>React | NodeJs | Postgres</ProjectSubTitle>
+          <ProjectText>
+            A full-stack app in which you can add and search users.
+          </ProjectText>
+          <Buttons>
+            <BtnProjectLeft
+              href="https://filter-cards-app2.herokuapp.com/"
+              target="_blank"
+              aria-label="Heroku"
+            >
+              Live
+            </BtnProjectLeft>
+            <BtnProjectRight
+              href="https://github.com/CalinRaduAlexandru/Filter-cards-app"
+              target="_blank"
+              aria-label="Github"
+            >
+              <FaGithub style={{ fontSize: "35px" }} />
+            </BtnProjectRight>
+          </Buttons>
+        </ProjectInfo>
+        <CardFilter />
       </ProjectWrapper>
     </ProjectsContainer>
   );

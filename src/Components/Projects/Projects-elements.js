@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { Link } from "react-router-dom";
 
 export const ProjectsContainer = styled.div`
   height: 800px;
@@ -78,7 +77,7 @@ align-items: center;
 
 `;
 
-export const BtnProjectLeft = styled(Link)`
+export const BtnProjectLeft = styled.a`
   font-size: 1.2rem;
   background: #38cfd9;
   padding: 15px 35px;
@@ -97,7 +96,7 @@ export const BtnProjectLeft = styled(Link)`
   }
 `;
 
-export const BtnProjectRight = styled(Link)`
+export const BtnProjectRight = styled.a`
   margin: 0 25px;
   background: #38cfd9;
   padding: 5px 33px;
