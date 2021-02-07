@@ -12,7 +12,6 @@ import {
   ArrowFromBottom,
   GoUp,
   Github,
-  Facebook,
   Linkedin,
 } from "./Footer-elements";
 
@@ -28,15 +27,10 @@ const Footer = () => {
       <SocialMedia>
         <SocialMediaWrap>
           <WebsiteRights>
-            <SocialLogo to="/" onClick={toggleHome}>
-              Călin Radu
-            </SocialLogo>
+            <SocialLogo onClick={toggleHome}>Călin Radu</SocialLogo>
             Călin Radu © {new Date().getFullYear()} All rights reserved.
           </WebsiteRights>
           <SocialIcons>
-            <SocialIconLink href="/" target="_blank" aria-label="facebook">
-              <Facebook />
-            </SocialIconLink>
             <SocialIconLink
               href="//www.github.com/CalinRaduAlexandru/"
               target="_blank"
@@ -44,7 +38,7 @@ const Footer = () => {
             >
               <Github />
             </SocialIconLink>
-            <SocialIconLink href="/" target="_blank" aria-label="Linkedin">
+            <SocialIconLink>
               <Linkedin />
             </SocialIconLink>
           </SocialIcons>

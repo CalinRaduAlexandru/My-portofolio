@@ -1,6 +1,6 @@
 import React from "react";
-import { Button } from "../Button-element";
 import profile from "./../../Assets/profile.jpg";
+import cv from "./../../Assets/cv.pdf";
 import {
   AboutContainer,
   AboutWrapper,
@@ -11,6 +11,7 @@ import {
   Heading,
   Subtitle,
   BtnWrap,
+  BtnResume,
   Column2,
   ImgWrap,
   Img,
@@ -41,18 +42,9 @@ const AboutSection = ({
                 <Heading lightText={lightText}>{headline}</Heading>
                 <Subtitle darkText={darkText}>{description}</Subtitle>
                 <BtnWrap>
-                  <Button
-                    to="home"
-                    smooth={true}
-                    duration={500}
-                    spy={true}
-                    exact="true"
-                    offset={-80}
-                    primary={primary ? 1 : 0}
-                    dark={dark ? 1 : 0}
-                  >
-                    {buttonLabel}
-                  </Button>
+                  <BtnResume href={cv} download="calin resume">
+                    Resume
+                  </BtnResume>
                 </BtnWrap>
               </TextWrapper>
             </Column1>

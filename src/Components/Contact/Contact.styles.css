@@ -1,53 +1,39 @@
 .form-container {
   background: black;
-  padding: 40px;
-  overflow-x: hidden;
-}
-
-.form-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
+  padding: 40px 0 0 0;
+  overflow-x: hidden;
 }
 
 .form-img {
-  width: 30%;
+  width: 20%;
 }
 
 .form-content-right {
   margin-top: -40px;
   color: #fff;
-  padding: 50px;
-}
-
-@media screen and (max-width: 768px) {
-  .form-content-right {
-    padding: 0px;
-    margin-top: 10px;
-  }
+  padding: 50px 50px 20px 50px;
+  max-width: 600px;
+  margin-bottom: 30px;
 }
 
 .form-img-2 {
   width: 44%;
-  margin-top: 25px;
+  margin-top: 60px;
 }
 
 .close-btn {
-  font-size: 30px;
+  font-size: 1.2rem;
   cursor: pointer;
   text-decoration: underline;
 }
 
 .close-btn:hover {
   color: lightblue;
-}
-
-@media screen and (max-width: 768px) {
-  .close-btn {
-    font-size: 20px;
-  }
 }
 
 .contact-section {
@@ -63,12 +49,7 @@
 .form > h1 {
   color: white;
   margin: 10px 0;
-}
-
-@media screen and (max-width: 768px) {
-  .form > h1 {
-    font-size: 25px;
-  }
+  font-size: 1.4rem;
 }
 
 .form {
@@ -107,6 +88,7 @@
   width: 100%;
   border: none;
 }
+
 .form-input::placeholder {
   color: #595959;
   font-size: 12px;
@@ -139,21 +121,51 @@
 }
 
 @media screen and (max-width: 768px) {
-  .form-img {
-    width: 50%;
+  .form > h1 {
+    font-size: 25px;
   }
-}
 
-@media screen and (max-width: 768px) {
+  .form-container {
+    padding: 60px 20px;
+  }
+
+  .form-img {
+    width: 30%;
+  }
+
   .form-img-2 {
     width: 50%;
     margin-top: 30px;
+  }
+
+  .close-btn {
+    font-size: 20px;
+  }
+
+  .form-content-right {
+    padding: 0 40px;
+    margin-top: 10px;
+    margin-bottom: 80px;
   }
 }
 
 @media screen and (max-width: 400px) {
   .form-img-2 {
-    width: 100%;
-    margin-top: 100px;
+    width: 92%;
+    margin-top: 50px;
+    margin-left: 6px;
+  }
+
+  .form-container {
+    padding: 60px 0px;
+  }
+
+  .form-content-right {
+    padding: 0 10px;
+    margin-top: 0px;
+  }
+
+  .form > h1 {
+    font-size: 19px;
   }
 }

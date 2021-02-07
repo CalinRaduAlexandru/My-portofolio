@@ -20,9 +20,7 @@ const NavBar = ({ toggle }) => {
     <>
       <Nav>
         <NavbarContainer>
-          <NavLogo to="/" onClick={toggleHome}>
-            Călin Radu
-          </NavLogo>
+          <NavLogo onClick={toggleHome}>Călin Radu</NavLogo>
           <MobileIcon onClick={toggle}>
             <FaBars />
           </MobileIcon>

@@ -7,7 +7,6 @@ export const homeObjOne = {
   headline: "Creative, proactive and passionate about my work",
   description:
     "Junior developer aspiring to juggle software tools as a senior as soon as possible",
-  buttonLabel: "Resume",
   imgStart: true,
   img: "",
   alt: "Calin Radu",

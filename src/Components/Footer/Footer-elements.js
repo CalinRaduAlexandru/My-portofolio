@@ -1,7 +1,6 @@
 import styled from "styled-components";
-import { Link } from "react-router-dom";
 import { BiArrowFromBottom } from "react-icons/bi";
-import { FaGithub, FaFacebook, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 export const FooterContainer = styled.div`
   background: #010606;
@@ -21,10 +20,10 @@ export const SocialMediaWrap = styled.div`
   flex-direction: column;
   align-items: center;
   max-width: 1100px;
-  margin: 48px auto 20px auto;
+  margin: 48px auto 30px auto;
 `;
 
-export const SocialLogo = styled(Link)`
+export const SocialLogo = styled.div`
   color: #fff;
   cursor: pointer;
   text-decoration: none;
@@ -33,10 +32,10 @@ export const SocialLogo = styled(Link)`
   align-items: center;
   justify-content: center;
   margin-bottom: 16px;
-  font-weight: bolt;
+  font-weight: bold;
 
   &:hover {
-    color: lightblue;
+    color: #00b4d8;
   }
 `;
 
@@ -47,9 +46,7 @@ export const WebsiteRights = styled.small`
 
 export const SocialIcons = styled.div`
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  width: 240px;
 `;
 
 export const SocialIconLink = styled.a`
@@ -64,7 +61,7 @@ export const ArrowFromBottom = styled(BiArrowFromBottom)`
   color: #fff;
 
   &:hover {
-    color: lightblue;
+    color: #00b4d8;
   }
 `;
 
@@ -80,17 +77,7 @@ export const Github = styled(FaGithub)`
   cursor: pointer;
 
   &:hover {
-    color: lightblue;
-  }
-`;
-
-export const Facebook = styled(FaFacebook)`
-  font-size: 50px;
-  margin: 0 10px;
-  cursor: pointer;
-
-  &:hover {
-    color: lightblue;
+    color: #00b4d8;
   }
 `;
 
@@ -100,6 +87,6 @@ export const Linkedin = styled(FaLinkedin)`
   cursor: pointer;
 
   &:hover {
-    color: lightblue;
+    color: #00b4d8;
   }
 `;

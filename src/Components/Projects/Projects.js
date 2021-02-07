@@ -1,46 +1,49 @@
 import React from "react";
-import work1 from "./../../Assets/work1.jpg";
-import work2 from "./../../Assets/work2.jpg";
-import work3 from "./../../Assets/work3.jpg";
-import work4 from "./../../Assets/work4.jpg";
+import { FaGithub } from "react-icons/fa";
+import { Card } from "../Card";
 
 import {
   ProjectsContainer,
-  ProjectsH1,
-  ProjectsWrapper,
-  ProjectCard,
-  ProjectIcon,
-  ProjectH2,
-  ProjectP,
+  ProjectWrapper,
+  ProjectInfo,
+  ProjectTitle,
+  ProjectSubTitle,
+  ProjectText,
+  Buttons,
+  BtnProjectLeft,
+  BtnProjectRight,
 } from "./Projects-elements";
 
 const Projects = () => {
   return (
     <ProjectsContainer id="projects">
-      <ProjectsH1>
-        <ProjectsWrapper>
-          <ProjectCard>
-            <ProjectIcon src={work1} />
-            <ProjectH2>Redux | React</ProjectH2>
-            <ProjectP>Fully fledged e-commerce platform</ProjectP>
-          </ProjectCard>
-          <ProjectCard>
-            <ProjectIcon src={work2} />
-            <ProjectH2>Redux | React</ProjectH2>
-            <ProjectP>Fully fledged e-commerce platform</ProjectP>
-          </ProjectCard>
-          <ProjectCard>
-            <ProjectIcon src={work3} />
-            <ProjectH2>Redux | React</ProjectH2>
-            <ProjectP>Fully fledged e-commerce platform</ProjectP>
-          </ProjectCard>
-          <ProjectCard>
-            <ProjectIcon src={work4} />
-            <ProjectH2>Redux | React</ProjectH2>
-            <ProjectP>Fully fledged e-commerce platform</ProjectP>
-          </ProjectCard>
-        </ProjectsWrapper>
-      </ProjectsH1>
+      <ProjectWrapper>
+        <ProjectInfo>
+          <ProjectTitle>CrownFeel Ltd.</ProjectTitle>
+          <ProjectSubTitle>React | Redux | Firebase</ProjectSubTitle>
+          <ProjectText>
+            A fully fledged e-commerce website with user authentication, cart
+            memory storage and online payment.
+          </ProjectText>
+          <Buttons>
+            <BtnProjectLeft
+              to="//www.github.com/CalinRaduAlexandru/"
+              target="_blank"
+              aria-label="Github"
+            >
+              Live
+            </BtnProjectLeft>
+            <BtnProjectRight
+              to="//www.github.com/CalinRaduAlexandru/"
+              target="_blank"
+              aria-label="Github"
+            >
+              <FaGithub style={{ fontSize: "35px" }} />
+            </BtnProjectRight>
+          </Buttons>
+        </ProjectInfo>
+        <Card />
+      </ProjectWrapper>
     </ProjectsContainer>
   );
 };
