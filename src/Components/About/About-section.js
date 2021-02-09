@@ -42,8 +42,8 @@ const AboutSection = ({
                 <TopLine>Excited to bring your project to life!</TopLine>
                 <Heading lightText={lightText}>{headline}</Heading>
                 <Subtitle darkText={darkText}>
-                  Let`s tackle new possibilities and create inovative projects
-                  to impact the world!
+                  Let`s discover new possibilities in which we can create your
+                  vision!
                 </Subtitle>
                 <BtnWrap>
                   <BtnResume href={cv} download="calin resume">
