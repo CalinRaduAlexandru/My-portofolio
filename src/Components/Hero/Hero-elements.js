@@ -64,14 +64,27 @@ export const HeroContent = styled.div`
 `;
 
 export const TitleWrapper = styled.div`
+  position: relative;
   display: flex;
   justify-content: center;
-  animation: slide-left 4s;
+  box-shadow: 10px 10px 10px 5px rgba(0, 0, 0, 0.3);
+  padding: 20px 30px 35px 140px;
+  border-radius: 25px;
+  background: rgba(0, 35, 149, 0.7);
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    transform: scale(1.1);
+    background: rgba(0, 35, 149, 0.9);
+  }
+
+  animation: slide-left 2s;
 
   @keyframes slide-left {
     from {
       margin-left: 100%;
-      width: 300%;
+      width: 100%;
       opacity: 0;
     }
 
@@ -80,6 +93,10 @@ export const TitleWrapper = styled.div`
       width: 100%;
       opacity: 1;
     }
+  }
+
+  @media screen and (max-width: 500px) {
+    padding: 10px 20px 20px 90px;
   }
 `;
 
@@ -90,13 +107,12 @@ export const HeroH1 = styled.h1`
   font-size: 48px;
   text-align: center;
   padding: 20px 0;
+  animation: slide-up 2s;
 
-  animation: slide-down 4s;
-
-  @keyframes slide-down {
+  @keyframes slide-up {
     from {
-      margin-top: 100%;
-      width: 300%;
+      margin-top: 50%;
+      width: 200%;
       opacity: 0;
     }
 
@@ -107,30 +123,30 @@ export const HeroH1 = styled.h1`
     }
   }
 
-  @media screen and (max-width: 768px) {
-    font-size: 40px;
-  }
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 500px) {
     font-size: 32px;
   }
 `;
 
 export const HeroH2 = styled.h2`
+  position: absolute;
   color: black;
-  font-family: "Spartan", sans-serif;
-  font-weight: 400;
-  font-size: 68px;
+  font-family: "Allura", cursive;
+  font-size: 120px;
+  top: 0%;
+  left: 5%;
   letter-spacing: 1.9px;
   text-align: center;
-  margin: 20px 0 0 0;
-  @media screen and (max-width: 768px) {
-    font-size: 38px;
-    margin-top: 23px;
+  @media screen and (max-width: 500px) {
+    font-size: 78px;
+    top: 0%;
+    left: 5%;
   }
 `;
+// #002395;
 
 export const HeroH3 = styled.h2`
-  color: #002395;
+  color: #551a8b;
   padding: 10px 10px 0 10px;
   border-radius: 25px;
   background: rgba(0, 0, 0, 0.8);
@@ -138,11 +154,12 @@ export const HeroH3 = styled.h2`
   opacity: 0.8;
   font-family: "Spartan", sans-serif;
   font-size: 60px;
+  font-weight: 600;
   letter-spacing: 1.9px;
   text-align: center;
   margin: 17px 0 0 0;
-  @media screen and (max-width: 768px) {
-    font-size: 40px;
+  @media screen and (max-width: 500px) {
+    font-size: 25px;
   }
 `;
 
@@ -156,7 +173,7 @@ export const HeroP = styled.p`
   @media screen and (max-width: 768px) {
     font-size: 30px;
   }
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 500px) {
     font-size: 17px;
   }
 `;

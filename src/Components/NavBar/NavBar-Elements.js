@@ -29,10 +29,11 @@ export const NavbarContainer = styled.div`
 `;
 
 export const NavLogo = styled.div`
-  color: #0077b6;
+  color: #002395;
+  font-family: "Allura", cursive;
   justify-self: flex-start;
   cursor: pointer;
-  font-size: 1.5rem;
+  font-size: 60px;
   display: flex;
   align-items: center;
   font-weight: bold;

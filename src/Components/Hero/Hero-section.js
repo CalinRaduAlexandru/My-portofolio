@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import Tilt from "react-parallax-tilt";
 import setup from "./../../Assets/setup.jpg";
 import { Button } from "../Button-element";
 import {
@@ -18,6 +19,11 @@ import {
 
 const HeroSection = () => {
   const [hover, setHover] = useState(false);
+  const [background, setBackground] = useState(false);
+
+  useEffect(() => {
+    setTimeout(() => setBackground(true), 1500);
+  }, []);
 
   const onHover = () => {
     setHover(!hover);
@@ -28,30 +34,34 @@ const HeroSection = () => {
       <HeroBg>
         <ImgBg alt="programming setup" src={setup} />
       </HeroBg>
-      <HeroContent>
-        <HeroH1>Welcome!</HeroH1>
-        <TitleWrapper>
-          <HeroH2>Ra</HeroH2>
-          <HeroH3>DESIGN</HeroH3>
-        </TitleWrapper>
-        <HeroP>
-          Radu Călin | Full-stack <br /> Web Developer
-        </HeroP>
-        <HeroBtnWrapper>
-          <Button
-            to="contact"
-            smooth={true}
-            duration={500}
-            spy={true}
-            exact="true"
-            offset={-80}
-            onMouseEnter={onHover}
-            onMouseLeave={onHover}
-          >
-            Contact me! {hover ? <ArrowForward /> : <ArrowRight />}
-          </Button>
-        </HeroBtnWrapper>
-      </HeroContent>
+      {background && (
+        <HeroContent>
+          <HeroH1>Welcome!</HeroH1>
+          <Tilt>
+            <TitleWrapper>
+              <HeroH2>Ra</HeroH2>
+              <HeroH3>DESIGN</HeroH3>
+            </TitleWrapper>
+          </Tilt>
+          <HeroP>
+            Radu Călin | Full-stack <br /> Web Developer
+          </HeroP>
+          <HeroBtnWrapper>
+            <Button
+              to="contact"
+              smooth={true}
+              duration={500}
+              spy={true}
+              exact="true"
+              offset={-80}
+              onMouseEnter={onHover}
+              onMouseLeave={onHover}
+            >
+              Contact me! {hover ? <ArrowForward /> : <ArrowRight />}
+            </Button>
+          </HeroBtnWrapper>
+        </HeroContent>
+      )}
     </HeroContainer>
   );
 };

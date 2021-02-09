@@ -24,10 +24,11 @@ export const SocialMediaWrap = styled.div`
 `;
 
 export const SocialLogo = styled.div`
-  color: #fff;
+  color: #002395;
+  font-family: "Allura", cursive;
   cursor: pointer;
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -50,7 +51,7 @@ export const SocialIcons = styled.div`
 `;
 
 export const SocialIconLink = styled.a`
-  color: #fff;
+  color: #00b4d8;
   font-size: 24px;
 `;
 
@@ -77,7 +78,7 @@ export const Github = styled(FaGithub)`
   cursor: pointer;
 
   &:hover {
-    color: #00b4d8;
+    color: #fff;
   }
 `;
 
@@ -87,6 +88,6 @@ export const Linkedin = styled(FaLinkedin)`
   cursor: pointer;
 
   &:hover {
-    color: #00b4d8;
+    color: #fff;
   }
 `;

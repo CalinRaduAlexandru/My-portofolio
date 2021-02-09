@@ -26,10 +26,7 @@ const Footer = () => {
       <GoUp onClick={toggleHome}>Go top!</GoUp>
       <SocialMedia>
         <SocialMediaWrap>
-          <WebsiteRights>
-            <SocialLogo onClick={toggleHome}>Călin Radu</SocialLogo>
-            Călin Radu © {new Date().getFullYear()} All rights reserved.
-          </WebsiteRights>
+          <SocialLogo onClick={toggleHome}>Radu Călin</SocialLogo>
           <SocialIcons>
             <SocialIconLink
               href="//www.github.com/CalinRaduAlexandru/"
@@ -44,6 +41,9 @@ const Footer = () => {
           </SocialIcons>
         </SocialMediaWrap>
       </SocialMedia>
+      <WebsiteRights>
+        Călin Radu © {new Date().getFullYear()} All rights reserved.
+      </WebsiteRights>
     </FooterContainer>
   );
 };
