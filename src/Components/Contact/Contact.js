@@ -12,9 +12,7 @@ const Contact = ({ submitForm }) => {
     <div className="contact-section">
       <div className="form-content-right">
         <form className="form" onSubmit={handleSubmit}>
-          <h1>
-            Let`s get in touch! I`ll get back in touch with you in no time!
-          </h1>
+          <h1>Let`s get in touch! I`ll get back to you in no time!</h1>
           <div className="form-inputs">
             <label htmlFor="name" className="form-label">
               Name{" "}
@@ -24,7 +22,7 @@ const Contact = ({ submitForm }) => {
               type="text"
               name="name"
               className="form-input"
-              placeholder="Enter your name or company"
+              placeholder="Enter your name"
               value={values.name}
               onChange={handleChange}
             />
@@ -54,7 +52,7 @@ const Contact = ({ submitForm }) => {
               type="text"
               name="message"
               className="form-input"
-              placeholder="Send me a message"
+              placeholder="Write a message"
               value={values.message}
               onChange={handleChange}
             />

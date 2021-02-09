@@ -5,7 +5,7 @@ export const AboutContainer = styled.div`
   background: ${({ lightBg }) => (lightBg ? "#f9f9f9" : "#010606")};
 
   @media screen and (max-width: 768px) {
-    padding: 100px 0 100px 0;
+    padding: 50px 0 50px 0;
   }
 `;
 
@@ -36,6 +36,8 @@ export const AboutRow = styled.div`
   @media screen and (max-width: 768px) {
     grid-template-areas: ${({ imgStart }) =>
       imgStart ? `'col1' 'col2'` : `'col1 col1' 'col2 col2'`};
+    margin: 0;
+    padding: 0;
   }
 
   @media screen and (max-width: 968px) {
@@ -48,7 +50,6 @@ export const Column1 = styled.div`
   margin-bottom: 15px;
   padding: 0 15px;
   grid-area: col1;
-  margin: 0 40px;
 `;
 
 export const Column2 = styled.div`
@@ -124,6 +125,7 @@ export const BtnResume = styled.a`
 
 export const ImgWrap = styled.div`
   max-width: 405px;
+  min-height: 350px;
   height: 100%;
 `;
 

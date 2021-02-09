@@ -38,9 +38,12 @@ const AboutSection = ({
           <AboutRow imgStart={imgStart}>
             <Column1>
               <TextWrapper>
-                <TopLine>{topLine}</TopLine>
+                <TopLine>Excited to bring ideas to life!</TopLine>
                 <Heading lightText={lightText}>{headline}</Heading>
-                <Subtitle darkText={darkText}>{description}</Subtitle>
+                <Subtitle darkText={darkText}>
+                  Let`s tackle new challanges and create inovative projects to
+                  impact the world!
+                </Subtitle>
                 <BtnWrap>
                   <BtnResume href={cv} download="calin resume">
                     Resume

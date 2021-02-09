@@ -6,8 +6,10 @@ import {
   ImgBg,
   HeroContainer,
   HeroContent,
+  TitleWrapper,
   HeroH1,
   HeroH2,
+  HeroH3,
   HeroP,
   HeroBtnWrapper,
   ArrowRight,
@@ -27,9 +29,14 @@ const HeroSection = () => {
         <ImgBg alt="programming setup" src={setup} />
       </HeroBg>
       <HeroContent>
-        <HeroH1>Welcome to my portofolio!</HeroH1>
-        <HeroH2>Călin Radu</HeroH2>
-        <HeroP>full-stack developer</HeroP>
+        <HeroH1>Welcome!</HeroH1>
+        <TitleWrapper>
+          <HeroH2>Ra</HeroH2>
+          <HeroH3>DESIGN</HeroH3>
+        </TitleWrapper>
+        <HeroP>
+          Radu Călin | Full-stack <br /> Web Developer
+        </HeroP>
         <HeroBtnWrapper>
           <Button
             to="contact"
@@ -40,8 +47,6 @@ const HeroSection = () => {
             offset={-80}
             onMouseEnter={onHover}
             onMouseLeave={onHover}
-            primary="true"
-            dark="true"
           >
             Contact me! {hover ? <ArrowForward /> : <ArrowRight />}
           </Button>
