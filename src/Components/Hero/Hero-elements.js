@@ -156,12 +156,15 @@ export const HeroH3 = styled.h2`
 `;
 
 export const HeroP = styled.p`
-  margin-top: 40px;
+  margin-top: 20px;
   font-family: "Spartan", sans-serif;
   color: black;
   font-size: 27px;
   text-align: center;
-  max-width: 700px;
+  font-weight: 600;
+  text-shadow: 10px 10px 10px 5px;
+  max-width: 500px;
+
   @media screen and (max-width: 768px) {
     font-size: 30px;
   }

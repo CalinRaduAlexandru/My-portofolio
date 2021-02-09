@@ -52,7 +52,7 @@ const Contact = ({ submitForm }) => {
               type="text"
               name="message"
               className="form-input"
-              placeholder="Write a message"
+              placeholder="Tell me more"
               value={values.message}
               onChange={handleChange}
             />

@@ -3,6 +3,8 @@ import styled from "styled-components";
 export const AboutContainer = styled.div`
   color: #fff;
   background: ${({ lightBg }) => (lightBg ? "#f9f9f9" : "#010606")};
+  height: 100vh;
+  width: 100%;
 
   @media screen and (max-width: 768px) {
     padding: 50px 0 50px 0;
@@ -12,8 +14,7 @@ export const AboutContainer = styled.div`
 export const AboutWrapper = styled.div`
   display: grid;
   z-index: 1;
-  height: 101vh;
-  width: 100%;
+
   max-width: 1100px;
   margin-right: auto;
   margin-left: auto;
@@ -127,11 +128,39 @@ export const ImgWrap = styled.div`
   max-width: 405px;
   min-height: 350px;
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 80px;
+
+  @media screen and (max-width: 768px) {
+    margin-bottom: 0px;
+  }
 `;
 
 export const Img = styled.img`
-  width: 100%;
+  width: 80%;
   border-radius: 50%;
   margin: 0 0 10px 0;
   padding-right: 0;
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
+`;
+
+export const HeroP = styled.p`
+  margin-top: 40px;
+  font-family: "Spartan", sans-serif;
+  color: white;
+  font-size: 27px;
+  text-align: center;
+  max-width: 700px;
+  @media screen and (max-width: 768px) {
+    font-size: 30px;
+  }
+  @media screen and (max-width: 500px) {
+    font-size: 17px;
+  }
 `;

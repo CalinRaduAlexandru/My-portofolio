@@ -44,7 +44,7 @@ const HeroSection = () => {
             </TitleWrapper>
           </Tilt>
           <HeroP>
-            Radu Călin | Full-stack <br /> Web Developer
+            Thriving for excelence in your business as it would be mine!
           </HeroP>
           <HeroBtnWrapper>
             <Button
@@ -57,7 +57,8 @@ const HeroSection = () => {
               onMouseEnter={onHover}
               onMouseLeave={onHover}
             >
-              Contact me! {hover ? <ArrowForward /> : <ArrowRight />}
+              Tell me how can I help you!{" "}
+              {hover ? <ArrowForward /> : <ArrowRight />}
             </Button>
           </HeroBtnWrapper>
         </HeroContent>

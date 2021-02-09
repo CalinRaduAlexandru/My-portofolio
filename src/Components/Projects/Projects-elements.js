@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const ProjectsContainer = styled.div`
   height: auto;
   display: flex;
+  height: 100vh;
   flex-direction: column;
   align-items: center;
   background: rgb(34, 193, 195);

@@ -15,6 +15,7 @@ import {
   Column2,
   ImgWrap,
   Img,
+  HeroP,
 } from "./About-elements";
 
 const AboutSection = ({
@@ -38,11 +39,11 @@ const AboutSection = ({
           <AboutRow imgStart={imgStart}>
             <Column1>
               <TextWrapper>
-                <TopLine>Excited to bring ideas to life!</TopLine>
+                <TopLine>Excited to bring your project to life!</TopLine>
                 <Heading lightText={lightText}>{headline}</Heading>
                 <Subtitle darkText={darkText}>
-                  Let`s tackle new challanges and create inovative projects to
-                  impact the world!
+                  Let`s tackle new possibilities and create inovative projects
+                  to impact the world!
                 </Subtitle>
                 <BtnWrap>
                   <BtnResume href={cv} download="calin resume">
@@ -54,6 +55,9 @@ const AboutSection = ({
             <Column2>
               <ImgWrap>
                 <Img src={profile} alt={alt} />
+                <HeroP>
+                  Radu Călin | Full-stack <br /> Web Developer
+                </HeroP>
               </ImgWrap>
             </Column2>
           </AboutRow>
