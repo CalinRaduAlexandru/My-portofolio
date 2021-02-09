@@ -24,16 +24,16 @@ export const SocialMediaWrap = styled.div`
 `;
 
 export const SocialLogo = styled.div`
-  color: #fff;
+  color: #002395;
+  font-family: "Allura", cursive;
   cursor: pointer;
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 16px;
   font-weight: bold;
-
   &:hover {
     color: #00b4d8;
   }
@@ -50,7 +50,7 @@ export const SocialIcons = styled.div`
 `;
 
 export const SocialIconLink = styled.a`
-  color: #fff;
+  color: #00b4d8;
   font-size: 24px;
 `;
 
@@ -59,7 +59,6 @@ export const ArrowFromBottom = styled(BiArrowFromBottom)`
   margin: 50px 0 0 0;
   cursor: pointer;
   color: #fff;
-
   &:hover {
     color: #00b4d8;
   }
@@ -75,9 +74,8 @@ export const Github = styled(FaGithub)`
   font-size: 50px;
   margin: 0 10px;
   cursor: pointer;
-
   &:hover {
-    color: #00b4d8;
+    color: #fff;
   }
 `;
 
@@ -85,8 +83,7 @@ export const Linkedin = styled(FaLinkedin)`
   font-size: 50px;
   margin: 0 10px;
   cursor: pointer;
-
   &:hover {
-    color: #00b4d8;
+    color: #fff;
   }
 `;
