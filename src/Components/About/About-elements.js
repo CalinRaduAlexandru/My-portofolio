@@ -3,8 +3,6 @@ import styled from "styled-components";
 export const AboutContainer = styled.div`
   color: #fff;
   background: ${({ lightBg }) => (lightBg ? "#f9f9f9" : "#010606")};
-  height: 100vh;
-  width: 100%;
 
   @media screen and (max-width: 768px) {
     padding: 50px 0 50px 0;
@@ -14,7 +12,7 @@ export const AboutContainer = styled.div`
 export const AboutWrapper = styled.div`
   display: grid;
   z-index: 1;
-
+  width: 100%;
   max-width: 1100px;
   margin-right: auto;
   margin-left: auto;
