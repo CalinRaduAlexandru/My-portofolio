@@ -3,7 +3,7 @@ import { Link } from "react-scroll";
 
 export const Nav = styled.nav`
   background: #000;
-  height: 80px;
+  height: 82px;
   margin-top: -80px;
   display: flex;
   justify-content: center;
