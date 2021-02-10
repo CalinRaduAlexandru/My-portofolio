@@ -1,9 +1,12 @@
 import React from "react";
 import { CardCrown } from "./Cards/CardCrown";
 import { CardFilter } from "./Cards/CardFilter";
+import { MdKeyboardArrowDown } from "react-icons/md";
 
 import {
   ProjectsContainer,
+  Header,
+  FirstProjectWrapper,
   ProjectWrapper,
   ProjectInfo,
   ProjectTitle,
@@ -18,7 +21,11 @@ import {
 const Projects = () => {
   return (
     <ProjectsContainer id="projects">
-      <ProjectWrapper>
+      <Header>
+        Personal projects{" "}
+        <MdKeyboardArrowDown style={{ marginTop: "5px", marginLeft: "5px" }} />
+      </Header>
+      <FirstProjectWrapper>
         <ProjectInfo>
           <ProjectTitle>CrownFeel Ltd.</ProjectTitle>
           <ProjectSubTitle>React | Redux | Firebase</ProjectSubTitle>
@@ -44,7 +51,7 @@ const Projects = () => {
           </Buttons>
         </ProjectInfo>
         <CardCrown />
-      </ProjectWrapper>
+      </FirstProjectWrapper>
       <ProjectWrapper>
         <ProjectInfo>
           <ProjectTitle>Search friends</ProjectTitle>

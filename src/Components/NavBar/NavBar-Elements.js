@@ -57,9 +57,15 @@ export const NavLogo = styled.div`
   align-items: center;
   font-weight: bold;
   text-decoration: none;
-  animation: slide-right 5s;
-  @keyframes slide-right {
+  animation: appear 5s;
+  @keyframes appear {
     0% {
+      margin-right: 5%;
+      width: 100%;
+      opacity: 0;
+    }
+
+    40% {
       margin-right: 5%;
       width: 100%;
       opacity: 0;
