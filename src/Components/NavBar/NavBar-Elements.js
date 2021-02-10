@@ -12,6 +12,25 @@ export const Nav = styled.nav`
   position: sticky;
   top: 0;
   z-index: 10;
+  animation: slide-right 1s;
+  @keyframes slide-right {
+    0% {
+      margin-right: 5%;
+      width: 100%;
+      opacity: 0;
+    }
+
+    90% {
+      margin-right: 5%;
+      width: 100%;
+      opacity: 0;
+    }
+    100% {
+      margin-right: 0%;
+      width: 100%;
+      opacity: 1;
+    }
+  }
 
   @media screen and (max-width: 960px) {
     transition: 0.8s all ease;
@@ -38,9 +57,19 @@ export const NavLogo = styled.div`
   align-items: center;
   font-weight: bold;
   text-decoration: none;
+  animation: slide-right 5s;
+  @keyframes slide-right {
+    0% {
+      margin-right: 5%;
+      width: 100%;
+      opacity: 0;
+    }
 
-  &:hover {
-    color: #0077b6;
+    100% {
+      margin-right: 0%;
+      width: 100%;
+      opacity: 1;
+    }
   }
 `;
 

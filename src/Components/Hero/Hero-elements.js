@@ -8,6 +8,20 @@ export const HeroContainer = styled.div`
   height: 100vh;
   position: relative;
   z-index: 1;
+  animation: slide-right 1s;
+  @keyframes slide-right {
+    0% {
+      margin-right: 5%;
+      width: 100%;
+      opacity: 0;
+    }
+
+    100% {
+      margin-right: 0%;
+      width: 100%;
+      opacity: 1;
+    }
+  }
   &::before {
     content: "";
     z-index: 2;
@@ -61,6 +75,19 @@ export const HeroContent = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  animation: slide-up 2s;
+  @keyframes slide-up {
+    from {
+      margin-top: 40%;
+      width: 100%;
+      opacity: 0;
+    }
+    to {
+      margin-top: 0%;
+      width: 100%;
+      opacity: 1;
+    }
+  }
 `;
 
 export const TitleWrapper = styled.div`
@@ -69,30 +96,29 @@ export const TitleWrapper = styled.div`
   justify-content: center;
   align-items: center;
   box-shadow: 10px 10px 10px 5px rgba(0, 0, 0, 0.3);
-  padding: 0px;
   border-radius: 25px;
   background: rgba(0, 35, 149, 0.7);
   cursor: pointer;
   transition: all 0.2s ease-in-out;
-  &:hover {
-    transform: scale(1.1);
-    background: rgba(0, 35, 149, 0.9);
-  }
-  animation: slide-left 2s;
-  @keyframes slide-left {
+  animation: slide-top 2s;
+  @keyframes slide-top {
     from {
-      margin-left: 100%;
+      margin-bottom: 50%;
       width: 100%;
       opacity: 0;
     }
     to {
-      margin-left: 0%;
+      margin-bottom: 0%;
       width: 100%;
       opacity: 1;
     }
   }
+  &:hover {
+    transform: scale(1.1);
+  }
+
   @media screen and (max-width: 500px) {
-    padding: 0px;
+    max-width: 70vw;
   }
 `;
 
@@ -103,19 +129,20 @@ export const HeroH1 = styled.h1`
   font-size: 48px;
   text-align: center;
   padding: 20px 0;
-  animation: slide-up 2s;
-  @keyframes slide-up {
+  animation: slide-down 1s;
+  @keyframes slide-down {
     from {
-      margin-top: 50%;
-      width: 200%;
+      margin-bottom: 0%;
+      width: 100%;
       opacity: 0;
     }
     to {
-      margin-top: 0%;
+      margin-bottom: 0%;
       width: 100%;
       opacity: 1;
     }
   }
+
   @media screen and (max-width: 500px) {
     font-size: 32px;
   }
@@ -126,6 +153,7 @@ export const HeroH2 = styled.h2`
   font-family: "Allura", cursive;
   font-size: 100px;
   letter-spacing: 1.9px;
+
   @media screen and (max-width: 500px) {
     font-size: 60px;
   }
@@ -144,6 +172,7 @@ export const HeroH3 = styled.h2`
   font-weight: 600;
   letter-spacing: 1.9px;
   text-align: center;
+
   @media screen and (max-width: 500px) {
     font-size: 17px;
     padding: 15px;

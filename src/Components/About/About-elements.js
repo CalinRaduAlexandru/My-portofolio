@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { HiDownload } from "react-icons/hi";
 
 export const AboutContainer = styled.div`
   color: #fff;
@@ -28,6 +29,10 @@ export const AboutWrapper = styled.div`
 
   @media screen and (max-width: 768px) {
     height: 100%;
+  }
+
+  @media screen and (max-width: 368px) {
+    padding: 0;
   }
 `;
 
@@ -129,6 +134,10 @@ export const BtnResume = styled.a`
   }
 `;
 
+export const Download = styled(HiDownload)`
+  margin-left: 10px;
+`;
+
 export const ImgWrap = styled.div`
   max-width: 405px;
   min-height: 350px;
@@ -136,7 +145,7 @@ export const ImgWrap = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   margin-bottom: 80px;
 
   @media screen and (max-width: 768px) {
@@ -156,7 +165,8 @@ export const Img = styled.img`
 `;
 
 export const HeroP = styled.p`
-  margin-top: 40px;
+  margin: 20px 0;
+
   font-family: "Spartan", sans-serif;
   color: white;
   font-size: 27px;

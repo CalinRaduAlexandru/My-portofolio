@@ -26,7 +26,7 @@ export const SocialMediaWrap = styled.div`
   margin: 15px auto 15px auto;
   background: #1a2228;
   border-radius: 25px;
-  padding: 5px 0;
+  padding: 10px 0;
 
   @media screen and (max-width: 500px) {
     padding: 0;
