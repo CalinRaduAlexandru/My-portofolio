@@ -40,7 +40,7 @@ const HeroSection = () => {
           <Tilt>
             <TitleWrapper>
               <HeroH2>Ra</HeroH2>
-              <HeroH3>DESIGN</HeroH3>
+              <HeroH3>WEB DEVELOPMENT</HeroH3>
             </TitleWrapper>
           </Tilt>
           <HeroP>

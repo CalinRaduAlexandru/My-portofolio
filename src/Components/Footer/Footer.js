@@ -11,6 +11,11 @@ import {
   SocialIconLink,
   ArrowFromBottom,
   GoUp,
+  DetailsWrap,
+  PhoneWrap,
+  Whatsapp,
+  EmailWrap,
+  OutlineMail,
   Github,
   Linkedin,
 } from "./Footer-elements";
@@ -27,6 +32,14 @@ const Footer = () => {
       <SocialMedia>
         <SocialMediaWrap>
           <SocialLogo onClick={toggleHome}>Radu Călin</SocialLogo>
+          <DetailsWrap>
+            <PhoneWrap>
+              <Whatsapp /> +40 742804731
+            </PhoneWrap>
+            <EmailWrap>
+              <OutlineMail /> CalinRaduAlexandru@protonmail.com
+            </EmailWrap>
+          </DetailsWrap>
           <SocialIcons>
             <SocialIconLink
               href="//www.github.com/CalinRaduAlexandru/"

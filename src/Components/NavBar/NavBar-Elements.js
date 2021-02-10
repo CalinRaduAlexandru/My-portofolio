@@ -29,7 +29,7 @@ export const NavbarContainer = styled.div`
 `;
 
 export const NavLogo = styled.div`
-  color: #002395;
+  color: #00b4d8;
   font-family: "Allura", cursive;
   justify-self: flex-start;
   cursor: pointer;
@@ -38,6 +38,10 @@ export const NavLogo = styled.div`
   align-items: center;
   font-weight: bold;
   text-decoration: none;
+
+  &:hover {
+    color: #0077b6;
+  }
 `;
 
 export const MobileIcon = styled.div`

@@ -1,5 +1,4 @@
 import React from "react";
-import { FaGithub } from "react-icons/fa";
 import { CardCrown } from "./Cards/CardCrown";
 import { CardFilter } from "./Cards/CardFilter";
 
@@ -13,6 +12,7 @@ import {
   Buttons,
   BtnProjectLeft,
   BtnProjectRight,
+  Github,
 } from "./Projects-elements";
 
 const Projects = () => {
@@ -39,7 +39,7 @@ const Projects = () => {
               target="_blank"
               aria-label="Github"
             >
-              <FaGithub style={{ fontSize: "35px" }} />
+              <Github style={{ fontSize: "35px" }} />
             </BtnProjectRight>
           </Buttons>
         </ProjectInfo>
@@ -65,7 +65,7 @@ const Projects = () => {
               target="_blank"
               aria-label="Github"
             >
-              <FaGithub style={{ fontSize: "35px" }} />
+              <Github style={{ fontSize: "35px" }} />
             </BtnProjectRight>
           </Buttons>
         </ProjectInfo>

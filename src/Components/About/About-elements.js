@@ -7,6 +7,13 @@ export const AboutContainer = styled.div`
   @media screen and (max-width: 768px) {
     padding: 50px 0 50px 0;
   }
+
+  @media screen and (min-width: 900px) {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 `;
 
 export const AboutWrapper = styled.div`

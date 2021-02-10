@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { FaGithub } from "react-icons/fa";
 
 export const ProjectsContainer = styled.div`
   height: auto;
@@ -21,8 +22,7 @@ export const ProjectWrapper = styled.div`
   align-items: center;
   flex-wrap: wrap;
   border-bottom: 3px solid black;
-  margin-bottom: 20px;
-  padding: 40px;
+  padding: 30px;
 
   @media screen and (max-width: 768px) {
     margin: 20px 0;
@@ -71,6 +71,8 @@ align-items: center;
 
 export const BtnProjectLeft = styled.a`
   font-size: 1.2rem;
+  color: #551a8b;
+  cursor: pointer;
   background: #38cfd9;
   padding: 15px 35px;
   border-radius: 25px;
@@ -90,6 +92,8 @@ export const BtnProjectLeft = styled.a`
 
 export const BtnProjectRight = styled.a`
   margin: 0 25px;
+  color: #551a8b;
+  cursor: pointer;
   background: #38cfd9;
   padding: 5px 33px;
   border-radius: 25px;
@@ -112,3 +116,7 @@ export const BtnProjectRight = styled.a`
 `;
 
 export const ImgWrapper = styled.div``;
+
+export const Github = styled(FaGithub)`
+  color: #551a8b;
+`;

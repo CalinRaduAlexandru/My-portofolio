@@ -1,6 +1,8 @@
 import styled from "styled-components";
 import { BiArrowFromBottom } from "react-icons/bi";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { SiWhatsapp } from "react-icons/si";
+import { HiOutlineMail } from "react-icons/hi";
 
 export const FooterContainer = styled.div`
   background: #010606;
@@ -12,6 +14,7 @@ export const FooterContainer = styled.div`
 export const SocialMedia = styled.section`
   max-width: 1000px;
   width: 100%;
+  padding: 0px 20px;
 `;
 
 export const SocialMediaWrap = styled.div`
@@ -20,11 +23,18 @@ export const SocialMediaWrap = styled.div`
   flex-direction: column;
   align-items: center;
   max-width: 1100px;
-  margin: 48px auto 30px auto;
+  margin: 15px auto 15px auto;
+  background: #1a2228;
+  border-radius: 25px;
+  padding: 5px 0;
+
+  @media screen and (max-width: 500px) {
+    padding: 0;
+  }
 `;
 
 export const SocialLogo = styled.div`
-  color: #002395;
+  color: #0077b6;
   font-family: "Allura", cursive;
   cursor: pointer;
   text-decoration: none;
@@ -32,16 +42,10 @@ export const SocialLogo = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 16px;
   font-weight: bold;
   &:hover {
     color: #00b4d8;
   }
-`;
-
-export const WebsiteRights = styled.small`
-  color: #fff;
-  margin-bottom: 16px;
 `;
 
 export const SocialIcons = styled.div`
@@ -56,7 +60,7 @@ export const SocialIconLink = styled.a`
 
 export const ArrowFromBottom = styled(BiArrowFromBottom)`
   font-size: 50px;
-  margin: 50px 0 0 0;
+  margin: 10px 0 0 0;
   cursor: pointer;
   color: #fff;
   &:hover {
@@ -68,6 +72,42 @@ export const GoUp = styled.p`
   font-size: 16px;
   cursor: pointer;
   color: #fff;
+`;
+export const DetailsWrap = styled.div`
+  color: #fff;
+  padding: 10px 25px 10px 25px;
+  display: flex;
+  flex-direction: column;
+  items-align: center;
+  justify-content: center;
+  text-align: center;
+
+  @media screen and (max-width: 500px) {
+    font-size: 14px;
+  }
+
+  @media screen and (max-width: 350px) {
+    font-size: 10px;
+  }
+`;
+export const PhoneWrap = styled.div`
+  padding: 5px;
+`;
+export const Whatsapp = styled(SiWhatsapp)``;
+export const EmailWrap = styled.div`
+  padding: 5px;
+  display: flex;
+`;
+export const OutlineMail = styled(HiOutlineMail)`
+  font-size: 20px;
+  margin-right: 7px;
+  @media screen and (max-width: 500px) {
+    font-size: 15px;
+  }
+
+  @media screen and (max-width: 300px) {
+    display: none;
+  }
 `;
 
 export const Github = styled(FaGithub)`
@@ -86,4 +126,9 @@ export const Linkedin = styled(FaLinkedin)`
   &:hover {
     color: #fff;
   }
+`;
+
+export const WebsiteRights = styled.small`
+  color: #fff;
+  margin-bottom: 16px;
 `;
