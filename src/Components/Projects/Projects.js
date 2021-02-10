@@ -1,6 +1,7 @@
 import React from "react";
 import { CardCrown } from "./Cards/CardCrown";
 import { CardFilter } from "./Cards/CardFilter";
+import { CardSearch } from "./Cards/CardSearch";
 import { MdKeyboardArrowDown } from "react-icons/md";
 
 import {
@@ -52,6 +53,33 @@ const Projects = () => {
         </ProjectInfo>
         <CardCrown />
       </FirstProjectWrapper>
+      <ProjectWrapper>
+        <ProjectInfo>
+          <ProjectTitle>Recognize faces</ProjectTitle>
+          <ProjectSubTitle>React | NodeJs | Postgres</ProjectSubTitle>
+          <ProjectText>
+            A full-stack app in which you can add photos URL`s and accumulate
+            points.
+          </ProjectText>
+          <Buttons>
+            <BtnProjectLeft
+              href="https://search-face-app.herokuapp.com/"
+              target="_blank"
+              aria-label="Heroku"
+            >
+              Live
+            </BtnProjectLeft>
+            <BtnProjectRight
+              href="https://github.com/CalinRaduAlexandru/Filter-cards-app"
+              target="_blank"
+              aria-label="Github"
+            >
+              <Github style={{ fontSize: "35px" }} />
+            </BtnProjectRight>
+          </Buttons>
+        </ProjectInfo>
+        <CardSearch />
+      </ProjectWrapper>
       <ProjectWrapper>
         <ProjectInfo>
           <ProjectTitle>Search friends</ProjectTitle>
