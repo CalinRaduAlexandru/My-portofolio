@@ -130,10 +130,9 @@ export const HeroH2 = styled.h2`
     font-size: 60px;
   }
 `;
-// #002395;
 
 export const HeroH3 = styled.h2`
-  color: #551a8b;
+  color: #9370db;
   padding: 20px 20px 10px 20px;
   border-bottom-left-radius: 25px;
   border-bottom-right-radius: 25px;
