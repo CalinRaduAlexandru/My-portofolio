@@ -27,10 +27,6 @@ export const SocialMediaWrap = styled.div`
   background: #1a2228;
   border-radius: 25px;
   padding: 10px 0;
-
-  @media screen and (max-width: 500px) {
-    padding: 0;
-  }
 `;
 
 export const SocialLogo = styled.div`

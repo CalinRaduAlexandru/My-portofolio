@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { db } from "../../Firebase";
 
 const useForm = (callback, validateInfo) => {
   const [values, setValues] = useState({
@@ -19,6 +20,12 @@ const useForm = (callback, validateInfo) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    db.collection("contact").add({
+      name: values.name,
+      email: values.email,
+      message: values.message,
+    });
 
     setErrors(validateInfo(values));
     setIsSubmitting(true);

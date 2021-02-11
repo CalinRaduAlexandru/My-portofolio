@@ -1,7 +1,7 @@
 import React from "react";
 import "./Card.styles.css";
 import CrownCard from "./../../../Assets/CrownCard.jpg";
-import work1 from "./../../../Assets/work1.jpg";
+import CrownGif from "./../../../Assets/CrownGif.gif";
 
 export const CardCrown = () => {
   return (
@@ -11,7 +11,7 @@ export const CardCrown = () => {
           <img src={CrownCard} alt="logo" className="logo" />
         </div>
         <div className="view back">
-          <img src={work1} alt="site" />
+          <img src={CrownGif} alt="site" />
         </div>
       </div>
     </section>

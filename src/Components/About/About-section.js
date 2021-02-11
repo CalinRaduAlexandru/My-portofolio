@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import profile from "./../../Assets/profile.jpg";
-import cv from "./../../Assets/cv.pdf";
+import Radu_Calin_Resume from "./../../Assets/Radu_Calin_Resume.PDF";
 import { Button } from "../Button-element";
 
 import {
@@ -81,7 +81,7 @@ const AboutSection = ({
                   Radu Călin | Full-stack <br /> Web Developer
                 </HeroP>
                 <BtnWrap>
-                  <BtnResume href={cv} download="calin resume">
+                  <BtnResume href={Radu_Calin_Resume} download="calin resume">
                     Resume
                     <Download />
                   </BtnResume>

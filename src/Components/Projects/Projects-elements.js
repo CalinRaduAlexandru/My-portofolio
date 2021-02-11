@@ -19,7 +19,7 @@ display: flex;
 justify-content: center;
 align-items: center;
 height: 70px;
-width: 100vw;
+width: 100%;
 font-weight: 700;
 background: #0077b6;
 background: linear-gradient(
