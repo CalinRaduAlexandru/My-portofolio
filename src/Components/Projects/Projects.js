@@ -30,9 +30,9 @@ const Projects = () => {
       <FirstProjectWrapper>
         <ProjectInfo>
           <ProjectTitle>CrownFeel Ltd.</ProjectTitle>
-          <ProjectSubTitle>React | Redux | Firebase</ProjectSubTitle>
+          <ProjectSubTitle>React | Redux | Stripe</ProjectSubTitle>
           <ProjectText>
-            A front-end e-commerce platform with online payment.
+            The front-end of an e-commerce platform with online payment.
           </ProjectText>
           <Buttons>
             <BtnProjectLeft
@@ -58,7 +58,7 @@ const Projects = () => {
           <ProjectTitle>Recognize faces</ProjectTitle>
           <ProjectSubTitle>React | NodeJs | Postgres</ProjectSubTitle>
           <ProjectText>
-            A full-stack app in which you can add photos URL`s and accumulate
+            Full-stack app in which you can add photos URL`s and accumulate
             points.
           </ProjectText>
           <Buttons>
@@ -85,7 +85,8 @@ const Projects = () => {
           <ProjectTitle>Search friends</ProjectTitle>
           <ProjectSubTitle>React | NodeJs | Postgres</ProjectSubTitle>
           <ProjectText>
-            A full-stack app in which you can add and search users.
+            Full-stack app in which you can add custom users and search through
+            them.
           </ProjectText>
           <Buttons>
             <BtnProjectLeft
@@ -111,8 +112,8 @@ const Projects = () => {
           <ProjectTitle>Gratefulness App</ProjectTitle>
           <ProjectSubTitle>React | CSS</ProjectSubTitle>
           <ProjectText>
-            Create a gratefulness list app which you can add and edit text. Plus
-            you have a random quote generator to inspire you!
+            Create a gratefulness list in which you can add, remove and edit
+            text. Plus you have a random quote generator to inspire you!
           </ProjectText>
           <Buttons>
             <BtnProjectLeft

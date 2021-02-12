@@ -1,5 +1,6 @@
 {
-  "name": "my-portofolio",
+  "name": "RaDevelopment",
+  "homepage": "https://radevelopment.net",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

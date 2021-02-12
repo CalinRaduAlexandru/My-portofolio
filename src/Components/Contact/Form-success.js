@@ -8,7 +8,7 @@ const FormSuccess = ({ toggleForm }) => {
       <h1 className="form-success">I have received your request!</h1>
       <img className="form-img-2" src={success} alt="success" />
       <span className="close-btn" onClick={toggleForm}>
-        Go back!
+        Return
       </span>
     </div>
   );

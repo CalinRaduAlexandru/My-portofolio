@@ -8,20 +8,7 @@ export const HeroContainer = styled.div`
   height: 100vh;
   position: relative;
   z-index: 1;
-  animation: slide-right 1s;
-  @keyframes slide-right {
-    0% {
-      margin-right: 5%;
-      width: 100%;
-      opacity: 0;
-    }
 
-    100% {
-      margin-right: 0%;
-      width: 100%;
-      opacity: 1;
-    }
-  }
   &::before {
     content: "";
     z-index: 2;
