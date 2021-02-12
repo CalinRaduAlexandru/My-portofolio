@@ -48,7 +48,11 @@ const Footer = () => {
             >
               <Github />
             </SocialIconLink>
-            <SocialIconLink>
+            <SocialIconLink
+              href="https://www.linkedin.com/in/radu-calin-485606204/"
+              target="_blank"
+              aria-label="Github"
+            >
               <Linkedin />
             </SocialIconLink>
           </SocialIcons>
