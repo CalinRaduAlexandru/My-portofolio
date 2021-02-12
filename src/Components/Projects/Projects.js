@@ -10,6 +10,7 @@ import {
   Header,
   FirstProjectWrapper,
   ProjectWrapper,
+  LastProjectWrapper,
   ProjectInfo,
   ProjectTitle,
   ProjectSubTitle,
@@ -107,7 +108,7 @@ const Projects = () => {
         </ProjectInfo>
         <CardFilter />
       </ProjectWrapper>
-      <ProjectWrapper>
+      <LastProjectWrapper>
         <ProjectInfo>
           <ProjectTitle>Gratefulness App</ProjectTitle>
           <ProjectSubTitle>React | CSS</ProjectSubTitle>
@@ -133,7 +134,7 @@ const Projects = () => {
           </Buttons>
         </ProjectInfo>
         <CardGrateful />
-      </ProjectWrapper>
+      </LastProjectWrapper>
     </ProjectsContainer>
   );
 };

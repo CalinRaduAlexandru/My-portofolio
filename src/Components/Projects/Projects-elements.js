@@ -21,6 +21,7 @@ align-items: center;
 height: 70px;
 width: 100%;
 font-weight: 700;
+cursor: default;
 background: #0077b6;
 background: linear-gradient(
   0deg,
@@ -55,6 +56,20 @@ export const ProjectWrapper = styled.div`
   align-items: center;
   flex-wrap: wrap;
   border-bottom: 3px solid black;
+  padding: 30px;
+
+  @media screen and (max-width: 768px) {
+    margin: 10px 0;
+  }
+`;
+
+export const LastProjectWrapper = styled.div`
+  margin: 0 auto;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
   padding: 30px;
 
   @media screen and (max-width: 768px) {
