@@ -65,7 +65,7 @@ export const HeroContent = styled.div`
   animation: slide-up 2s;
   @keyframes slide-up {
     from {
-      margin-top: 40%;
+      margin-right: 40%;
       width: 100%;
       opacity: 0;
     }
@@ -87,15 +87,15 @@ export const TitleWrapper = styled.div`
   background: rgba(0, 35, 149, 0.7);
   cursor: pointer;
   transition: all 0.2s ease-in-out;
-  animation: slide-top 2s;
-  @keyframes slide-top {
+  animation: slide-left 2s;
+  @keyframes slide-left {
     from {
-      margin-bottom: 50%;
+      margin-left: 100%;
       width: 100%;
       opacity: 0;
     }
     to {
-      margin-bottom: 0%;
+      margin-left: 0%;
       width: 100%;
       opacity: 1;
     }
@@ -116,15 +116,15 @@ export const HeroH1 = styled.h1`
   font-size: 48px;
   text-align: center;
   padding: 20px 0;
-  animation: slide-down 1s;
+  animation: slide-down 2s;
   @keyframes slide-down {
     from {
-      margin-bottom: 0%;
+      margin-right: 40%;
       width: 100%;
       opacity: 0;
     }
     to {
-      margin-bottom: 0%;
+      margin-top: 0%;
       width: 100%;
       opacity: 1;
     }
