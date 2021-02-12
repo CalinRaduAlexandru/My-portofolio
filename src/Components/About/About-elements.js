@@ -87,7 +87,7 @@ export const TopLine = styled.p`
 
 export const Heading = styled.h1`
   margin-bottom: 24px;
-  font-size: 48px;
+  font-size: 40px;
   line-height: 1.1;
   font-weight: 600;
   color: ${({ lightText }) => (lightText ? "#f7f8fa" : "#010606")};
@@ -112,7 +112,6 @@ export const BtnWrap = styled.div`
 
 export const BtnResume = styled.a`
   background: white;
-  color: red;
   border-radius: 50px;
   background: #00b4d8;
   white-spate: nowrap;
@@ -146,7 +145,6 @@ export const ImgWrap = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 80px;
 
   @media screen and (max-width: 768px) {
     margin-bottom: 0px;
