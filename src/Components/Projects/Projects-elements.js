@@ -64,6 +64,7 @@ export const ProjectWrapper = styled.div`
 
 export const ProjectInfo = styled.div`
   padding: 20px;
+  margin-right: 20px;
   font-size: 1rem;
   display: flex;
   flex-direction: column;
@@ -83,7 +84,7 @@ export const ProjectSubTitle = styled.h2`
   color: #002366;
 `;
 export const ProjectText = styled.p`
-  max-width: 400px;
+  max-width: 350px;
   font-weight: 500;
   margin: 30px 0;
   color: #2c1a24;

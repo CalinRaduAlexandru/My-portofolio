@@ -117,7 +117,7 @@ export const HeroH1 = styled.h1`
   font-size: 48px;
   text-align: center;
   padding: 20px 0;
-  cursor: none;
+  cursor: default;
   animation: slide-down 2s;
   @keyframes slide-down {
     from {
@@ -174,6 +174,7 @@ export const HeroP = styled.p`
   color: black;
   font-size: 20px;
   text-align: center;
+  cursor: default;
   font-weight: 600;
   text-shadow: 10px 10px 10px 5px;
   max-width: 500px;
