@@ -12,15 +12,15 @@ section {
   padding: 0px;
   align-items: center;
   position: relative;
-  width: 400px;
-  height: 280px;
+  width: 350px;
+  height: 230px;
   transform-style: preserve-3d;
   perspective: 500px;
 }
 
 .logo {
-  width: 400px;
-  height: 280px;
+  width: 350px;
+  height: 230px;
 }
 
 .card .view {
