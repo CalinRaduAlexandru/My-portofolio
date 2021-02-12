@@ -3,7 +3,7 @@ import { Link } from "react-scroll";
 
 export const Nav = styled.nav`
   background: #000;
-  height: 82px;
+  height: 80px;
   margin-top: -80px;
   display: flex;
   justify-content: center;
@@ -52,7 +52,7 @@ export const NavLogo = styled.div`
   font-family: "Allura", cursive;
   justify-self: flex-start;
   cursor: pointer;
-  font-size: 60px;
+  font-size: 50px;
   display: flex;
   align-items: center;
   font-weight: bold;
