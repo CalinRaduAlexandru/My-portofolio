@@ -81,6 +81,7 @@ export const TitleWrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  max-width: 500px;
   align-items: center;
   box-shadow: 10px 10px 10px 5px rgba(0, 0, 0, 0.3);
   border-radius: 25px;
@@ -139,11 +140,11 @@ export const HeroH1 = styled.h1`
 export const HeroH2 = styled.h2`
   color: #00b4d8;
   font-family: "Allura", cursive;
-  font-size: 100px;
+  font-size: 60px;
   letter-spacing: 1.9px;
 
   @media screen and (max-width: 500px) {
-    font-size: 60px;
+    font-size: 40px;
   }
 `;
 
@@ -156,7 +157,7 @@ export const HeroH3 = styled.h2`
   text-shadow: 2px 0 black;
   opacity: 0.8;
   font-family: "Spartan", sans-serif;
-  font-size: 45px;
+  font-size: 30px;
   font-weight: 600;
   letter-spacing: 1.9px;
   text-align: center;
@@ -171,7 +172,7 @@ export const HeroP = styled.p`
   margin-top: 20px;
   font-family: "Spartan", sans-serif;
   color: black;
-  font-size: 27px;
+  font-size: 20px;
   text-align: center;
   font-weight: 600;
   text-shadow: 10px 10px 10px 5px;
