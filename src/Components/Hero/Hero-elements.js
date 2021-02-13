@@ -106,9 +106,9 @@ export const HeroH1 = styled.h1`
   color: black;
   font-family: "Dancing Script", cursive;
   bottom-border: 2px solid black;
-  font-size: 48px;
+  font-size: 52px;
   text-align: center;
-  padding: 20px 0;
+  padding: 15px 0;
   cursor: default;
 
   @media screen and (max-width: 500px) {
@@ -117,7 +117,7 @@ export const HeroH1 = styled.h1`
 `;
 
 export const HeroH2 = styled.h2`
-  color: rgba(0, 0, 0, 0.8);
+  color: #033340;
   font-family: "Allura", cursive;
   font-size: 60px;
   letter-spacing: 1.9px;
@@ -166,7 +166,7 @@ export const HeroP = styled.p`
   font-weight: 600;
   text-shadow: 10px 10px 10px 5px;
   max-width: 350px;
-  background: rgba(138, 211, 230, 0.8);
+  background: rgba(146, 198, 212, 0.9);
   border-radius: 25px;
   padding: 20px 10px;
   margin: 25px 0 10px 0;
