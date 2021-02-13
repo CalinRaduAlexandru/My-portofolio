@@ -89,6 +89,7 @@ export const TitleWrapper = styled.div`
   @media screen and (max-width: 1020px) {
     width: 90vw;
     max-width: 400px;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.3);
     animation: appear 2s;
     @keyframes appear {
       from {
@@ -165,7 +166,7 @@ export const HeroP = styled.p`
   font-weight: 600;
   text-shadow: 10px 10px 10px 5px;
   max-width: 300px;
-  background: rgba(102, 153, 204, 0.8);
+  background: rgba(255, 255, 255, 0.7);
   border-radius: 25px;
   padding: 20px 10px;
   margin: 25px 0 10px 0;
