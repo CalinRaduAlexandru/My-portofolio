@@ -105,6 +105,14 @@ export const Subtitle = styled.p`
   color: ${({ darkText }) => (darkText ? "#010606" : "#fff")};
 `;
 
+export const AboutBtnWrapper = styled.div`
+  bottom: 10%;
+  margin-top: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
+
 export const BtnWrap = styled.div`
   display: flex;
   justify-content: flex-start;

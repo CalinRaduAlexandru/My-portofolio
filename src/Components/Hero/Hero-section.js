@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import Tilt from "react-parallax-tilt";
 import setup from "./../../Assets/setup.jpg";
 import laptop from "./../../Assets/laptop.jpg";
-import { Button } from "../Button-element";
 import {
   HeroBg,
   ImgBg,
@@ -15,6 +14,7 @@ import {
   HeroPWrap,
   HeroP,
   HeroBtnWrapper,
+  HeroButton,
   ArrowRight,
   ArrowForward,
 } from "./Hero-elements";
@@ -51,7 +51,7 @@ const HeroSection = () => {
             </HeroP>
           </HeroPWrap>
           <HeroBtnWrapper>
-            <Button
+            <HeroButton
               to="contact"
               smooth={true}
               duration={500}
@@ -64,7 +64,7 @@ const HeroSection = () => {
             >
               Tell me how can I help you!{" "}
               {hover ? <ArrowForward /> : <ArrowRight />}
-            </Button>
+            </HeroButton>
           </HeroBtnWrapper>
         </HeroContent>
       )}

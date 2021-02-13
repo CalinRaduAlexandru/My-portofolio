@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link as LinkS } from "react-scroll";
 import { MdKeyboardArrowRight, MdArrowForward } from "react-icons/md";
 
 export const HeroContainer = styled.div`
@@ -33,11 +34,14 @@ export const ImgBg = styled.img`
 export const HeroContent = styled.div`
   z-index: 3;
   max-width: 1200px;
+  height: 100%;
   position: absolute;
-  padding: 0 24px 0 47px;
+  position: relative;
+  padding: 0 24px 50px 47px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   animation: slide-up 2s;
   @keyframes slide-up {
     from {
@@ -53,7 +57,7 @@ export const HeroContent = styled.div`
   }
 
   @media screen and (max-width: 500px) {
-    padding: 30px 0 0 12px;
+    padding: 0 0 50px 12px;
   }
 `;
 
@@ -177,10 +181,42 @@ export const HeroP = styled.p`
 `;
 
 export const HeroBtnWrapper = styled.div`
+  position: absolute;
+  bottom: 10%;
   margin-top: 32px;
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media screen and (max-width: 500px) {
+    font-size: 10px;
+  }
+`;
+
+export const HeroButton = styled(LinkS)`
+  border-radius: 50px;
+  background: rgba(0, 0, 0, 0.6);
+  white-spate: nowrap;
+  padding: 12px 30px;
+  color: #fff;
+  font-size: 20px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.2s ease-in-out;
+  @media screen and (max-width: 500px) {
+    font-size: 11px;
+  }
+
+  &:hover {
+    transition: 0.2s ease-in-out;
+    color: black;
+    background: #fff;
+    border: 30px solid rgba(0, 0, 0, 0.8);
+  }
 `;
 
 export const ArrowForward = styled(MdArrowForward)`

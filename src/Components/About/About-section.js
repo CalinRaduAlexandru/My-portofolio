@@ -3,11 +3,7 @@ import profile from "./../../Assets/profile.jpg";
 import Radu_Calin_Resume from "./../../Assets/Radu_Calin_Resume.PDF";
 import { Button } from "../Button-element";
 
-import {
-  HeroBtnWrapper,
-  ArrowRight,
-  ArrowForward,
-} from "../Hero/Hero-elements";
+import { ArrowRight, ArrowForward } from "../Hero/Hero-elements";
 
 import {
   AboutContainer,
@@ -18,6 +14,7 @@ import {
   TopLine,
   Heading,
   Subtitle,
+  AboutBtnWrapper,
   BtnWrap,
   BtnResume,
   Download,
@@ -58,7 +55,7 @@ const AboutSection = ({
                   Let`s discover and build new possibilities in which we can
                   expand your vision!
                 </Subtitle>
-                <HeroBtnWrapper>
+                <AboutBtnWrapper>
                   <Button
                     to="contact"
                     smooth={true}
@@ -71,7 +68,7 @@ const AboutSection = ({
                   >
                     Contact me! {hover ? <ArrowForward /> : <ArrowRight />}
                   </Button>
-                </HeroBtnWrapper>
+                </AboutBtnWrapper>
               </TextWrapper>
             </Column1>
             <Column2>
