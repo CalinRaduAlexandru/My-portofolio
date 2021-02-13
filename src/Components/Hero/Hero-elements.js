@@ -42,16 +42,12 @@ export const HeroContent = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  animation: slide-up 2s;
-  @keyframes slide-up {
+  animation: appear 2s;
+  @keyframes appear {
     from {
-      margin-right: 50%;
-      width: 100%;
       opacity: 0;
     }
     to {
-      margin-top: 0%;
-      width: 100%;
       opacity: 1;
     }
   }
@@ -75,7 +71,7 @@ export const TitleWrapper = styled.div`
   animation: slide-left 2s;
   @keyframes slide-left {
     from {
-      margin-left: 150%;
+      margin-left: 50%;
       width: 100%;
       opacity: 0;
     }
@@ -91,6 +87,15 @@ export const TitleWrapper = styled.div`
 
   @media screen and (max-width: 500px) {
     width: 90vw;
+    animation: appear 2s;
+    @keyframes appear {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
   }
 `;
 
@@ -102,19 +107,6 @@ export const HeroH1 = styled.h1`
   text-align: center;
   padding: 20px 0;
   cursor: default;
-  animation: slide-down 2s;
-  @keyframes slide-down {
-    from {
-      margin-right: 40%;
-      width: 100%;
-      opacity: 0;
-    }
-    to {
-      margin-top: 0%;
-      width: 100%;
-      opacity: 1;
-    }
-  }
 
   @media screen and (max-width: 500px) {
     font-size: 40px;
@@ -172,6 +164,19 @@ export const HeroP = styled.p`
   border-radius: 25px;
   padding: 20px 10px;
   margin: 25px 0 10px 0;
+  animation: slide-top 2s;
+  @keyframes slide-top {
+    from {
+      margin-left: -100%;
+      width: 100%;
+      opacity: 0;
+    }
+    to {
+      margin-left: 0%;
+      width: 100%;
+      opacity: 1;
+    }
+  }
 
   @media screen and (max-width: 500px) {
     font-size: 14px;
@@ -208,6 +213,23 @@ export const HeroButton = styled(LinkS)`
   justify-content: center;
   align-items: center;
   transition: 0.2s ease-in-out;
+  animation: appear 2s;
+  @keyframes appear {
+    from {
+      margin-bottom: 0%;
+      width: 100%;
+      opacity: 0;
+    }
+    to {
+      margin: 0%;
+      width: 100%;
+      opacity: 1;
+    }
+  }
+
+  @keyframes right {
+  }
+
   @media screen and (max-width: 500px) {
     font-size: 11px;
   }
