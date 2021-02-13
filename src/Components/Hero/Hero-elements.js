@@ -165,8 +165,8 @@ export const HeroP = styled.p`
   cursor: default;
   font-weight: 600;
   text-shadow: 10px 10px 10px 5px;
-  max-width: 300px;
-  background: rgba(255, 255, 255, 0.7);
+  max-width: 350px;
+  background: rgba(138, 211, 230, 0.8);
   border-radius: 25px;
   padding: 20px 10px;
   margin: 25px 0 10px 0;
