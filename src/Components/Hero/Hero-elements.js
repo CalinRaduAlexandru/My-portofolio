@@ -90,16 +90,7 @@ export const TitleWrapper = styled.div`
     width: 90vw;
     max-width: 400px;
     box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.3);
-    animation: appear 2s;
-    @keyframes appear {
-      from {
-        opacity: 0;
-      }
-      to {
-        opacity: 1;
-      }
-    }
-  }
+    
 `;
 
 export const HeroH1 = styled.h1`
