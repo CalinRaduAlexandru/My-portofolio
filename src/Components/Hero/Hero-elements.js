@@ -37,7 +37,7 @@ export const HeroContent = styled.div`
   height: 100%;
   position: absolute;
   position: relative;
-  padding: 0 24px 50px 47px;
+  padding: 0 24px 50px 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -53,7 +53,7 @@ export const HeroContent = styled.div`
   }
 
   @media screen and (max-width: 500px) {
-    padding: 0 0 50px 12px;
+    padding: 0 0 50px 15px;
   }
 `;
 
@@ -90,7 +90,7 @@ export const TitleWrapper = styled.div`
     width: 90vw;
     max-width: 400px;
     box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.3);
-    
+
 `;
 
 export const HeroH1 = styled.h1`
