@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Tilt from "react-parallax-tilt";
 import setup from "./../../Assets/setup.jpg";
+import laptop from "./../../Assets/laptop.jpg";
 import { Button } from "../Button-element";
 import {
   HeroBg,
@@ -11,6 +12,7 @@ import {
   HeroH1,
   HeroH2,
   HeroH3,
+  HeroPWrap,
   HeroP,
   HeroBtnWrapper,
   ArrowRight,
@@ -32,7 +34,7 @@ const HeroSection = () => {
   return (
     <HeroContainer>
       <HeroBg>
-        <ImgBg alt="programming setup" src={setup} />
+        <ImgBg alt="programming setup" src={laptop} />
       </HeroBg>
       {background && (
         <HeroContent>
@@ -43,9 +45,11 @@ const HeroSection = () => {
               <HeroH3>WEB DEVELOPMENT</HeroH3>
             </TitleWrapper>
           </Tilt>
-          <HeroP>
-            Thriving for excelence in your business as it would be mine!
-          </HeroP>
+          <HeroPWrap>
+            <HeroP>
+              Thriving for excellence in your business as it would be mine!
+            </HeroP>
+          </HeroPWrap>
           <HeroBtnWrapper>
             <Button
               to="contact"
@@ -56,6 +60,7 @@ const HeroSection = () => {
               offset={-80}
               onMouseEnter={onHover}
               onMouseLeave={onHover}
+              style={{ border: "1px solid rgba(0, 0, 0, 0.2)" }}
             >
               Tell me how can I help you!{" "}
               {hover ? <ArrowForward /> : <ArrowRight />}

@@ -8,23 +8,6 @@ export const HeroContainer = styled.div`
   height: 100vh;
   position: relative;
   z-index: 1;
-
-  &::before {
-    content: "";
-    z-index: 2;
-    width: 120vw;
-    height: 100vh;
-    bottom: 0vh;
-    left: 0;
-    overflow: hidden;
-    opacity: 0.4;
-    background: linear-gradient(
-      0deg,
-      rgba(0, 0, 0, 0.8) 0%,
-      rgba(0, 0, 0, 0.2) 50%,
-      rgba(0, 0, 0, 0.9) 100%
-    );
-  }
 `;
 
 export const HeroBg = styled.div`
@@ -43,14 +26,7 @@ export const ImgBg = styled.img`
   height: 100%;
   -o-object-fit: cover;
   object-fit: cover;
-  background: rgb(43, 179, 172);
-  background: linear-gradient(
-    90deg,
-    rgba(43, 179, 172, 1) 29%,
-    rgba(47, 198, 186, 0.4514180672268907) 56%,
-    rgba(43, 179, 172, 1) 84%
-  );
-  opacity: 0.6;
+  opacity: 0.7;
   z-index: 1;
 `;
 
@@ -58,14 +34,14 @@ export const HeroContent = styled.div`
   z-index: 3;
   max-width: 1200px;
   position: absolute;
-  padding: 0px 24px;
+  padding: 0 24px 0 47px;
   display: flex;
   flex-direction: column;
   align-items: center;
   animation: slide-up 2s;
   @keyframes slide-up {
     from {
-      margin-right: 40%;
+      margin-right: 50%;
       width: 100%;
       opacity: 0;
     }
@@ -74,6 +50,10 @@ export const HeroContent = styled.div`
       width: 100%;
       opacity: 1;
     }
+  }
+
+  @media screen and (max-width: 500px) {
+    padding: 30px 0 0 12px;
   }
 `;
 
@@ -91,7 +71,7 @@ export const TitleWrapper = styled.div`
   animation: slide-left 2s;
   @keyframes slide-left {
     from {
-      margin-left: 100%;
+      margin-left: 150%;
       width: 100%;
       opacity: 0;
     }
@@ -149,7 +129,7 @@ export const HeroH2 = styled.h2`
 `;
 
 export const HeroH3 = styled.h2`
-  color: #9370db;
+  color: #0077b6;
   padding: 20px 20px 10px 20px;
   border-bottom-left-radius: 25px;
   border-bottom-right-radius: 25px;
@@ -167,20 +147,32 @@ export const HeroH3 = styled.h2`
     padding: 15px;
   }
 `;
+export const HeroPWrap = styled.div`
+  @media screen and (max-width: 500px) {
+    max-width: 60vw;
+  }
+`;
 
 export const HeroP = styled.p`
-  margin-top: 20px;
   font-family: "Spartan", sans-serif;
+  box-shadow: 10px 10px 10px 5px rgba(0, 0, 0, 0.3);
   color: black;
-  font-size: 20px;
+  font-size: 16px;
   text-align: center;
   cursor: default;
   font-weight: 600;
   text-shadow: 10px 10px 10px 5px;
-  max-width: 500px;
+  max-width: 300px;
+  background: rgba(102, 153, 204, 0.8);
+  border-radius: 25px;
+  padding: 20px 10px;
+  margin: 25px 0 10px 0;
 
   @media screen and (max-width: 500px) {
-    font-size: 17px;
+    font-size: 10px;
+    padding: 10px 20px;
+    border-radius: 15px;
+    margin: 15px 0 10px 0;
   }
 `;
 

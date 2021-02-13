@@ -60,7 +60,7 @@ const Projects = () => {
           <ProjectSubTitle>React | NodeJs | Postgres</ProjectSubTitle>
           <ProjectText>
             Full-stack app in which you can add photos URL`s and accumulate
-            points.
+            points for each face that it detects.
           </ProjectText>
           <Buttons>
             <BtnProjectLeft
