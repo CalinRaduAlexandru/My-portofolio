@@ -201,7 +201,7 @@ export const HeroButton = styled(LinkS)`
   background: rgba(0, 0, 0, 0.6);
   white-spate: nowrap;
   padding: 12px 30px;
-  color: #fff;
+  color: #a4e3f5;
   font-size: 20px;
   outline: none;
   border: none;
