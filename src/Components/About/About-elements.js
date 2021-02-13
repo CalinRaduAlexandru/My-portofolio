@@ -29,9 +29,6 @@ export const AboutWrapper = styled.div`
 
   @media screen and (max-width: 768px) {
     height: 100%;
-  }
-
-  @media screen and (max-width: 368px) {
     padding: 0;
   }
 `;
