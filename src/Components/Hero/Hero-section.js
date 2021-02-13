@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import Tilt from "react-parallax-tilt";
-import setup from "./../../Assets/setup.jpg";
 import laptop from "./../../Assets/laptop.jpg";
 import {
   HeroBg,
