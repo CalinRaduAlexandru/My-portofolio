@@ -136,7 +136,7 @@ export const HeroH3 = styled.h2`
 
   @media screen and (max-width: 1020px) {
     font-size: 17px;
-    padding: 15px;
+    padding: 15px 15px 10px 15px;
     width: 90vw;
     max-width: 400px;
   }
