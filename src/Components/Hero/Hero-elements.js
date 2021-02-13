@@ -90,7 +90,7 @@ export const TitleWrapper = styled.div`
   }
 
   @media screen and (max-width: 500px) {
-    max-width: 70vw;
+    width: 90vw;
   }
 `;
 
@@ -117,7 +117,7 @@ export const HeroH1 = styled.h1`
   }
 
   @media screen and (max-width: 500px) {
-    font-size: 32px;
+    font-size: 40px;
   }
 `;
 
@@ -149,6 +149,7 @@ export const HeroH3 = styled.h2`
   @media screen and (max-width: 500px) {
     font-size: 17px;
     padding: 15px;
+    width: 90vw;
   }
 `;
 export const HeroPWrap = styled.div`
@@ -173,7 +174,7 @@ export const HeroP = styled.p`
   margin: 25px 0 10px 0;
 
   @media screen and (max-width: 500px) {
-    font-size: 10px;
+    font-size: 14px;
     padding: 10px 20px;
     border-radius: 15px;
     margin: 15px 0 10px 0;
