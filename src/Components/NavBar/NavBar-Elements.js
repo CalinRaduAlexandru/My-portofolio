@@ -48,7 +48,7 @@ export const NavbarContainer = styled.div`
 `;
 
 export const NavLogo = styled.div`
-  color: #00b4d8;
+  color: #0077b6;
   font-family: "Allura", cursive;
   justify-self: flex-start;
   cursor: pointer;

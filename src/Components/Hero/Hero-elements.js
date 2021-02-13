@@ -61,11 +61,12 @@ export const TitleWrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  width: 40vw;
   max-width: 500px;
   align-items: center;
   box-shadow: 10px 10px 10px 5px rgba(0, 0, 0, 0.3);
   border-radius: 25px;
-  background: rgba(0, 35, 149, 0.7);
+  background: rgba(30, 152, 217, 0.8);
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   animation: slide-left 2s;
@@ -85,8 +86,9 @@ export const TitleWrapper = styled.div`
     transform: scale(1.1);
   }
 
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 1020px) {
     width: 90vw;
+    max-width: 400px;
     animation: appear 2s;
     @keyframes appear {
       from {
@@ -109,12 +111,12 @@ export const HeroH1 = styled.h1`
   cursor: default;
 
   @media screen and (max-width: 500px) {
-    font-size: 40px;
+    font-size: 43px;
   }
 `;
 
 export const HeroH2 = styled.h2`
-  color: #00b4d8;
+  color: rgba(0, 0, 0, 0.8);
   font-family: "Allura", cursive;
   font-size: 60px;
   letter-spacing: 1.9px;
@@ -125,7 +127,9 @@ export const HeroH2 = styled.h2`
 `;
 
 export const HeroH3 = styled.h2`
-  color: #0077b6;
+  color: #1e98d9;
+  width: 40vw;
+  max-width: 500px;
   padding: 20px 20px 10px 20px;
   border-bottom-left-radius: 25px;
   border-bottom-right-radius: 25px;
@@ -138,10 +142,11 @@ export const HeroH3 = styled.h2`
   letter-spacing: 1.9px;
   text-align: center;
 
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 1020px) {
     font-size: 17px;
     padding: 15px;
     width: 90vw;
+    max-width: 400px;
   }
 `;
 export const HeroPWrap = styled.div`
