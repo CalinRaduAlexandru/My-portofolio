@@ -157,7 +157,7 @@ export const HeroP = styled.p`
   font-weight: 600;
   text-shadow: 10px 10px 10px 5px;
   max-width: 350px;
-  background: rgba(146, 198, 212, 0.9);
+  background: rgba(110, 212, 240, 0.9);
   border-radius: 25px;
   padding: 20px 10px;
   margin: 25px 0 10px 0;
