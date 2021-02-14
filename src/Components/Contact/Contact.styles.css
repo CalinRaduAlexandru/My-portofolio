@@ -9,6 +9,16 @@
   overflow-x: hidden;
 }
 
+.form-content-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.austronaut {
+  margin: 10px 0 50px 0;
+}
+
 .form-img {
   width: 20%;
 }
@@ -121,6 +131,32 @@
   transition: all 0.4s ease-out;
 }
 
+.austronaut-game {
+  color: white;
+}
+
+@media (min-width: 1024px) {
+  .form-container {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .austronaut {
+    margin-right: 100px;
+    margin-left: -100px;
+  }
+
+  .form-img {
+  }
+
+  .form-content-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .form > h1 {
     font-size: 25px;
@@ -147,6 +183,9 @@
     padding: 0 20px;
     margin-top: 10px;
     margin-bottom: 0px;
+  }
+  .austronaut {
+    margin: 10px 0 0 0;
   }
 }
 
