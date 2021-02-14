@@ -1,5 +1,4 @@
-import React, { useState, useEffect } from "react";
-import { useWindowScroll } from "react-use";
+import React, { useState } from "react";
 import NavBar from "../Components/NavBar/NavBar";
 import Sidebar from "../Components/Sidebar/Sidebar";
 import HeroSection from "../Components/Hero/Hero-section";

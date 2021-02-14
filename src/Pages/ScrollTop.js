@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useWindowScroll } from "react-use";
 import { animateScroll as scroll } from "react-scroll";
-import rocket from "./../Assets/rocket.svg";
 import { RocketWrapper, Rocket } from "./ScrollTop-elements";
 
 export const ScrollTop = () => {
