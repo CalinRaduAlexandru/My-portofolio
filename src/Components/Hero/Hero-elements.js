@@ -71,7 +71,7 @@ export const TitleWrapper = styled.div`
   flex-direction: column;
   justify-content: center;
   width: 40vw;
-  max-width: 450px;
+  max-width: 400px;
   align-items: center;
   border-radius: 25px;
   background: rgba(30, 152, 217, 0.8);
@@ -95,14 +95,14 @@ export const TitleWrapper = styled.div`
   }
 
   @media screen and (max-width: 1020px) {
-    width: 80vw;
+    width: 90vw;
     max-width: 400px;
 
 `;
 
 export const HeroH1 = styled.h1`
   color: #fff;
-  margin-top: 100px;
+  margin-top: 10px;
   font-family: "Dancing Script", cursive;
   bottom-border: 2px solid black;
   font-size: 45px;
@@ -111,7 +111,7 @@ export const HeroH1 = styled.h1`
   cursor: default;
 
   @media screen and (max-width: 500px) {
-    font-size: 43px;
+    font-size: 40px;
   }
 `;
 
@@ -129,7 +129,7 @@ export const HeroH2 = styled.h2`
 export const HeroH3 = styled.h2`
   color: #1e98d9;
   width: 40vw;
-  max-width: 450px;
+  max-width: 400px;
   padding: 20px 20px 10px 20px;
   border-bottom-left-radius: 25px;
   border-bottom-right-radius: 25px;
@@ -137,7 +137,7 @@ export const HeroH3 = styled.h2`
   text-shadow: 2px 0 black;
   opacity: 0.8;
   font-family: "Spartan", sans-serif;
-  font-size: 30px;
+  font-size: 26px;
   font-weight: 600;
   letter-spacing: 1.9px;
   text-align: center;
@@ -171,7 +171,7 @@ export const HeroP = styled.p`
   animation: slide-top 2s;
   @keyframes slide-top {
     from {
-      margin-left: -100%;
+      margin-left: 0%;
       width: 100%;
       opacity: 0;
     }
