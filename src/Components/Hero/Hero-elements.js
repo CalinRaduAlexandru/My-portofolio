@@ -18,8 +18,8 @@ export const HeroContainer = styled.div`
     left: 0;
     background: linear-gradient(
         180deg,
-        rgba(0, 0, 0, 0.1) 0%,
-        rgba(0, 0, 0, 0.2) 60%
+        rgba(0, 0, 0, 0.2) 0%,
+        rgba(0, 0, 0, 0.6) 60%
       ),
       linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, transparent 100%);
     z-index: 2;
@@ -54,7 +54,7 @@ export const HeroContent = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   animation: appear 2s;
   @keyframes appear {
     from {
@@ -65,11 +65,6 @@ export const HeroContent = styled.div`
     }
   }
 `;
-export const UpperBlock = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-`;
 
 export const TitleWrapper = styled.div`
   display: flex;
@@ -78,7 +73,6 @@ export const TitleWrapper = styled.div`
   width: 40vw;
   max-width: 450px;
   align-items: center;
-  box-shadow: 10px 10px 10px 5px rgba(0, 0, 0, 0.3);
   border-radius: 25px;
   background: rgba(30, 152, 217, 0.8);
   cursor: pointer;
@@ -101,9 +95,8 @@ export const TitleWrapper = styled.div`
   }
 
   @media screen and (max-width: 1020px) {
-    width: 90vw;
+    width: 80vw;
     max-width: 400px;
-    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.3);
 
 `;
 
@@ -157,12 +150,6 @@ export const HeroH3 = styled.h2`
   }
 `;
 
-export const DownBlock = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-`;
-
 export const HeroPWrap = styled.div`
   @media screen and (max-width: 500px) {
     max-width: 60vw;
@@ -170,8 +157,6 @@ export const HeroPWrap = styled.div`
 `;
 
 export const HeroP = styled.p`
-  font-family: "Spartan", sans-serif;
-  box-shadow: 10px 10px 10px 5px rgba(0, 0, 0, 0.3);
   color: black;
   font-size: 16px;
   text-align: center;
@@ -179,7 +164,7 @@ export const HeroP = styled.p`
   font-weight: 600;
   text-shadow: 10px 10px 10px 5px;
   max-width: 350px;
-  background: rgba(110, 212, 240, 0.9);
+  background: rgba(110, 212, 240, 0.7);
   border-radius: 25px;
   padding: 20px 10px;
   margin: 25px 0 10px 0;
@@ -210,6 +195,8 @@ export const HeroBtnWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: absolute;
+  bottom: 5%;
 
   @media screen and (max-width: 500px) {
     font-size: 10px;

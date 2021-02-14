@@ -107,7 +107,7 @@ export const NavMenu = styled.ul`
 
 export const NavItemFirst = styled.li`
   height: 80px;
-  animation: appear 1s;
+  animation: appear 2s;
   @keyframes appear {
     0% {
       opacity: 0;
@@ -125,7 +125,7 @@ export const NavItemFirst = styled.li`
 
 export const NavItemSecond = styled.li`
   height: 80px;
-  animation: appear 2s;
+  animation: appear 3s;
   @keyframes appear {
     0% {
       opacity: 0;
@@ -143,7 +143,7 @@ export const NavItemSecond = styled.li`
 
 export const NavItemThird = styled.li`
   height: 80px;
-  animation: appear 3s;
+  animation: appear 4s;
   @keyframes appear {
     0% {
       opacity: 0;
