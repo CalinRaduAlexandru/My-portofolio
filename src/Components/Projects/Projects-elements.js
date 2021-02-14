@@ -91,7 +91,7 @@ export const ProjectInfo = styled.div`
 `;
 
 export const ProjectTitle = styled.h1`
-  color: black;
+  color: #fff;
 `;
 
 export const ProjectSubTitle = styled.h2`

@@ -9,6 +9,21 @@ export const HeroContainer = styled.div`
   height: 100vh;
   position: relative;
   z-index: 1;
+  :before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.1) 0%,
+        rgba(0, 0, 0, 0.2) 60%
+      ),
+      linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, transparent 100%);
+    z-index: 2;
+  }
 `;
 
 export const HeroBg = styled.div`
@@ -36,12 +51,10 @@ export const HeroContent = styled.div`
   max-width: 1200px;
   height: 100%;
   position: absolute;
-  position: relative;
-  padding: 0 24px 50px 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   animation: appear 2s;
   @keyframes appear {
     from {
@@ -51,10 +64,11 @@ export const HeroContent = styled.div`
       opacity: 1;
     }
   }
-
-  @media screen and (max-width: 500px) {
-    padding: 0 0 50px 15px;
-  }
+`;
+export const UpperBlock = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 `;
 
 export const TitleWrapper = styled.div`
@@ -62,7 +76,7 @@ export const TitleWrapper = styled.div`
   flex-direction: column;
   justify-content: center;
   width: 40vw;
-  max-width: 500px;
+  max-width: 450px;
   align-items: center;
   box-shadow: 10px 10px 10px 5px rgba(0, 0, 0, 0.3);
   border-radius: 25px;
@@ -94,12 +108,13 @@ export const TitleWrapper = styled.div`
 `;
 
 export const HeroH1 = styled.h1`
-  color: black;
+  color: #fff;
+  margin-top: 100px;
   font-family: "Dancing Script", cursive;
   bottom-border: 2px solid black;
-  font-size: 52px;
+  font-size: 45px;
   text-align: center;
-  padding: 15px 0;
+  padding: 25px 0;
   cursor: default;
 
   @media screen and (max-width: 500px) {
@@ -121,7 +136,7 @@ export const HeroH2 = styled.h2`
 export const HeroH3 = styled.h2`
   color: #1e98d9;
   width: 40vw;
-  max-width: 500px;
+  max-width: 450px;
   padding: 20px 20px 10px 20px;
   border-bottom-left-radius: 25px;
   border-bottom-right-radius: 25px;
@@ -141,6 +156,13 @@ export const HeroH3 = styled.h2`
     max-width: 400px;
   }
 `;
+
+export const DownBlock = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+`;
+
 export const HeroPWrap = styled.div`
   @media screen and (max-width: 500px) {
     max-width: 60vw;
@@ -184,8 +206,6 @@ export const HeroP = styled.p`
 `;
 
 export const HeroBtnWrapper = styled.div`
-  position: absolute;
-  bottom: 10%;
   margin-top: 32px;
   display: flex;
   flex-direction: column;
@@ -200,7 +220,7 @@ export const HeroButton = styled(LinkS)`
   border-radius: 50px;
   background: rgba(0, 0, 0, 0.6);
   white-spate: nowrap;
-  padding: 12px 30px;
+  padding: 14px 30px;
   color: #a4e3f5;
   font-size: 20px;
   outline: none;
@@ -232,10 +252,10 @@ export const HeroButton = styled(LinkS)`
   }
 
   &:hover {
-    transition: 0.2s ease-in-out;
+    transition: 0.1s ease-in-out;
     color: black;
-    background: #fff;
-    border: 30px solid rgba(0, 0, 0, 0.8);
+    background: rgba(30, 152, 217, 0.9);
+    border: none;
   }
 `;
 

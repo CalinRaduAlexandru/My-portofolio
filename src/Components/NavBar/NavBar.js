@@ -1,5 +1,6 @@
 import React from "react";
 import { animateScroll as scroll } from "react-scroll";
+import Tilt from "react-parallax-tilt";
 import { FaBars } from "react-icons/fa";
 import {
   Nav,
@@ -7,7 +8,9 @@ import {
   NavLogo,
   MobileIcon,
   NavMenu,
-  NavItem,
+  NavItemFirst,
+  NavItemSecond,
+  NavItemThird,
   NavLinks,
 } from "./NavBar-Elements";
 
@@ -25,42 +28,48 @@ const NavBar = ({ toggle }) => {
             <FaBars />
           </MobileIcon>
           <NavMenu>
-            <NavItem>
-              <NavLinks
-                to="about"
-                smooth={true}
-                duration={500}
-                spy={true}
-                exact="true"
-                offset={-80}
-              >
-                About
-              </NavLinks>
-            </NavItem>
-            <NavItem>
-              <NavLinks
-                to="projects"
-                smooth={true}
-                duration={500}
-                spy={true}
-                exact="true"
-                offset={-80}
-              >
-                Projects
-              </NavLinks>
-            </NavItem>
-            <NavItem>
-              <NavLinks
-                to="contact"
-                smooth={true}
-                duration={500}
-                spy={true}
-                exact="true"
-                offset={-80}
-              >
-                Contact
-              </NavLinks>
-            </NavItem>
+            <Tilt>
+              <NavItemFirst>
+                <NavLinks
+                  to="about"
+                  smooth={true}
+                  duration={500}
+                  spy={true}
+                  exact="true"
+                  offset={-80}
+                >
+                  About
+                </NavLinks>
+              </NavItemFirst>
+            </Tilt>
+            <Tilt>
+              <NavItemSecond>
+                <NavLinks
+                  to="projects"
+                  smooth={true}
+                  duration={500}
+                  spy={true}
+                  exact="true"
+                  offset={-80}
+                >
+                  Projects
+                </NavLinks>
+              </NavItemSecond>
+            </Tilt>
+            <Tilt>
+              <NavItemThird>
+                <NavLinks
+                  to="contact"
+                  smooth={true}
+                  duration={500}
+                  spy={true}
+                  exact="true"
+                  offset={-80}
+                >
+                  Contact
+                </NavLinks>
+              </NavItemThird>
+            </Tilt>
           </NavMenu>
         </NavbarContainer>
       </Nav>

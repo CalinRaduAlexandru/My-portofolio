@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import profile from "./../../Assets/profile.jpg";
 import Radu_Calin_Resume from "./../../Assets/Radu_Calin_Resume.PDF";
 import { Button } from "../Button-element";
-
 import { ArrowRight, ArrowForward } from "../Hero/Hero-elements";
 
 import {

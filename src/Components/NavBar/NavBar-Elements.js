@@ -60,22 +60,21 @@ export const NavLogo = styled.div`
   animation: appear 5s;
   @keyframes appear {
     0% {
-      margin-right: 5%;
-      width: 100%;
       opacity: 0;
     }
 
     40% {
-      margin-right: 5%;
-      width: 100%;
       opacity: 0;
     }
 
     100% {
-      margin-right: 0%;
-      width: 100%;
       opacity: 1;
     }
+  }
+
+  &:hover {
+    transition: 0.2s ease-in-out;
+    color: #00b4d8;
   }
 `;
 
@@ -106,8 +105,58 @@ export const NavMenu = styled.ul`
   }
 `;
 
-export const NavItem = styled.li`
+export const NavItemFirst = styled.li`
   height: 80px;
+  animation: appear 1s;
+  @keyframes appear {
+    0% {
+      opacity: 0;
+    }
+
+    40% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+`;
+
+export const NavItemSecond = styled.li`
+  height: 80px;
+  animation: appear 2s;
+  @keyframes appear {
+    0% {
+      opacity: 0;
+    }
+
+    40% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+`;
+
+export const NavItemThird = styled.li`
+  height: 80px;
+  animation: appear 3s;
+  @keyframes appear {
+    0% {
+      opacity: 0;
+    }
+
+    40% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
 `;
 
 export const NavLinks = styled(Link)`
@@ -122,4 +171,9 @@ export const NavLinks = styled(Link)`
   &.active {
     border-bottom: 3px solid #20639b;
   }
+
+  &:hover {
+    transition: 0.2s ease-in-out;
+    color: #0077b6;
+    transform: scale(1.1);
 `;
