@@ -35,12 +35,12 @@ box-shadow: 0 0 20px rgba(0, 0, 0, 1);
 `;
 export const ProjectsWrapper = styled.div`
   display: flex;
-  padding: 100px 0;
+  padding: 50px 0;
   margin: 50px 0;
   justify-items: center;
   align-items: center;
 
-  @media (max-width: 1400px) {
+  @media (max-width: 1300px) {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     padding: 0;
@@ -58,7 +58,7 @@ export const ProjectsWrapper = styled.div`
 `;
 
 export const ProjectWrapper = styled.div`
-  margin: 20px;
+  margin: 10px;
   width: 90%;
   display: flex;
   flex-direction: column;
@@ -68,22 +68,26 @@ export const ProjectWrapper = styled.div`
 
 export const ProjectInfo = styled.div`
   font-size: 14px;
-  padding: 20px;
+  padding: 20px 10px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
+  background: #3d69db;
+  border-radius: 25px;
 `;
 
 export const ProjectTitle = styled.h1`
   color: #fff;
-  font-size: 26px;
+  font-size: 23px;
   margin-top: 10px;
+  margin-left: 10px;
 `;
 
 export const ProjectSubTitle = styled.h2`
   font-size: 16px;
   margin-top: 10px;
   color: #002366;
+  margin-left: 10px;
 `;
 export const ProjectText = styled.p`
   max-width: 250px;
@@ -91,6 +95,7 @@ export const ProjectText = styled.p`
   font-weight: 500;
   margin: 20px 0 0 10px;
   color: #2c1a24;
+  color: #fff;
 `;
 
 export const Buttons = styled.div`
