@@ -87,7 +87,11 @@ const AboutSection = ({
                   Radu Călin | Full-stack <br /> Web Developer
                 </HeroP>
                 <BtnWrap>
-                  <BtnResume href={Radu_Calin_Resume} download="calin resume">
+                  <BtnResume
+                    href={Radu_Calin_Resume}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     Resume
                     <Download />
                   </BtnResume>
