@@ -50,7 +50,7 @@ const Form = () => {
             whileTap={{ scale: 0.9 }}
             drag={true}
             dragConstraints={{ left: 50, right: 50, top: 0, bottom: 50 }}
-            initial={{ opacity: 0, y: 0 }}
+            initial={{ opacity: 0, y: 100 }}
             animate={{ opacity: 1, y: 0, transition: { duration: 3 } }}
           />
           <div className="austronaut-game">

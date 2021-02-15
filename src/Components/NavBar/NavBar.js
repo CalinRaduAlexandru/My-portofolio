@@ -2,6 +2,7 @@ import React from "react";
 import { animateScroll as scroll } from "react-scroll";
 import Tilt from "react-parallax-tilt";
 import { FaBars } from "react-icons/fa";
+
 import {
   Nav,
   NavbarContainer,

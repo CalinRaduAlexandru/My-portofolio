@@ -2,16 +2,17 @@ import styled from "styled-components";
 import { Link } from "react-scroll";
 
 export const Nav = styled.nav`
-  background: #000;
+  background: black;
   height: 80px;
   margin-top: -80px;
   display: flex;
   justify-content: center;
   align-item: center;
   font-size: 1rem;
-  position: sticky;
   top: 0;
-  z-index: 10;
+  z-index: 100;
+  position: -webkit-sticky;
+  position: sticky;
   animation: slide-right 1s;
   @keyframes slide-right {
     0% {
@@ -45,6 +46,7 @@ export const NavbarContainer = styled.div`
   width: 100%;
   padding: 0 24px;
   max-width: 1100px;
+  position: sticky;
 `;
 
 export const NavLogo = styled.div`
@@ -90,6 +92,20 @@ export const MobileIcon = styled.div`
     font-size: 1.8rem;
     cursor: pointer;
     color: #0077b6;
+    animation: appear 2s;
+    @keyframes appear {
+      0% {
+        opacity: 0;
+      }
+
+      40% {
+        opacity: 0;
+      }
+
+      100% {
+        opacity: 1;
+      }
+    }
   }
 `;
 

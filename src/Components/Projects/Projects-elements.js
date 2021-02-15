@@ -33,57 +33,44 @@ border-bottom-right-radius: 40% 30%;
 box-shadow: 0 0 20px rgba(0, 0, 0, 1);
 }
 `;
-
-export const FirstProjectWrapper = styled.div`
-  margin: 0px auto;
-  width: 90%;
+export const ProjectsWrapper = styled.div`
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  border-bottom: 3px solid black;
-  padding: 30px;
+  align-items: flex-start;
+  margin: 50px;
 
-  @media screen and (max-width: 768px) {
+  @media (max-width: 1200px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  @media (max-width: 1100px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (max-width: 900px) {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-left: 20px;
   }
 `;
 
 export const ProjectWrapper = styled.div`
-  margin: 0 auto;
+  margin: 20px;
   width: 90%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
-  border-bottom: 3px solid black;
-  padding: 30px;
-
-  @media screen and (max-width: 768px) {
-    margin: 10px 0;
-  }
-`;
-
-export const LastProjectWrapper = styled.div`
-  margin: 0 auto;
-  width: 90%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  padding: 30px;
-
-  @media screen and (max-width: 768px) {
-    margin: 10px 0;
-  }
+  padding: 30px 0;
 `;
 
 export const ProjectInfo = styled.div`
+  font-size: 14px;
   padding: 20px;
-  margin-right: 20px;
-  font-size: 1rem;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  align-items: flex-start;
 
   @media screen and (max-width: 768px) {
     padding: 10px;
@@ -92,82 +79,102 @@ export const ProjectInfo = styled.div`
 
 export const ProjectTitle = styled.h1`
   color: #fff;
+  font-size: 26px;
 `;
 
 export const ProjectSubTitle = styled.h2`
-  font-size: 20px;
+  font-size: 16px;
+  margin-top: 10px;
   color: #002366;
 `;
 export const ProjectText = styled.p`
-  max-width: 350px;
+  max-width: 300px;
+  height: 80px;
   font-weight: 500;
-  margin: 30px 0;
+  margin: 20px 0;
   color: #2c1a24;
 `;
 
 export const Buttons = styled.div`
-display: flex;
-justify-content: center;
-align-items: center;
-
-
-  @media screen and (max-width: 768px) {
-    font-size: 18px;
-    margin-bottom: 20px;
-  }
-
-  @media screen and (max-width: 300px) {
-      font-size: 10px;
-
+  display: flex;
+  justify-content: center;
+  align-self: center;
 `;
 
 export const BtnProjectLeft = styled.a`
-  font-size: 1.2rem;
-  color: #002366;
-  cursor: pointer;
-  background: #38cfd9;
-  padding: 15px 35px;
+  position: relative;
+  width: 80px;
+  height: 40px;
   border-radius: 25px;
-  border: none;
-  font-weight: bold;
-  font-size: 12px;
-  text-transform: uppercase;
-  text-decoration: none;
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
-  transition: 0.2s ease-in-out;
-
-  &:hover {
-    transition: 0.2s ease-in-out;
-    background: #00b4d8;
+  background: #a4baf5;
+  transition: all 100ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  box-shadow: 0px -2px 10px rgba(255, 255, 255, 1),
+    0px 6px 15px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  &:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 17px;
+    z-index: 2;
   }
+  &:active {
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.02);
+    &:after {
+      box-shadow: inset 0px 0px 2px rgb(255, 255, 255),
+        inset 0px 2px 5px rgba(0, 0, 0, 0.15);
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    box-shadow: none;
+  }
+`;
+
+export const LiveText = styled.p`
+  text-decoration: none;
+  position: absolute;
+  top: 30%;
+  left: 30%;
+  color: #002366;
+  font-weight: bold;
 `;
 
 export const BtnProjectRight = styled.a`
-  margin: 0 25px;
-  color: #002366;
-  cursor: pointer;
-  background: #38cfd9;
-  padding: 5px 33px;
+  position: relative;
+  width: 80px;
+  height: 40px;
   border-radius: 25px;
-  border: none;
-  font-weight: bold;
-  font-size: 12px;
-  text-transform: uppercase;
-  text-decoration: none;
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
-  transition: 0.2s ease-in-out;
-
-  &:hover {
-    transition: 0.2s ease-in-out;
-    background: #00b4d8;
+  margin-left: 20px;
+  background: #a4baf5;
+  transition: all 100ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  box-shadow: 0px -2px 10px rgba(255, 255, 255, 1),
+    0px 6px 15px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  &:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 17px;
+    z-index: 2;
   }
-
-
-  @media screen and (max-width: 300px) {
-    margin: 0px;
+  &:active {
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.02);
+    &:after {
+      box-shadow: inset 0px 0px 2px rgb(255, 255, 255),
+        inset 0px 2px 5px rgba(0, 0, 0, 0.15);
+    }
+  }
+  @media screen and (max-width: 768px) {
+    box-shadow: none;
+  }
 `;
-
-export const ImgWrapper = styled.div``;
 
 export const Github = styled(FaGithub)`
   color: #002366;

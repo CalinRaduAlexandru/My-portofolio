@@ -18,9 +18,9 @@ const Home = () => {
 
   return (
     <>
-      <ScrollTop />
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <NavBar toggle={toggle} />
+      <ScrollTop />
       <HeroSection />
       <AboutSection {...homeObjOne} />
       <Projects />

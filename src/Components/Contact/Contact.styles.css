@@ -1,12 +1,18 @@
 .form-container {
   background: black;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
   padding: 40px 0 0 0;
   overflow-x: hidden;
+}
+
+@screen (min-width: 1200px) {
+  .form-container {
+    height: 100vh;
+    padding: 50px 0;
+  }
 }
 
 .form-content-left {
@@ -40,10 +46,6 @@
   font-size: 1.2rem;
   cursor: pointer;
   text-decoration: underline;
-}
-
-.close-btn:hover {
-  color: lightblue;
 }
 
 .contact-section {

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useWindowScroll } from "react-use";
 import { animateScroll as scroll } from "react-scroll";
-import { RocketWrapper, Rocket } from "./ScrollTop-elements";
+import { RocketWrapper, Rocket, Up } from "./ScrollTop-elements";
 
 export const ScrollTop = () => {
   const { y: pageYOffSet } = useWindowScroll();
@@ -25,7 +25,7 @@ export const ScrollTop = () => {
   return (
     <RocketWrapper onClick={toggleHome}>
       <Rocket />
-      <h3>Up</h3>
+      <Up>Up</Up>
     </RocketWrapper>
   );
 };

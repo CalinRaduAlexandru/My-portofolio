@@ -2,25 +2,24 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
+  align-self: center;
 }
 
 .card {
   display: flex;
   flex-direction: column;
-  margin: 5px;
   cursor: pointer;
-  padding: 0px;
-  align-items: center;
   position: relative;
-  width: 350px;
-  height: 230px;
+  width: 270px;
+  height: 180px;
   transform-style: preserve-3d;
   perspective: 500px;
+  overflow: hidden;
 }
 
 .logo {
-  width: 350px;
-  height: 230px;
+  width: 270px;
+  height: 180px;
 }
 
 .card .view {
@@ -40,42 +39,30 @@ section {
 .back {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
   height: 100%;
 }
 
 .card:hover .view.front {
-  transform: rotateY(-180deg);
+  opacity: 0;
 }
 
 .card .view.back {
-  transform: rotateY(-180deg);
+  opacity: 0;
 }
 
 .card:hover .view.back {
-  transform: rotateY(-360deg);
-}
-
-@media screen and (max-width: 500px) {
-  .card {
-    width: 290px;
-    height: 175px;
-  }
-
-  .logo {
-    width: 290px;
-    height: 175px;
-  }
+  opacity: 1;
 }
 
 @media screen and (max-width: 300px) {
   .card {
-    width: 250px;
-    height: 200px;
+    width: 200px;
+    height: 140px;
   }
 
   .logo {
-    width: 250px;
-    height: 200px;
+    width: 200px;
+    height: 140px;
   }
 }
