@@ -5,7 +5,7 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 40px 0 0 0;
+  padding: 100px 0;
   overflow-x: hidden;
 }
 
@@ -13,10 +13,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.austronaut {
-  margin: 10px 0 50px 0;
 }
 
 .form-img {
@@ -55,7 +51,7 @@
 .form > h1 {
   color: white;
   margin: 10px 0;
-  font-size: 1.3rem;
+  font-size: 18px;
   cursor: default;
 }
 
@@ -128,6 +124,22 @@
 }
 
 .austronaut-game {
+  margin: 10px 0 50px 0;
+}
+
+.austronaut {
+  z-index: 1;
+  opacity: 1;
+}
+
+.space-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 2;
+}
+
+.austronaut-text {
   color: white;
 }
 
@@ -138,7 +150,7 @@
     justify-content: center;
   }
 
-  .austronaut {
+  .austronaut-game {
     margin-right: 100px;
     margin-left: -100px;
   }
@@ -203,5 +215,196 @@
 
   .form > h1 {
     font-size: 16px;
+  }
+}
+
+.star {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background-color: white;
+  z-index: 2;
+}
+
+.s1 {
+  top: 50px;
+  left: 50px;
+}
+
+.s2 {
+  top: 10px;
+  left: 80px;
+}
+
+.s3 {
+  top: 90px;
+  left: 100px;
+}
+
+.s4 {
+  top: 130px;
+  left: 40px;
+}
+
+.s5 {
+  top: 25px;
+  left: 160px;
+}
+
+.s6 {
+  top: 15px;
+  left: 300px;
+}
+
+.s7 {
+  top: 70px;
+  left: 365px;
+}
+
+.s8 {
+  top: 30px;
+  left: 425px;
+}
+
+.s9 {
+  top: 90px;
+  left: 460px;
+}
+
+.s10 {
+  top: 120px;
+  left: 408px;
+}
+
+.shootingstar {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  background-color: white;
+  top: 31px;
+  left: 375px;
+  animation: shoot 5s infinite;
+}
+
+.shootingstar2 {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  background-color: white;
+  top: 20px;
+  left: 380px;
+  animation: shootreverse 5s infinite;
+}
+
+#animate {
+  animation: glow 4s infinite;
+}
+
+@media (max-width: 600px) {
+  .shootingstar {
+    left: 300px;
+  }
+
+  .shootingstar2 {
+    left: 305px;
+  }
+
+  .s10,
+  .s9,
+  .s8,
+  .s7 {
+    display: none;
+  }
+}
+
+/* all the animation goes here */
+
+@keyframes shoot {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.1;
+  }
+  20% {
+    opacity: 0.2;
+  }
+  30% {
+    opacity: 0.3;
+  }
+  40% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 0.5;
+    width: 20px;
+  }
+  60% {
+    opacity: 0.5;
+  }
+  70% {
+    opacity: 0.4;
+  }
+  80% {
+    opacity: 0.3;
+  }
+  90% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 0.1;
+    transform: translateX(-350px);
+  }
+}
+
+@keyframes glow {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes shootreverse {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.1;
+  }
+  20% {
+    opacity: 0.2;
+  }
+  30% {
+    opacity: 0.3;
+  }
+  40% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 0.5;
+    width: 30px;
+  }
+  60% {
+    opacity: 0.4;
+  }
+  70% {
+    opacity: 0.3;
+  }
+  80% {
+    opacity: 0.2;
+  }
+  90% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-250px);
   }
 }

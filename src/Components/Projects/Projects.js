@@ -30,8 +30,8 @@ const Projects = () => {
       </Header>
       <ProjectsWrapper>
         <ProjectWrapper>
-          <CardCrown />
           <ProjectInfo>
+            <CardCrown />
             <ProjectTitle>CrownFeel Ltd.</ProjectTitle>
             <ProjectSubTitle>React | Redux | Stripe</ProjectSubTitle>
             <ProjectText>
@@ -63,13 +63,13 @@ const Projects = () => {
           </ProjectInfo>
         </ProjectWrapper>
         <ProjectWrapper>
-          <CardSearch />
           <ProjectInfo>
+            <CardSearch />
             <ProjectTitle>Recognize faces</ProjectTitle>
             <ProjectSubTitle>React | NodeJs | Postgres</ProjectSubTitle>
             <ProjectText>
               Full-stack app in which you can add photos URL`s and accumulate
-              points for each face that it detects.
+              points for each face.
             </ProjectText>
             <Buttons>
               <BtnProjectLeft
@@ -97,8 +97,8 @@ const Projects = () => {
           </ProjectInfo>
         </ProjectWrapper>
         <ProjectWrapper>
-          <CardFilter />
           <ProjectInfo>
+            <CardFilter />
             <ProjectTitle>Search friends</ProjectTitle>
             <ProjectSubTitle>React | NodeJs | Postgres</ProjectSubTitle>
             <ProjectText>
@@ -131,8 +131,8 @@ const Projects = () => {
           </ProjectInfo>
         </ProjectWrapper>
         <ProjectWrapper>
-          <CardGrateful />
           <ProjectInfo>
+            <CardGrateful />
             <ProjectTitle>Gratefulness</ProjectTitle>
             <ProjectSubTitle>React | CSS</ProjectSubTitle>
             <ProjectText>

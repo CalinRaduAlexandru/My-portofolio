@@ -43,17 +43,32 @@ const Form = () => {
             <FormSuccess toggleForm={toggleForm} />
           )}
         </div>
-        <div className="austronaut">
-          <Image
-            src={austronaut}
-            alt="planet"
-            whileTap={{ scale: 0.9 }}
-            drag={true}
-            dragConstraints={{ left: 50, right: 50, top: 0, bottom: 50 }}
-            initial={{ opacity: 0, y: 100 }}
-            animate={{ opacity: 1, y: 0, transition: { duration: 3 } }}
-          />
-          <div className="austronaut-game">
+        <div className="austronaut-game">
+          <div className="austronaut">
+            <Image
+              src={austronaut}
+              alt="planet"
+              whileTap={{ scale: 0.9 }}
+              drag={true}
+              dragConstraints={{ left: 200, right: 50, top: 100, bottom: 200 }}
+              animate={{ opacity: 1, y: 0, transition: { duration: 5 } }}
+            />
+          </div>
+          <div className="space-container">
+            <div className="star s1" id="animate"></div>
+            <div className="star s2"></div>
+            <div className="star s3"></div>
+            <div className="star s4"></div>
+            <div className="star s5"></div>
+            <div className="star s6" id="animate"></div>
+            <div className="star s7"></div>
+            <div className="star s8"></div>
+            <div className="star s9" id="animate"></div>
+            <div className="star s10"></div>
+            <div className="shootingstar"></div>
+            <div className="shootingstar2"></div>
+          </div>
+          <div className="austronaut-text">
             <FaHandRock /> <p>Grab the austronaut around!</p>
           </div>
         </div>

@@ -81,10 +81,15 @@ export const TopLine = styled.p`
   letter-spacing: 1.4px;
   text-transform: uppercase;
   margin-bottom: 16px;
+
+  @media screen and (max-width: 480px) {
+    line-height: 1.1;
+  }
 `;
 
 export const Heading = styled.h1`
-  margin-bottom: 24px;
+  margin-bottom: 16px;
+  padding: 5px 0;
   font-size: 35px;
   line-height: 1.1;
   font-weight: 600;
