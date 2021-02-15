@@ -76,6 +76,10 @@ export const NavLogo = styled.div`
     transition: 0.2s ease-in-out;
     color: #00b4d8;
   }
+
+  @media (max-width: 768px) {
+    font-size: 18px;
+  }
 `;
 
 export const MobileIcon = styled.div`

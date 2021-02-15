@@ -8,7 +8,7 @@ export const AboutContainer = styled.div`
   background: ${({ lightBg }) => (lightBg ? "#f9f9f9" : "#010606")};
 
   @media screen and (max-width: 768px) {
-    padding: 50px 0 50px 0;
+    padding: 20px 0 50px 0;
   }
 
   @media screen and (min-width: 900px) {

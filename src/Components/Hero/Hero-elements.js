@@ -18,8 +18,8 @@ export const HeroContainer = styled.div`
     left: 0;
     background: linear-gradient(
         180deg,
-        rgba(0, 0, 0, 0.2) 0%,
-        rgba(0, 0, 0, 0.3) 60%
+        rgba(0, 0, 0, 0.3) 0%,
+        rgba(0, 0, 0, 0.4) 60%
       ),
       linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, transparent 100%);
     z-index: 2;
@@ -34,7 +34,6 @@ export const HeroBg = styled.div`
   right: 0;
   width: 100%;
   height: 100vh;
-  overflow: hidden;
 `;
 
 export const ImgBg = styled.img`
@@ -48,7 +47,7 @@ export const ImgBg = styled.img`
 
 export const HeroContent = styled.div`
   z-index: 3;
-  max-width: 1200px;
+  width: 100vw;
   height: 100%;
   position: absolute;
   display: flex;
@@ -56,6 +55,9 @@ export const HeroContent = styled.div`
   align-items: center;
   justify-content: center;
   animation: appear 2s;
+  @media (min-width: 1248px) {
+    width: 50vw;
+  }
   @keyframes appear {
     from {
       opacity: 0;
@@ -70,7 +72,6 @@ export const TitleWrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 40vw;
   max-width: 400px;
   align-items: center;
   cursor: pointer;
@@ -79,7 +80,7 @@ export const TitleWrapper = styled.div`
   animation: slide-left 2s;
   @keyframes slide-left {
     from {
-      margin-left: 50%;
+      margin-left: 100%;
       width: 100%;
       opacity: 0;
     }
@@ -93,9 +94,11 @@ export const TitleWrapper = styled.div`
     transform: scale(1.1);
   }
 
-  @media screen and (max-width: 1020px) {
-    width: 90vw;
-    max-width: 400px;
+  @media screen and (max-width: 1248px) {
+    max-width: 300px;
+    padding: 15px 30px;
+    font-size: 18px;
+    background: #0077b6;
 
 `;
 
@@ -121,7 +124,7 @@ export const HeroH2 = styled.h2`
   font-weight: 400;
 
   @media screen and (max-width: 500px) {
-    font-size: 40px;
+    font-size: 20px;
   }
 `;
 
@@ -157,7 +160,7 @@ export const HeroPWrap = styled.div`
 
 export const HeroP = styled.p`
   color: #fff;
-  font-size: 16px;
+  font-size: 18px;
   text-align: center;
   cursor: default;
   font-weight: 600;
@@ -165,7 +168,7 @@ export const HeroP = styled.p`
   max-width: 350px;
   border-radius: 25px;
   padding: 20px 10px;
-  margin: 25px 0 10px 0;
+  margin: 20px 0 10px 0;
   animation-delay: 7s;
   animation: slide-top 2s;
   @keyframes slide-top {
@@ -182,8 +185,8 @@ export const HeroP = styled.p`
   }
 
   @media screen and (max-width: 500px) {
-    font-size: 14px;
-    padding: 10px 20px;
+    font-size: 15px;
+    padding: 10px 0px;
     border-radius: 15px;
     margin: 15px 0 10px 0;
   }
@@ -196,16 +199,10 @@ export const HeroBtnWrapper = styled.div`
   align-items: center;
   position: absolute;
   bottom: 5%;
-
-  @media screen and (max-width: 500px) {
-    font-size: 10px;
-  }
 `;
 
 export const HeroButton = styled(LinkS)`
-  border-radius: 50px;
   background: rgba(0, 0, 0, 0.6);
-  white-spate: nowrap;
   padding: 14px 30px;
   color: #a4e3f5;
   font-size: 18px;
@@ -216,6 +213,7 @@ export const HeroButton = styled(LinkS)`
   justify-content: center;
   align-items: center;
   transition: 0.2s ease-in-out;
+  width: 360px;
   animation-delay: 7s;
   animation: appear 2s;
   @keyframes appear {
@@ -231,11 +229,13 @@ export const HeroButton = styled(LinkS)`
     }
   }
 
-  @keyframes right {
+  @media screen and (max-width: 800px) {
+    font-size: 12px;
+    width: 260px;
   }
 
-  @media screen and (max-width: 500px) {
-    font-size: 11px;
+  @media (min-width: 1248px) {
+    border-radius: 50px;
   }
 
   &:hover {
