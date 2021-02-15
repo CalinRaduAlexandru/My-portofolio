@@ -12,8 +12,8 @@ const Image = styled(motion.img)`
   cursor: grab;
   width: 100%;
   height: 100%;
-  max-width: 250px;
-  max-height: 250px;
+  max-width: 200px;
+  max-height: 200px;
   @media (max-width: 1024px) {
     width: 100px;
     height: 100px;
@@ -48,9 +48,8 @@ const Form = () => {
             <Image
               src={austronaut}
               alt="planet"
-              whileTap={{ scale: 0.9 }}
               drag={true}
-              dragConstraints={{ left: 200, right: 50, top: 100, bottom: 200 }}
+              dragConstraints={{ left: 200, right: 0, top: 100, bottom: 200 }}
               animate={{ opacity: 1, y: 0, transition: { duration: 5 } }}
             />
           </div>
