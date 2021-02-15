@@ -12,8 +12,8 @@ export const FooterContainer = styled.div`
 `;
 
 export const SocialMedia = styled.section`
-  max-width: 1000px;
-  width: 100%;
+  max-width: 100px;
+  width: 90vw;
   padding: 0px 20px;
 `;
 

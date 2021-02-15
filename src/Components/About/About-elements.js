@@ -128,7 +128,7 @@ export const BtnResume = styled.a`
   background: #00b4d8;
   white-spate: nowrap;
   padding: ${({ big }) => (big ? "14px 48px" : "12px 30px")};
-  color: #010606;
+  color: #d9ddde;
   font-size: ${({ fontBig }) => (fontBig ? "20px" : "16px")};
   outline: none;
   border: none;
@@ -136,11 +136,11 @@ export const BtnResume = styled.a`
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: 0.2s ease-in-out;
+  transition: 0.1s ease-in-out;
   text-decoration: none;
 
   &:hover {
-    transition: 0.2s ease-in-out;
+    transition: 0.1s ease-in-out;
     background: #0077b6;
   }
 `;

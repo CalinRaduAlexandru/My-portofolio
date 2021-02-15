@@ -18,7 +18,7 @@ export const HeroContainer = styled.div`
     left: 0;
     background: linear-gradient(
         180deg,
-        rgba(0, 0, 0, 0.3) 0%,
+        rgba(0, 0, 0, 0.5) 0%,
         rgba(0, 0, 0, 0.4) 60%
       ),
       linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, transparent 100%);
@@ -47,7 +47,7 @@ export const ImgBg = styled.img`
 
 export const HeroContent = styled.div`
   z-index: 3;
-  width: 100vw;
+  width: 90vw;
   height: 100%;
   position: absolute;
   display: flex;
@@ -153,9 +153,7 @@ export const HeroH3 = styled.h2`
 `;
 
 export const HeroPWrap = styled.div`
-  @media screen and (max-width: 500px) {
-    max-width: 60vw;
-  }
+  max-width: 400px;
 `;
 
 export const HeroP = styled.p`
@@ -186,6 +184,7 @@ export const HeroP = styled.p`
 
   @media screen and (max-width: 500px) {
     font-size: 15px;
+    max-width: 300px;
     padding: 10px 0px;
     border-radius: 15px;
     margin: 15px 0 10px 0;
@@ -203,6 +202,7 @@ export const HeroBtnWrapper = styled.div`
 
 export const HeroButton = styled(LinkS)`
   background: rgba(0, 0, 0, 0.6);
+  white-space: nowrap;
   padding: 14px 30px;
   color: #a4e3f5;
   font-size: 18px;
@@ -232,6 +232,10 @@ export const HeroButton = styled(LinkS)`
   @media screen and (max-width: 800px) {
     font-size: 12px;
     width: 260px;
+  }
+  @media screen and (max-width: 300px) {
+    font-size: 12px;
+    width: 200px;
   }
 
   @media (min-width: 1248px) {
