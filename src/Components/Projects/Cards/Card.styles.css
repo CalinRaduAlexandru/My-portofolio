@@ -15,6 +15,7 @@ section {
   transform-style: preserve-3d;
   perspective: 500px;
   overflow: hidden;
+  border-radius: 10px;
 }
 
 .logo {
@@ -34,6 +35,7 @@ section {
   transform-style: preserve-3d;
   transition: 1s;
   backface-visibility: hidden;
+  border-radius: 10px;
 }
 
 .back {
@@ -42,6 +44,7 @@ section {
   justify-content: center;
   width: 270px;
   height: 180px;
+  border-radius: 10px;
 }
 
 .card:hover .view.front {
@@ -56,14 +59,37 @@ section {
   opacity: 1;
 }
 
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 400px) {
   .card {
-    width: 200px;
-    height: 140px;
+    width: 85vw;
+    height: 210px;
+  }
+
+  .back {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 85vw;
+    height: 220px;
+    border-radius: 10px;
   }
 
   .logo {
-    width: 200px;
-    height: 140px;
+    width: 85vw;
+    height: 210px;
+  }
+
+  .card .view {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 85vw;
+    height: 210px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    transform-style: preserve-3d;
+    transition: 1s;
+    backface-visibility: hidden;
   }
 }

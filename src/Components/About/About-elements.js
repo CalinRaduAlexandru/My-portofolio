@@ -4,6 +4,7 @@ import { Link as LinkS } from "react-scroll";
 
 export const AboutContainer = styled.div`
   color: #fff;
+  position: relative;
   padding: 100px 0;
   background: ${({ lightBg }) => (lightBg ? "#f9f9f9" : "#010606")};
 
@@ -128,7 +129,7 @@ export const BtnResume = styled.a`
   background: #00b4d8;
   white-spate: nowrap;
   padding: ${({ big }) => (big ? "14px 48px" : "12px 30px")};
-  color: #d9ddde;
+  color: black;
   font-size: ${({ fontBig }) => (fontBig ? "20px" : "16px")};
   outline: none;
   border: none;

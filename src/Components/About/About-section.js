@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import profile from "./../../Assets/profile.jpg";
 import Radu_Calin_Resume from "./../../Assets/Radu_Calin_Resume.PDF";
 import { ArrowRight, ArrowForward } from "../Hero/Hero-elements";
-import "./About.styles.css";
+import "./About-button.styles.css";
+import "./Bubbles.styles.css";
 
 import {
   AboutContainer,

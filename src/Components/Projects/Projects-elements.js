@@ -69,6 +69,10 @@ export const ProjectInfo = styled.div`
   align-items: flex-start;
   background: #6189f2;
   border-radius: 25px;
+
+  @media (max-width: 400px) {
+    width: 95vw;
+  }
 `;
 
 export const ProjectTitle = styled.h1`

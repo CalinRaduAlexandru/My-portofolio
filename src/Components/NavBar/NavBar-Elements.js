@@ -53,7 +53,7 @@ export const NavLogo = styled.div`
   color: #0077b6;
   justify-self: flex-start;
   cursor: pointer;
-  font-size: 30px;
+  font-size: 26px;
   display: flex;
   align-items: center;
   text-decoration: none;

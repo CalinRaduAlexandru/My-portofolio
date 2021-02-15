@@ -22,6 +22,7 @@ export const SocialMediaWrap = styled.div`
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  width: 90vw;
   max-width: 1100px;
   margin: 15px auto 15px auto;
   background: #1a2228;
