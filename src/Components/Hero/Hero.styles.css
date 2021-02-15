@@ -799,3 +799,12 @@ orange circle
     opacity: 1;
   }
 }
+@media screen and (max-width: 1248px) {
+  .animation01 {
+    display: none;
+  }
+
+  .animation02 {
+    display: none;
+  }
+}
