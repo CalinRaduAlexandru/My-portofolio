@@ -1,8 +1,10 @@
 import styled from "styled-components";
 import { HiDownload } from "react-icons/hi";
+import { Link as LinkS } from "react-scroll";
 
 export const AboutContainer = styled.div`
   color: #fff;
+  padding: 100px 0;
   background: ${({ lightBg }) => (lightBg ? "#f9f9f9" : "#010606")};
 
   @media screen and (max-width: 768px) {
@@ -10,7 +12,7 @@ export const AboutContainer = styled.div`
   }
 
   @media screen and (min-width: 900px) {
-    height: 100vh;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -20,7 +22,6 @@ export const AboutContainer = styled.div`
 export const AboutWrapper = styled.div`
   display: grid;
   z-index: 1;
-
   max-width: 1300px;
   margin-right: auto;
   margin-left: auto;
@@ -80,6 +81,7 @@ export const TopLine = styled.p`
   font-weight: 700;
   letter-spacing: 1.4px;
   text-transform: uppercase;
+  margin-top: 50px;
   margin-bottom: 16px;
 
   @media screen and (max-width: 480px) {
@@ -111,33 +113,8 @@ export const Subtitle = styled.p`
   }
 `;
 
-export const AboutBtnWrapper = styled.div`
-  position: relative;
-  margin-top: 32px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  @media (max-width: 1124px) {
-    align-items: flex-start;
-  }
-`;
-
-export const DevelopmentWrapper = styled.div`
-  position: absolute;
-  max-width: 405px;
-  min-height: 350px;
-  top: -150%;
-  left: 0%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-
-  @media screen and (max-width: 1124px) {
-    display: none;
-  }
+export const ContactBtnWrapper = styled(LinkS)`
+  overflow: hidden;
 `;
 
 export const BtnWrap = styled.div`

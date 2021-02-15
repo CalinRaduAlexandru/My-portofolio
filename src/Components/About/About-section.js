@@ -1,9 +1,8 @@
 import React, { useState } from "react";
 import profile from "./../../Assets/profile.jpg";
 import Radu_Calin_Resume from "./../../Assets/Radu_Calin_Resume.PDF";
-import { Button } from "../Button-element";
 import { ArrowRight, ArrowForward } from "../Hero/Hero-elements";
-import development from "./../../Assets/development.svg";
+import "./About.styles.css";
 
 import {
   AboutContainer,
@@ -14,7 +13,7 @@ import {
   TopLine,
   Heading,
   Subtitle,
-  AboutBtnWrapper,
+  ContactBtnWrapper,
   BtnWrap,
   BtnResume,
   Download,
@@ -22,7 +21,6 @@ import {
   ImgWrap,
   Img,
   HeroP,
-  DevelopmentWrapper,
 } from "./About-elements";
 
 const AboutSection = ({
@@ -56,28 +54,29 @@ const AboutSection = ({
                   Let`s discover and build new possibilities in which we can
                   expand your vision!
                 </Subtitle>
-                <AboutBtnWrapper>
-                  <Button
-                    to="contact"
-                    smooth={true}
-                    duration={500}
-                    spy={true}
-                    exact="true"
-                    offset={-80}
-                    onMouseEnter={onHover}
-                    onMouseLeave={onHover}
-                  >
-                    Contact me! {hover ? <ArrowForward /> : <ArrowRight />}
-                  </Button>
-                  <DevelopmentWrapper>
-                    <img
-                      src={development}
-                      alt="development"
-                      width="150px"
-                      height="150px"
-                    />
-                  </DevelopmentWrapper>
-                </AboutBtnWrapper>
+                <ContactBtnWrapper
+                  to="contact"
+                  smooth={true}
+                  duration={500}
+                  spy={true}
+                  exact="true"
+                  offset={-80}
+                  onMouseEnter={onHover}
+                  onMouseLeave={onHover}
+                >
+                  <div className="svg-wrapper">
+                    <svg
+                      height="60"
+                      width="320"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <rect className="shape" height="60" width="320" />
+                    </svg>
+                    <div className="text">
+                      Contact me! {hover ? <ArrowForward /> : <ArrowRight />}
+                    </div>
+                  </div>
+                </ContactBtnWrapper>
               </TextWrapper>
             </Column1>
             <Column2>

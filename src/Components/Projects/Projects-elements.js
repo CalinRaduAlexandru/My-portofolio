@@ -72,7 +72,7 @@ export const ProjectInfo = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  background: #3d69db;
+  background: #6189f2;
   border-radius: 25px;
 `;
 
@@ -114,6 +114,9 @@ export const BtnProjectLeft = styled.a`
   box-shadow: 0px -2px 10px rgba(255, 255, 255, 1),
     0px 6px 15px rgba(0, 0, 0, 0.15);
   cursor: pointer;
+  &:hover {
+    background: #bfcef5;
+  }
   &:after {
     content: "";
     position: absolute;
@@ -157,6 +160,9 @@ export const BtnProjectRight = styled.a`
   box-shadow: 0px -2px 10px rgba(255, 255, 255, 1),
     0px 6px 15px rgba(0, 0, 0, 0.15);
   cursor: pointer;
+  &:hover {
+    background: #bfcef5;
+  }
   &:after {
     content: "";
     position: absolute;

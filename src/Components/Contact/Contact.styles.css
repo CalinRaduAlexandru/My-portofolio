@@ -162,11 +162,11 @@
   }
 
   .space-container {
-    width: 60vw;
+    width: 300px;
     height: 40vh;
     position: absolute;
     top: 140%;
-    left: -100%;
+    left: -30%;
     z-index: 1;
   }
 
