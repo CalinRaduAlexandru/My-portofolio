@@ -122,33 +122,10 @@ export const HeroH2 = styled.h2`
   font-size: 26px;
   letter-spacing: 1.9px;
   font-weight: 400;
+  margin-top: 25px;
 
   @media screen and (max-width: 500px) {
     font-size: 20px;
-  }
-`;
-
-export const HeroH3 = styled.h2`
-  color: #1e98d9;
-  width: 40vw;
-  max-width: 400px;
-  padding: 20px 20px 10px 20px;
-  border-bottom-left-radius: 25px;
-  border-bottom-right-radius: 25px;
-  background: rgba(0, 0, 0, 0.8);
-  text-shadow: 2px 0 black;
-  opacity: 0.8;
-  font-family: "Spartan", sans-serif;
-  font-size: 26px;
-  font-weight: 600;
-  letter-spacing: 1.9px;
-  text-align: center;
-
-  @media screen and (max-width: 1020px) {
-    font-size: 17px;
-    padding: 15px 15px 10px 15px;
-    width: 90vw;
-    max-width: 400px;
   }
 `;
 
@@ -166,7 +143,7 @@ export const HeroP = styled.p`
   max-width: 350px;
   border-radius: 25px;
   padding: 20px 10px;
-  margin: 20px 0 10px 0;
+  margin: 27px 0 25px 0;
   animation-delay: 7s;
   animation: slide-top 2s;
   @keyframes slide-top {

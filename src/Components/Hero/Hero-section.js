@@ -10,7 +10,6 @@ import {
   TitleWrapper,
   HeroH1,
   HeroH2,
-  // HeroH3,
   HeroPWrap,
   HeroP,
   HeroBtnWrapper,
