@@ -95,10 +95,11 @@ export const EmailWrap = styled.div`
   display: flex;
 `;
 export const OutlineMail = styled(HiOutlineMail)`
+  padding: 0 0 2px 0;
   font-size: 20px;
   margin-right: 7px;
   @media screen and (max-width: 500px) {
-    font-size: 15px;
+    font-size: 17px;
   }
 
   @media screen and (max-width: 300px) {

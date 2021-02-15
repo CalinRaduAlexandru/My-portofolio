@@ -7,7 +7,7 @@ export const RocketWrapper = styled.div`
   flex-direction: column;
   align-items: center;
   bottom: 5%;
-  right: 5%;
+  right: 2%;
   color: #dddcde;
   cursor: pointer;
   z-index: 100;
@@ -16,7 +16,7 @@ export const RocketWrapper = styled.div`
       right: 0%;
       bottom: 1%;
   }
-  
+
   &:hover {
     color: #b51e07;
     animation: shake-up 0.4s alternate infinite;

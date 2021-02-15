@@ -9,8 +9,8 @@ export const ProjectsContainer = styled.div`
   background: rgb(34, 193, 195);
   background: linear-gradient(
     0deg,
-    rgba(34, 193, 195, 1) 0%,
-    rgba(45, 112, 253, 1) 100%
+    rgba(45, 112, 253, 0.6) 100%,
+    rgba(34, 193, 195, 0.5) 0%
   );
 `;
 

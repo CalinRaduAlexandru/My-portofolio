@@ -12,6 +12,7 @@ section {
   position: relative;
   width: 270px;
   height: 180px;
+  border-radius: 25px;
   transform-style: preserve-3d;
   perspective: 500px;
   overflow: hidden;

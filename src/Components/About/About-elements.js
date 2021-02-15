@@ -20,8 +20,8 @@ export const AboutContainer = styled.div`
 export const AboutWrapper = styled.div`
   display: grid;
   z-index: 1;
-  width: 100%;
-  max-width: 1100px;
+
+  max-width: 1300px;
   margin-right: auto;
   margin-left: auto;
   padding: 0 44px;
@@ -74,6 +74,7 @@ export const TextWrapper = styled.div`
 
 export const TopLine = styled.p`
   color: #0077b6;
+  padding: 5px;
   font-size: 16px;
   line-height: 16px;
   font-weight: 700;
@@ -84,7 +85,7 @@ export const TopLine = styled.p`
 
 export const Heading = styled.h1`
   margin-bottom: 24px;
-  font-size: 40px;
+  font-size: 35px;
   line-height: 1.1;
   font-weight: 600;
   color: ${({ lightText }) => (lightText ? "#f7f8fa" : "#010606")};
@@ -106,11 +107,32 @@ export const Subtitle = styled.p`
 `;
 
 export const AboutBtnWrapper = styled.div`
-  bottom: 10%;
+  position: relative;
   margin-top: 32px;
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media (max-width: 1124px) {
+    align-items: flex-start;
+  }
+`;
+
+export const DevelopmentWrapper = styled.div`
+  position: absolute;
+  max-width: 405px;
+  min-height: 350px;
+  top: -150%;
+  left: 0%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  @media screen and (max-width: 1124px) {
+    display: none;
+  }
 `;
 
 export const BtnWrap = styled.div`

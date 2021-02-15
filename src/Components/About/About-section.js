@@ -3,6 +3,7 @@ import profile from "./../../Assets/profile.jpg";
 import Radu_Calin_Resume from "./../../Assets/Radu_Calin_Resume.PDF";
 import { Button } from "../Button-element";
 import { ArrowRight, ArrowForward } from "../Hero/Hero-elements";
+import development from "./../../Assets/development.svg";
 
 import {
   AboutContainer,
@@ -21,6 +22,7 @@ import {
   ImgWrap,
   Img,
   HeroP,
+  DevelopmentWrapper,
 } from "./About-elements";
 
 const AboutSection = ({
@@ -67,6 +69,14 @@ const AboutSection = ({
                   >
                     Contact me! {hover ? <ArrowForward /> : <ArrowRight />}
                   </Button>
+                  <DevelopmentWrapper>
+                    <img
+                      src={development}
+                      alt="development"
+                      width="200px"
+                      height="200px"
+                    />
+                  </DevelopmentWrapper>
                 </AboutBtnWrapper>
               </TextWrapper>
             </Column1>
