@@ -51,13 +51,11 @@ export const NavbarContainer = styled.div`
 
 export const NavLogo = styled.div`
   color: #0077b6;
-  font-family: "Allura", cursive;
   justify-self: flex-start;
   cursor: pointer;
-  font-size: 50px;
+  font-size: 30px;
   display: flex;
   align-items: center;
-  font-weight: bold;
   text-decoration: none;
   animation: appear 5s;
   @keyframes appear {

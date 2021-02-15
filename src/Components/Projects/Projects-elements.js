@@ -6,12 +6,7 @@ export const ProjectsContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: rgb(34, 193, 195);
-  background: linear-gradient(
-    0deg,
-    rgba(45, 112, 253, 0.6) 100%,
-    rgba(34, 193, 195, 0.5) 0%
-  );
+  background: #96b7fa;
 `;
 
 export const Header = styled.div`
@@ -79,7 +74,7 @@ export const ProjectInfo = styled.div`
 export const ProjectTitle = styled.h1`
   color: #fff;
   font-size: 23px;
-  margin-top: 10px;
+  margin-top: 20px;
   margin-left: 10px;
 `;
 

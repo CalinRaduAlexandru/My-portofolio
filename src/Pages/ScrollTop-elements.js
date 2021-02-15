@@ -18,7 +18,7 @@ export const RocketWrapper = styled.div`
   }
 
   &:hover {
-    color: #b51e07;
+    color: #f47141;
     animation: shake-up 0.4s alternate infinite;
 
   @keyframes shake-up {

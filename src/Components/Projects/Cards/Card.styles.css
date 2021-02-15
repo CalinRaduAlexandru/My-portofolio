@@ -10,17 +10,16 @@ section {
   flex-direction: column;
   cursor: pointer;
   position: relative;
-  width: 240px;
-  height: 150px;
-  border-radius: 25px;
+  width: 270px;
+  height: 170px;
   transform-style: preserve-3d;
   perspective: 500px;
   overflow: hidden;
 }
 
 .logo {
-  width: 240px;
-  height: 150px;
+  width: 270px;
+  height: 170px;
 }
 
 .card .view {

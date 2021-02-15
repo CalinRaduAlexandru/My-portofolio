@@ -24,7 +24,7 @@ const NavBar = ({ toggle }) => {
     <>
       <Nav>
         <NavbarContainer>
-          <NavLogo onClick={toggleHome}>Ra</NavLogo>
+          <NavLogo onClick={toggleHome}>Ra Web-Dev</NavLogo>
           <MobileIcon onClick={toggle}>
             <FaBars />
           </MobileIcon>

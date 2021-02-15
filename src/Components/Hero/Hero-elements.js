@@ -19,7 +19,7 @@ export const HeroContainer = styled.div`
     background: linear-gradient(
         180deg,
         rgba(0, 0, 0, 0.2) 0%,
-        rgba(0, 0, 0, 0.6) 60%
+        rgba(0, 0, 0, 0.3) 60%
       ),
       linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, transparent 100%);
     z-index: 2;
@@ -73,10 +73,9 @@ export const TitleWrapper = styled.div`
   width: 40vw;
   max-width: 400px;
   align-items: center;
-  border-radius: 25px;
-  background: rgba(30, 152, 217, 0.8);
   cursor: pointer;
   transition: all 0.2s ease-in-out;
+  animation-delay: 7s;
   animation: slide-left 2s;
   @keyframes slide-left {
     from {
@@ -116,10 +115,10 @@ export const HeroH1 = styled.h1`
 `;
 
 export const HeroH2 = styled.h2`
-  color: #033340;
-  font-family: "Allura", cursive;
-  font-size: 60px;
+  color: #fff;
+  font-size: 26px;
   letter-spacing: 1.9px;
+  font-weight: 400;
 
   @media screen and (max-width: 500px) {
     font-size: 40px;
@@ -157,17 +156,17 @@ export const HeroPWrap = styled.div`
 `;
 
 export const HeroP = styled.p`
-  color: black;
+  color: #fff;
   font-size: 16px;
   text-align: center;
   cursor: default;
   font-weight: 600;
   text-shadow: 10px 10px 10px 5px;
   max-width: 350px;
-  background: rgba(110, 212, 240, 0.7);
   border-radius: 25px;
   padding: 20px 10px;
   margin: 25px 0 10px 0;
+  animation-delay: 7s;
   animation: slide-top 2s;
   @keyframes slide-top {
     from {
@@ -209,7 +208,7 @@ export const HeroButton = styled(LinkS)`
   white-spate: nowrap;
   padding: 14px 30px;
   color: #a4e3f5;
-  font-size: 20px;
+  font-size: 18px;
   outline: none;
   border: none;
   cursor: pointer;
@@ -217,6 +216,7 @@ export const HeroButton = styled(LinkS)`
   justify-content: center;
   align-items: center;
   transition: 0.2s ease-in-out;
+  animation-delay: 7s;
   animation: appear 2s;
   @keyframes appear {
     from {
