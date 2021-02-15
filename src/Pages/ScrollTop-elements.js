@@ -12,6 +12,11 @@ export const RocketWrapper = styled.div`
   cursor: pointer;
   z-index: 100;
 
+  @media (max-width: 768px) {
+      right: 0%;
+      bottom: 1%;
+  }
+  
   &:hover {
     color: #b51e07;
     animation: shake-up 0.4s alternate infinite;
@@ -26,10 +31,6 @@ export const RocketWrapper = styled.div`
     }
   }
 
-  @media (max-width: 768px) {
-    right: 0%;
-    bottom: 1%;
-  }
 `;
 
 export const Rocket = styled(IoMdRocket)`
