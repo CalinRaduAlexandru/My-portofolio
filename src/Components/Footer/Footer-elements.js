@@ -72,7 +72,7 @@ export const GoUp = styled.p`
 `;
 export const DetailsWrap = styled.div`
   color: #fff;
-  padding: 10px 25px 10px 25px;
+  padding: 10px 0px;
   display: flex;
   flex-direction: column;
   items-align: center;

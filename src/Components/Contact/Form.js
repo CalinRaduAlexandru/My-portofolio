@@ -47,9 +47,9 @@ const Form = () => {
           <div className="austronaut">
             <Image
               src={austronaut}
-              alt="planet"
+              alt="austronaut"
               drag={true}
-              dragConstraints={{ left: 200, right: 0, top: 100, bottom: 200 }}
+              dragConstraints={{ left: 0, right: 100, top: 100, bottom: 200 }}
               animate={{ opacity: 1, y: 0, transition: { duration: 5 } }}
             />
           </div>

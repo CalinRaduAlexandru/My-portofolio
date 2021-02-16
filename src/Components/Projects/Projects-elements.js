@@ -71,7 +71,7 @@ export const ProjectInfo = styled.div`
   border-radius: 25px;
 
   @media (max-width: 400px) {
-    width: 95vw;
+    width: 90vw;
   }
 `;
 
