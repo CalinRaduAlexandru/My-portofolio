@@ -25,6 +25,7 @@ const useForm = (callback, validateInfo) => {
       name: values.name,
       email: values.email,
       message: values.message,
+      date: new Date(),
     });
 
     setErrors(validateInfo(values));

@@ -13,7 +13,7 @@ export const RocketWrapper = styled.div`
   z-index: 100;
 
   @media (max-width: 768px) {
-      right: 5%;
+      right: 0%;
       bottom: 1%;
   }
 

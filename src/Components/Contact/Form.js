@@ -49,7 +49,12 @@ const Form = () => {
               src={austronaut}
               alt="austronaut"
               drag={true}
-              dragConstraints={{ left: 0, right: 100, top: 100, bottom: 200 }}
+              dragConstraints={{
+                left: -100,
+                right: 100,
+                top: 0,
+                bottom: 150,
+              }}
               animate={{ opacity: 1, y: 0, transition: { duration: 5 } }}
             />
           </div>
@@ -68,7 +73,7 @@ const Form = () => {
             <div className="shootingstar2"></div>
           </div>
           <div className="austronaut-text">
-            <FaHandRock /> <p>Grab the austronaut around!</p>
+            <FaHandRock /> <p>Grab the austronaut by the leg!</p>
           </div>
         </div>
       </div>

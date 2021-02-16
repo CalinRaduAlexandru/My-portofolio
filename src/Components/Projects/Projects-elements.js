@@ -59,6 +59,10 @@ export const ProjectWrapper = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  @media (max-width: 768px) {
+    margin: 10px 0px;
+  }
 `;
 
 export const ProjectInfo = styled.div`
