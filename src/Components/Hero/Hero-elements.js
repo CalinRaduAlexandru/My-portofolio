@@ -180,7 +180,7 @@ export const HeroBtnWrapper = styled.div`
 export const HeroButton = styled(LinkS)`
   background: rgba(0, 0, 0, 0.6);
   white-space: nowrap;
-  padding: 14px 30px;
+  padding: 14px 20px 10px 20px;
   color: #a4e3f5;
   font-size: 18px;
   outline: none;
@@ -208,11 +208,11 @@ export const HeroButton = styled(LinkS)`
 
   @media screen and (max-width: 800px) {
     font-size: 12px;
-    width: 260px;
+    width: 240px;
   }
   @media screen and (max-width: 300px) {
-    font-size: 12px;
-    width: 200px;
+    font-size: 11px;
+    width: 240px;
   }
 
   @media (min-width: 1248px) {

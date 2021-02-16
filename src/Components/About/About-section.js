@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "aos/dist/aos.css";
 import profile from "./../../Assets/profile.jpg";
 import Radu_Calin_Resume from "./../../Assets/Radu_Calin_Resume.PDF";
 import { ArrowRight, ArrowForward } from "../Hero/Hero-elements";
@@ -48,7 +49,7 @@ const AboutSection = ({
       <AboutContainer lightBg={lightBg} id={id}>
         <AboutWrapper>
           <AboutRow imgStart={imgStart}>
-            <Column1>
+            <Column1 data-aos="fade-up">
               <TextWrapper>
                 <TopLine>Excited to bring life to your project!</TopLine>
                 <Heading lightText={lightText}>{headline}</Heading>
@@ -81,7 +82,7 @@ const AboutSection = ({
                 </ContactBtnWrapper>
               </TextWrapper>
             </Column1>
-            <Column2>
+            <Column2 data-aos="fade-right">
               <ImgWrap>
                 <Img src={profile} alt={alt} />
                 <HeroP>

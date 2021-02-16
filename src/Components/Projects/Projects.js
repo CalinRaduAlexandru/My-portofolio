@@ -1,4 +1,5 @@
 import React from "react";
+import "aos/dist/aos.css";
 import { CardCrown } from "./Cards/CardCrown";
 import { CardFilter } from "./Cards/CardFilter";
 import { CardSearch } from "./Cards/CardSearch";
@@ -29,7 +30,7 @@ const Projects = () => {
         <MdKeyboardArrowDown style={{ marginTop: "5px", marginLeft: "5px" }} />
       </Header>
       <ProjectsWrapper>
-        <ProjectWrapper>
+        <ProjectWrapper data-aos="slide-right">
           <ProjectInfo>
             <CardCrown />
             <ProjectTitle>CrownFeel Ltd.</ProjectTitle>
@@ -62,7 +63,7 @@ const Projects = () => {
             </Buttons>
           </ProjectInfo>
         </ProjectWrapper>
-        <ProjectWrapper>
+        <ProjectWrapper data-aos="slide-right" data-aos-delay="100">
           <ProjectInfo>
             <CardSearch />
             <ProjectTitle>Recognize faces</ProjectTitle>
@@ -96,7 +97,7 @@ const Projects = () => {
             </Buttons>
           </ProjectInfo>
         </ProjectWrapper>
-        <ProjectWrapper>
+        <ProjectWrapper data-aos="slide-right" data-aos-delay="200">
           <ProjectInfo>
             <CardFilter />
             <ProjectTitle>Search friends</ProjectTitle>
@@ -130,7 +131,7 @@ const Projects = () => {
             </Buttons>
           </ProjectInfo>
         </ProjectWrapper>
-        <ProjectWrapper>
+        <ProjectWrapper data-aos="slide-right" data-aos-delay="300">
           <ProjectInfo>
             <CardGrateful />
             <ProjectTitle>Gratefulness</ProjectTitle>

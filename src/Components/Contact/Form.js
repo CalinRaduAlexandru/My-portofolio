@@ -38,7 +38,7 @@ const Form = () => {
         <div className="form-content-left">
           <img
             data-aos="fade-down"
-            data-aos-delay="200"
+            data-aos-delay="350"
             className="form-img"
             src={spaceship}
             alt="spaceship"
@@ -63,8 +63,8 @@ const Form = () => {
               dragConstraints={{
                 left: -100,
                 right: 100,
-                top: 0,
-                bottom: 150,
+                top: 80,
+                bottom: 180,
               }}
               animate={{ opacity: 1, y: 0, transition: { duration: 5 } }}
             />
@@ -84,7 +84,7 @@ const Form = () => {
             <div className="shootingstar2"></div>
           </div>
           <div className="austronaut-text">
-            <FaHandRock /> <p>Grab the austronaut by the leg!</p>
+            <FaHandRock /> <p>Grab the austronaut around!</p>
           </div>
         </div>
       </div>
