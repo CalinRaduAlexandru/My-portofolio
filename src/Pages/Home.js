@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import Aos from "aos";
 import NavBar from "../Components/NavBar/NavBar";
 import Sidebar from "../Components/Sidebar/Sidebar";
 import HeroSection from "../Components/Hero/Hero-section";
@@ -15,6 +16,10 @@ const Home = () => {
   const toggle = () => {
     setIsOpen(!isOpen);
   };
+
+  useEffect(() => {
+    Aos.init({ dureaction: 4000, easing: "ease" });
+  }, []);
 
   return (
     <>

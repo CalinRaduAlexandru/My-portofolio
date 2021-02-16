@@ -42,6 +42,7 @@ const AboutSection = ({
   const onHover = () => {
     setHover(!hover);
   };
+
   return (
     <>
       <AboutContainer lightBg={lightBg} id={id}>

@@ -1,4 +1,5 @@
 import React from "react";
+import "aos/dist/aos.css";
 import useForm from "./useForm";
 import validateInfo from "./Validate";
 import "./Contact.styles.css";
@@ -8,9 +9,10 @@ const Contact = ({ submitForm }) => {
     submitForm,
     validateInfo
   );
+
   return (
     <div className="contact-section">
-      <div className="form-content-right">
+      <div data-aos="fade-right" className="form-content-right">
         <form className="form" onSubmit={handleSubmit}>
           <h1>Let`s get in touch! I`ll get back to you in no time!</h1>
           <div className="form-inputs">

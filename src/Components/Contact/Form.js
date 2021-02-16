@@ -4,6 +4,7 @@ import styled from "styled-components";
 import "./Contact.styles.css";
 import FormSuccess from "./Form-success";
 import Contact from "./Contact";
+import "aos/dist/aos.css";
 import spaceship from "./../../Assets/img-2.svg";
 import austronaut from "./../../Assets/astronaut2.svg";
 import { FaHandRock } from "react-icons/fa";
@@ -35,7 +36,13 @@ const Form = () => {
     <>
       <div className="form-container" id="contact">
         <div className="form-content-left">
-          <img className="form-img" src={spaceship} alt="spaceship" />
+          <img
+            data-aos="fade-down"
+            data-aos-delay="200"
+            className="form-img"
+            src={spaceship}
+            alt="spaceship"
+          />
 
           {!isSubmitted ? (
             <Contact submitForm={submitForm} />
@@ -44,7 +51,11 @@ const Form = () => {
           )}
         </div>
         <div className="austronaut-game">
-          <div className="austronaut">
+          <div
+            data-aos="fade-left"
+            data-aos-easing="ease-in-out"
+            className="austronaut"
+          >
             <Image
               src={austronaut}
               alt="austronaut"
