@@ -28,6 +28,7 @@ const NavBar = ({ toggle }) => {
           <MobileIcon onClick={toggle}>
             <FaBars />
           </MobileIcon>
+
           <NavMenu>
             <Tilt>
               <NavItemFirst>
