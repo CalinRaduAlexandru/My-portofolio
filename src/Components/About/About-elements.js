@@ -5,7 +5,7 @@ import { Link as LinkS } from "react-scroll";
 export const AboutContainer = styled.div`
   color: #fff;
   position: relative;
-  padding: 50px 0;
+  padding: 0px;
   background: ${({ lightBg }) => (lightBg ? "#f9f9f9" : "#010606")};
 
   @media screen and (max-width: 768px) {
@@ -84,6 +84,7 @@ export const TopLine = styled.p`
   text-transform: uppercase;
   margin-top: 50px;
   margin-bottom: 16px;
+  cursor: default;
 
   @media screen and (max-width: 480px) {
     line-height: 1.1;
@@ -93,9 +94,11 @@ export const TopLine = styled.p`
 export const Heading = styled.h1`
   margin-bottom: 16px;
   padding: 5px 0;
-  font-size: 35px;
+  font-size: 30px;
   line-height: 1.1;
   font-weight: 600;
+  cursor: default;
+
   color: ${({ lightText }) => (lightText ? "#f7f8fa" : "#010606")};
 
   @media screen and (max-width: 480px) {
@@ -109,6 +112,8 @@ export const Subtitle = styled.p`
   font-size: 18px;
   line-height: 24px;
   color: #d9ddde;
+  cursor: default;
+
   @media screen and (max-width: 480px) {
     font-size: 15px;
   }
@@ -182,6 +187,8 @@ export const HeroP = styled.p`
   font-size: 27px;
   text-align: center;
   max-width: 700px;
+  cursor: default;
+
   @media screen and (max-width: 768px) {
     font-size: 30px;
   }

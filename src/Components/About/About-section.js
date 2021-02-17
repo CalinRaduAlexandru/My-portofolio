@@ -1,10 +1,14 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "aos/dist/aos.css";
+import Particles from "react-particles-js";
+import { gsap } from "gsap";
 import profile from "./../../Assets/profile.jpg";
 import Radu_Calin_Resume from "./../../Assets/Radu_Calin_Resume.PDF";
 import { ArrowRight, ArrowForward } from "../Hero/Hero-elements";
 import "./About-button.styles.css";
-import "./Bubbles.styles.css";
+import "./Collaborate.styles.css";
+import "./Background.styles.css";
+import HelloAustronaut from "./../../Assets/HelloAustronaut.svg";
 
 import {
   AboutContainer,
@@ -44,43 +48,161 @@ const AboutSection = ({
     setHover(!hover);
   };
 
+  useEffect(() => {
+    gsap.to(".hello-austronaut", {
+      duration: 20,
+      rotation: 360,
+      repeat: -1,
+    });
+  }, []);
+
   return (
     <>
       <AboutContainer lightBg={lightBg} id={id}>
+        <Particles
+          className="particles"
+          params={{
+            particles: {
+              number: {
+                value: 60,
+                density: {
+                  enable: true,
+                  value_area: 1500,
+                },
+              },
+              line_linked: {
+                enable: true,
+                opacity: 0.1,
+              },
+              move: {
+                direction: "right",
+                speed: 0.25,
+              },
+              size: {
+                value: 2,
+              },
+              opacity: {
+                anim: {
+                  enable: true,
+                  speed: 1,
+                  opacity_min: 0.05,
+                },
+              },
+            },
+            interactivity: {
+              events: {
+                onclick: {
+                  enable: true,
+                  mode: "push",
+                },
+              },
+              modes: {
+                push: {
+                  particles_nb: 1,
+                },
+              },
+            },
+            retina_detect: true,
+          }}
+        />
         <AboutWrapper>
           <AboutRow imgStart={imgStart}>
-            <Column1 data-aos="fade-up">
-              <TextWrapper>
+            <Column1>
+              <TextWrapper data-aos="fade-up">
                 <TopLine>Excited to bring life to your project!</TopLine>
                 <Heading lightText={lightText}>{headline}</Heading>
                 <Subtitle darkText={darkText}>
                   Let`s discover and build new possibilities in which we can
                   expand your vision!
                 </Subtitle>
-                <ContactBtnWrapper
-                  to="contact"
-                  smooth={true}
-                  duration={500}
-                  spy={true}
-                  exact="true"
-                  offset={-80}
-                  onMouseEnter={onHover}
-                  onMouseLeave={onHover}
+              </TextWrapper>
+              <div className="collaborate">
+                <div
+                  className="collab-text"
+                  onClick={() =>
+                    gsap.to(".bubble, .hello-austronaut", {
+                      duration: 3,
+                      rotate: 720,
+                      ease: "ease-in-out",
+                    })
+                  }
                 >
-                  <div className="svg-wrapper">
-                    <svg
-                      height="60"
-                      width="320"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <rect className="shape" height="60" width="320" />
-                    </svg>
-                    <div className="text">
-                      Contact me! {hover ? <ArrowForward /> : <ArrowRight />}
+                  <div className="first-row">
+                    <div className="bubble x1">
+                      <h1>L</h1>
+                    </div>
+                    <div className="bubble x2">
+                      <h1>E</h1>
+                    </div>
+                    <div className="bubble x3">
+                      <h1>T</h1>
+                    </div>
+                    <div className="bubble x4">
+                      <h1>`</h1>
+                    </div>
+                    <div className="bubble x5">
+                      <h1>S</h1>
+                    </div>
+                    <img
+                      src={HelloAustronaut}
+                      alt="austronaut"
+                      width="150px"
+                      height="150px"
+                      className="hello-austronaut"
+                      onClick={() =>
+                        gsap.to(".bubble, .hello-austronaut", {
+                          duration: 3,
+                          rotation: 720,
+                          ease: "ease-in-out",
+                        })
+                      }
+                    />
+                  </div>
+                  <div className="second-row">
+                    <div className="bubble x6">
+                      <h1>C</h1>
+                    </div>
+                    <div className="bubble x7">
+                      <h1>O</h1>
+                    </div>
+                    <div className="bubble x8">
+                      <h1>L</h1>
+                    </div>
+                    <div className="bubble x9">
+                      <h1>L</h1>
+                    </div>
+                    <div className="bubble x10">
+                      <h1>A</h1>
+                    </div>
+                    <div className="bubble x11">
+                      <h1>B</h1>
                     </div>
                   </div>
-                </ContactBtnWrapper>
-              </TextWrapper>
+                </div>
+              </div>
+              <ContactBtnWrapper
+                to="contact"
+                smooth={true}
+                duration={500}
+                spy={true}
+                exact="true"
+                offset={-80}
+                onMouseEnter={onHover}
+                onMouseLeave={onHover}
+              >
+                <div className="svg-wrapper">
+                  <svg
+                    height="60"
+                    width="320"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect className="shape" height="60" width="320" />
+                  </svg>
+                  <div className="text">
+                    Contact me! {hover ? <ArrowForward /> : <ArrowRight />}
+                  </div>
+                </div>
+              </ContactBtnWrapper>
             </Column1>
             <Column2 data-aos="fade-right">
               <ImgWrap>
