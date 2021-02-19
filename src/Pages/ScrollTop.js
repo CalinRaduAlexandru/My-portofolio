@@ -6,7 +6,7 @@ import { RocketWrapper, Rocket, Up } from "./ScrollTop-elements";
 export const ScrollTop = () => {
   const { y: pageYOffSet } = useWindowScroll();
   const [visible, setVisible] = useState(false);
-  const toggleHome = () => {
+  const goTop = () => {
     scroll.scrollToTop();
   };
 
@@ -23,7 +23,7 @@ export const ScrollTop = () => {
   }
 
   return (
-    <RocketWrapper onClick={toggleHome}>
+    <RocketWrapper onClick={goTop}>
       <Rocket />
       <Up>Up</Up>
     </RocketWrapper>
