@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import "aos/dist/aos.css";
 import Particles from "react-particles-js";
 import { gsap } from "gsap";
-import profile from "./../../Assets/profile.jpg";
+import profile from "./../../Assets/ProfileRemoveBg.png";
 import Radu_Calin_Resume from "./../../Assets/Radu_Calin_Resume.PDF";
 import { ArrowRight, ArrowForward } from "../Hero/Hero-elements";
 import "./About-button.styles.css";

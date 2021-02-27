@@ -31,8 +31,8 @@ const Projects = () => {
       </Header>
       <ProjectsWrapper>
         <ProjectWrapper data-aos="slide-right">
+          <CardCrown />
           <ProjectInfo>
-            <CardCrown />
             <ProjectTitle>CrownFeel Ltd.</ProjectTitle>
             <ProjectSubTitle>React | Redux | Stripe</ProjectSubTitle>
             <ProjectText>
@@ -64,8 +64,8 @@ const Projects = () => {
           </ProjectInfo>
         </ProjectWrapper>
         <ProjectWrapper data-aos="slide-right" data-aos-delay="100">
+          <CardSearch />
           <ProjectInfo>
-            <CardSearch />
             <ProjectTitle>Recognize faces</ProjectTitle>
             <ProjectSubTitle>React | NodeJs | Postgres</ProjectSubTitle>
             <ProjectText>
@@ -98,8 +98,8 @@ const Projects = () => {
           </ProjectInfo>
         </ProjectWrapper>
         <ProjectWrapper data-aos="slide-right" data-aos-delay="200">
+          <CardFilter />
           <ProjectInfo>
-            <CardFilter />
             <ProjectTitle>Search friends</ProjectTitle>
             <ProjectSubTitle>React | NodeJs | Postgres</ProjectSubTitle>
             <ProjectText>
@@ -132,8 +132,8 @@ const Projects = () => {
           </ProjectInfo>
         </ProjectWrapper>
         <ProjectWrapper data-aos="slide-right" data-aos-delay="300">
+          <CardGrateful />
           <ProjectInfo>
-            <CardGrateful />
             <ProjectTitle>Gratefulness</ProjectTitle>
             <ProjectSubTitle>React | CSS</ProjectSubTitle>
             <ProjectText>

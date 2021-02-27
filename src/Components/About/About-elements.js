@@ -171,7 +171,6 @@ export const ImgWrap = styled.div`
 
 export const Img = styled.img`
   width: 80%;
-  border-radius: 50%;
   margin: 0 0 10px 0;
   padding-right: 0;
 
