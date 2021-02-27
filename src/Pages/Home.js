@@ -29,7 +29,7 @@ const Home = () => {
       <HeroSection />
       <AboutSection {...homeObjOne} />
       <Projects />
-      <Form id="contact" />
+      // <Form id="contact" />
       <Footer />{" "}
     </>
   );
