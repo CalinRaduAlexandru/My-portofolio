@@ -58,7 +58,7 @@ export const NavLogo = styled.div`
   display: flex;
   align-items: center;
   text-decoration: none;
-  animation: appear 5s;
+  animation: appear 2s;
   @keyframes appear {
     0% {
       opacity: 0;
@@ -126,7 +126,7 @@ export const NavMenu = styled.ul`
 
 export const NavItemFirst = styled.li`
   height: 80px;
-  animation: appear 2s;
+  animation: appear 1s;
   @keyframes appear {
     0% {
       opacity: 0;
@@ -144,7 +144,7 @@ export const NavItemFirst = styled.li`
 
 export const NavItemSecond = styled.li`
   height: 80px;
-  animation: appear 3s;
+  animation: appear 2s;
   @keyframes appear {
     0% {
       opacity: 0;
@@ -162,7 +162,7 @@ export const NavItemSecond = styled.li`
 
 export const NavItemThird = styled.li`
   height: 80px;
-  animation: appear 4s;
+  animation: appear 3s;
   @keyframes appear {
     0% {
       opacity: 0;

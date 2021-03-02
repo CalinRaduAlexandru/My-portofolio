@@ -30,7 +30,7 @@
 @media (max-width: 600px) {
   .hello-austronaut {
     width: 100px;
-    margin: 10px 0 50px 0;
+    margin-left: 100px;
   }
 }
 

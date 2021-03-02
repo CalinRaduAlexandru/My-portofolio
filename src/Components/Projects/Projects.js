@@ -3,12 +3,10 @@ import "aos/dist/aos.css";
 import { CardCrown } from "./Cards/CardCrown";
 import { CardFilter } from "./Cards/CardFilter";
 import { CardSearch } from "./Cards/CardSearch";
-import { MdKeyboardArrowDown } from "react-icons/md";
 import { CardGrateful } from "./Cards/CardGrateful";
 
 import {
   ProjectsContainer,
-  Header,
   ProjectsWrapper,
   ProjectWrapper,
   ProjectInfo,
@@ -25,12 +23,8 @@ import {
 const Projects = () => {
   return (
     <ProjectsContainer id="projects">
-      <Header>
-        Personal projects{" "}
-        <MdKeyboardArrowDown style={{ marginTop: "5px", marginLeft: "5px" }} />
-      </Header>
       <ProjectsWrapper>
-        <ProjectWrapper data-aos="slide-right">
+        <ProjectWrapper>
           <CardCrown />
           <ProjectInfo>
             <ProjectTitle>CrownFeel Ltd.</ProjectTitle>
@@ -63,7 +57,7 @@ const Projects = () => {
             </Buttons>
           </ProjectInfo>
         </ProjectWrapper>
-        <ProjectWrapper data-aos="slide-right" data-aos-delay="100">
+        <ProjectWrapper>
           <CardSearch />
           <ProjectInfo>
             <ProjectTitle>Recognize faces</ProjectTitle>
@@ -97,7 +91,7 @@ const Projects = () => {
             </Buttons>
           </ProjectInfo>
         </ProjectWrapper>
-        <ProjectWrapper data-aos="slide-right" data-aos-delay="200">
+        <ProjectWrapper>
           <CardFilter />
           <ProjectInfo>
             <ProjectTitle>Search friends</ProjectTitle>
@@ -131,7 +125,7 @@ const Projects = () => {
             </Buttons>
           </ProjectInfo>
         </ProjectWrapper>
-        <ProjectWrapper data-aos="slide-right" data-aos-delay="300">
+        <ProjectWrapper>
           <CardGrateful />
           <ProjectInfo>
             <ProjectTitle>Gratefulness</ProjectTitle>

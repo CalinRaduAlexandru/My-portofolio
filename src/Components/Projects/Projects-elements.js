@@ -6,7 +6,12 @@ export const ProjectsContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: #191919;
+  background: rgb(47, 151, 198);
+  background: linear-gradient(
+    90deg,
+    rgba(47, 151, 198, 1) 0%,
+    rgba(74, 172, 250, 0.9752275910364145) 100%
+  );
 `;
 
 export const Header = styled.div`
@@ -59,7 +64,6 @@ export const ProjectWrapper = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: #516675;
   border-radius: 10px;
 
   @media (max-width: 768px) {
@@ -112,13 +116,13 @@ export const BtnProjectLeft = styled.a`
   width: 80px;
   height: 40px;
   border-radius: 25px;
-  background: #a4baf5;
+  background: #bfcef5;
   transition: all 100ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  box-shadow: 0px -2px 10px rgba(255, 255, 255, 1),
+  box-shadow: 0px -2px 5px rgba(255, 255, 255, 1),
     0px 6px 15px rgba(0, 0, 0, 0.15);
   cursor: pointer;
   &:hover {
-    background: #bfcef5;
+    background: #d8e2fb;
   }
   &:after {
     content: "";
@@ -158,13 +162,13 @@ export const BtnProjectRight = styled.a`
   height: 40px;
   border-radius: 25px;
   margin-left: 20px;
-  background: #a4baf5;
+  background: #bfcef5;
   transition: all 100ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  box-shadow: 0px -2px 10px rgba(255, 255, 255, 1),
+  box-shadow: 0px -2px 5px rgba(255, 255, 255, 1),
     0px 6px 15px rgba(0, 0, 0, 0.15);
   cursor: pointer;
   &:hover {
-    background: #bfcef5;
+    background: #d8e2fb;
   }
   &:after {
     content: "";

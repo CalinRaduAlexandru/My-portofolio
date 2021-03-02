@@ -6,7 +6,7 @@ export const AboutContainer = styled.div`
   color: #fff;
   position: relative;
   padding: 0px;
-  background: ${({ lightBg }) => (lightBg ? "#f9f9f9" : "#010606")};
+  background: #03191f;
 
   @media screen and (max-width: 768px) {
     padding: 20px 0 50px 0;
@@ -75,7 +75,7 @@ export const TextWrapper = styled.div`
 `;
 
 export const TopLine = styled.p`
-  color: #0077b6;
+  color: #147bc3;
   padding: 5px;
   font-size: 16px;
   line-height: 16px;
@@ -129,12 +129,10 @@ export const BtnWrap = styled.div`
 `;
 
 export const BtnResume = styled.a`
-  background: white;
-  border-radius: 50px;
-  background: #00b4d8;
+  background: #147bc3;
   white-spate: nowrap;
   padding: ${({ big }) => (big ? "14px 48px" : "12px 30px")};
-  color: black;
+  color: #fff;
   font-size: ${({ fontBig }) => (fontBig ? "20px" : "16px")};
   outline: none;
   border: none;
@@ -147,7 +145,7 @@ export const BtnResume = styled.a`
 
   &:hover {
     transition: 0.1s ease-in-out;
-    background: #0077b6;
+    background: #00b4d8;
   }
 `;
 
@@ -166,6 +164,10 @@ export const ImgWrap = styled.div`
 
   @media screen and (max-width: 768px) {
     margin-bottom: 0px;
+  }
+
+  @media screen and (max-width: 500px) {
+    margin-right: 40px;
   }
 `;
 

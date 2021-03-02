@@ -8,6 +8,7 @@ import Projects from "../Components/Projects/Projects";
 import Footer from "../Components/Footer/Footer";
 import { homeObjOne } from "../Components/About/Data";
 import { ScrollTop } from "./ScrollTop";
+import Form from "../Components/Contact/Form";
 
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -28,7 +29,8 @@ const Home = () => {
       <HeroSection />
       <AboutSection {...homeObjOne} />
       <Projects />
-      <Footer />{" "}
+      <Form id="contact" />
+      <Footer />
     </>
   );
 };

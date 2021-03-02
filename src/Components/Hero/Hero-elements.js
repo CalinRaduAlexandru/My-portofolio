@@ -1,29 +1,12 @@
 import styled from "styled-components";
 import { Link as LinkS } from "react-scroll";
 import { MdKeyboardArrowRight, MdArrowForward } from "react-icons/md";
+import { IoMdQuote } from "react-icons/io";
 
 export const HeroContainer = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
   height: 100vh;
   position: relative;
   z-index: 1;
-  :before {
-    content: "";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    background: linear-gradient(
-        180deg,
-        rgba(0, 0, 0, 0.3) 0%,
-        rgba(0, 0, 0, 0.4) 60%
-      ),
-      linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, transparent 100%);
-    z-index: 2;
-  }
 `;
 
 export const HeroBg = styled.div`
@@ -34,196 +17,154 @@ export const HeroBg = styled.div`
   right: 0;
   width: 100%;
   height: 100vh;
+  background: #03191f;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
 `;
+
+export const Title = styled.h1`
+  font-size: 54px;
+  font-weight: 400;
+  color: white;
+  font-family: "Nunito", sans serif;
+  margin-top: 200px;
+  z-index: 11;
+  position: absolute;
+  left: 10%;
+  top: -5%;
+
+  @media (max-width: 900px) {
+    position: static;
+    font-size: 30px;
+    margin-top: 100px;
+  }
+
+  @media (max-width: 500px) {
+    margin-top: 120px;
+  }
+`;
+
+export const Technology = styled.img`
+  position: absolute;
+  top: 35%;
+  left: -70px;
+  width: 800px;
+  height: 500px;
+  z-index: 10;
+  filter: contrast(1.15);
+
+  @media (max-width: 1125px) {
+    width: 500px;
+    height: 300px;
+    left: 0;
+  }
+
+  @media (max-width: 900px) {
+    position: static;
+    padding: 0 40px 0 0;
+    margin-right: 20px;
+  }
+
+  @media (max-width: 500px) {
+    width: 80vw;
+    height: auto;
+
+    margin: 20px 0 50px 0;
+  }
+`;
+
+export const Container = styled.div``;
 
 export const ImgBg = styled.img`
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
   object-fit: cover;
-  opacity: 0.7;
-  z-index: 1;
-`;
-
-export const HeroContent = styled.div`
-  z-index: 3;
-  width: 90vw;
-  height: 100%;
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  animation: appear 2s;
-  @media (min-width: 1248px) {
-    width: 50vw;
-  }
-  @keyframes appear {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
+  @media (max-width: 900px) {
+    display: none;
   }
 `;
 
-export const TitleWrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  max-width: 400px;
-  align-items: center;
-  cursor: pointer;
-  transition: all 0.2s ease-in-out;
-  animation-delay: 7s;
-  animation: slide-left 2s;
-  @keyframes slide-left {
+export const RightSide = styled.div`
+  z-index: 100;
+  /* animation: slide-up 2s;
+  @keyframes slide-up {
     from {
-      margin-left: 100%;
+      margin-bottom: 100%;
       width: 100%;
       opacity: 0;
     }
     to {
-      margin-left: 0%;
-      width: 100%;
-      opacity: 1;
-    }
-  }
-  &:hover {
-    transform: scale(1.1);
-  }
-
-  @media screen and (max-width: 1248px) {
-    max-width: 300px;
-    padding: 0px 30px 15px;
-    font-size: 18px;
-    background: #0077b6;
-
-`;
-
-export const HeroH1 = styled.h1`
-  color: #fff;
-  margin-top: 10px;
-  font-family: "Dancing Script", cursive;
-  bottom-border: 2px solid black;
-  font-size: 45px;
-  text-align: center;
-  padding: 25px 0;
-  cursor: default;
-
-  @media screen and (max-width: 500px) {
-    font-size: 40px;
-  }
-`;
-
-export const HeroH2 = styled.h2`
-  color: #fff;
-  font-size: 26px;
-  letter-spacing: 1.9px;
-  font-weight: 400;
-  margin-top: 25px;
-
-  @media screen and (max-width: 500px) {
-    font-size: 20px;
-  }
-`;
-
-export const HeroPWrap = styled.div`
-  max-width: 400px;
-`;
-
-export const HeroP = styled.p`
-  color: #fff;
-  font-size: 18px;
-  text-align: center;
-  cursor: default;
-  font-weight: 600;
-  text-shadow: 10px 10px 10px 5px;
-  max-width: 350px;
-  border-radius: 25px;
-  padding: 20px 10px;
-  margin: 27px 0 25px 0;
-  animation-delay: 7s;
-  animation: slide-top 2s;
-  @keyframes slide-top {
-    from {
-      margin-left: 0%;
-      width: 100%;
-      opacity: 0;
-    }
-    to {
-      margin-left: 0%;
-      width: 100%;
-      opacity: 1;
-    }
-  }
-
-  @media screen and (max-width: 500px) {
-    font-size: 15px;
-    max-width: 300px;
-    padding: 10px 0px;
-    border-radius: 15px;
-    margin: 15px 0 10px 0;
-  }
-`;
-
-export const HeroBtnWrapper = styled.div`
-  margin-top: 32px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: absolute;
-  bottom: 5%;
-`;
-
-export const HeroButton = styled(LinkS)`
-  background: rgba(0, 0, 0, 0.6);
-  white-space: nowrap;
-  padding: 14px 20px 10px 20px;
-  color: #a4e3f5;
-  font-size: 18px;
-  outline: none;
-  border: none;
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: 0.2s ease-in-out;
-  width: 360px;
-  animation-delay: 7s;
-  animation: appear 2s;
-  @keyframes appear {
-    from {
       margin-bottom: 0%;
       width: 100%;
-      opacity: 0;
-    }
-    to {
-      margin: 0%;
-      width: 100%;
       opacity: 1;
     }
+  } */
+`;
+
+export const MobileBg = styled.img`
+  display: none;
+  @media (max-width: 900px) {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 90%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    z-index: 1;
+  }
+  @media (max-width: 500px) {
+    height: 60%;
+  }
+`;
+
+export const MdQuote = styled(IoMdQuote)`
+  font-size: 50px;
+  color: white;
+  margin-right: 10px;
+`;
+
+export const Motto = styled.p`
+  position: absolute;
+  right: 9%;
+  bottom: 20%;
+  color: white;
+  font-size: 25px;
+  max-width: 330px;
+  font-family: "Nunito", sans serif;
+  @media (max-width: 900px) {
+    position: static;
+    z-index: 100;
+    color: white;
+    margin: -40px 0 -80px 0;
+  }
+  @media (max-width: 500px) {
+    margin: 0 0 -80px 0;
+  }
+  @media (max-width: 400px) {
+    margin: 40px 0 -80px 0;
+    font-size: 21px;
+  }
+`;
+
+export const ContactBtnWrapper = styled(LinkS)`
+  position: absolute;
+  right: 10%;
+  bottom: 0%;
+
+  @media (max-width: 900px) {
+    position: static;
+    margin-top: -40px;
   }
 
-  @media screen and (max-width: 800px) {
-    font-size: 12px;
-    width: 240px;
+  @media (max-width: 500px) {
+    align-self: center;
   }
-  @media screen and (max-width: 300px) {
-    font-size: 11px;
-    width: 240px;
-  }
-
-  @media (min-width: 1248px) {
-    border-radius: 50px;
-  }
-
-  &:hover {
-    transition: 0.1s ease-in-out;
-    color: black;
-    background: rgba(30, 152, 217, 0.9);
-    border: none;
+  @media (max-width: 400px) {
+    margin-left: 45px;
+    background: red;
   }
 `;
 

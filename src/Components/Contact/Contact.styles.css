@@ -1,5 +1,5 @@
 .form-container {
-  background: black;
+  background: #03191f;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -102,11 +102,7 @@
   height: 50px;
   margin-top: 20px;
   border-radius: 2px;
-  background: linear-gradient(
-    90deg,
-    rgb(39, 176, 255) 0%,
-    rgb(0, 232, 236) 100%
-  );
+  background: #147bc4;
   outline: none;
   border: none;
   color: #fff;
@@ -115,11 +111,7 @@
 
 .form-input-btn:hover {
   cursor: pointer;
-  background: linear-gradient(
-    90deg,
-    rgb(39, 143, 255) 0%,
-    rgb(12, 99, 250) 100%
-  );
+  background: #00b4d8;
   transition: all 0.4s ease-out;
 }
 

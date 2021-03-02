@@ -5,7 +5,7 @@ import { SiWhatsapp } from "react-icons/si";
 import { HiOutlineMail } from "react-icons/hi";
 
 export const FooterContainer = styled.div`
-  background: #010606;
+  background: #03191f;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -25,17 +25,17 @@ export const SocialMediaWrap = styled.div`
   width: 90vw;
   max-width: 1100px;
   margin: 15px auto 15px auto;
-  background: #1a2228;
+  background: #147bc4;
   border-radius: 25px;
   padding: 10px 0;
 `;
 
 export const SocialLogo = styled.div`
-  color: #0077b6;
-  font-family: "Allura", cursive;
+  color: #fff;
+  font-family: "Nunito", sans serif;
   cursor: pointer;
   text-decoration: none;
-  font-size: 40px;
+  font-size: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -51,7 +51,7 @@ export const SocialIcons = styled.div`
 `;
 
 export const SocialIconLink = styled.a`
-  color: #00b4d8;
+  color: #fff;
   font-size: 24px;
 `;
 
@@ -113,7 +113,7 @@ export const Github = styled(FaGithub)`
   margin: 0 10px;
   cursor: pointer;
   &:hover {
-    color: #fff;
+    color: #00b4d8;
   }
 `;
 
@@ -122,7 +122,7 @@ export const Linkedin = styled(FaLinkedin)`
   margin: 0 10px;
   cursor: pointer;
   &:hover {
-    color: #fff;
+    color: #00b4d8;
   }
 `;
 
