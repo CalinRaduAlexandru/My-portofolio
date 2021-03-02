@@ -7,7 +7,6 @@ import AboutSection from "../Components/About/About-section";
 import Projects from "../Components/Projects/Projects";
 import Footer from "../Components/Footer/Footer";
 import { homeObjOne } from "../Components/About/Data";
-import Form from "../Components/Contact/Form";
 import { ScrollTop } from "./ScrollTop";
 
 const Home = () => {
