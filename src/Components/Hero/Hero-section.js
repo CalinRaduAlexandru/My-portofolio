@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import polygon from "./../../Assets/Polygon.svg";
 import PolygonMob from "./../../Assets/PolygonMob.svg";
-import TechnologyImg from "./../../Assets/Technology.svg";
+import TechnologyImg from "./../../Assets/Technology.png";
 import "./Hero.styles.css";
 import "./../About/About-button.styles.css";
 import {
