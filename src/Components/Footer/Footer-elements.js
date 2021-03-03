@@ -25,13 +25,12 @@ export const SocialMediaWrap = styled.div`
   width: 90vw;
   max-width: 1100px;
   margin: 15px auto 15px auto;
-  background: #147bc4;
-  border-radius: 25px;
+  border-radius: 5px;
   padding: 10px 0;
 `;
 
 export const SocialLogo = styled.div`
-  color: #fff;
+  color: #1f73ae;
   font-family: "Nunito", sans serif;
   cursor: pointer;
   text-decoration: none;
@@ -41,7 +40,7 @@ export const SocialLogo = styled.div`
   justify-content: center;
   font-weight: bold;
   &:hover {
-    color: #00b4d8;
+    filter: brightness(1.2);
   }
 `;
 
@@ -61,7 +60,7 @@ export const ArrowFromBottom = styled(BiArrowFromBottom)`
   cursor: pointer;
   color: #fff;
   &:hover {
-    color: #00b4d8;
+    color: #1f73ae;
   }
 `;
 
@@ -112,8 +111,9 @@ export const Github = styled(FaGithub)`
   font-size: 50px;
   margin: 0 10px;
   cursor: pointer;
+  color: #1f73ae;
   &:hover {
-    color: #00b4d8;
+    filter: brightness(1.2);
   }
 `;
 
@@ -121,8 +121,9 @@ export const Linkedin = styled(FaLinkedin)`
   font-size: 50px;
   margin: 0 10px;
   cursor: pointer;
+  color: #1f73ae;
   &:hover {
-    color: #00b4d8;
+    filter: brightness(1.2);
   }
 `;
 

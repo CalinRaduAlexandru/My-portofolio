@@ -75,7 +75,7 @@ export const TextWrapper = styled.div`
 `;
 
 export const TopLine = styled.p`
-  color: #147bc3;
+  color: #0d5485;
   padding: 5px;
   font-size: 16px;
   line-height: 16px;
@@ -112,6 +112,7 @@ export const Subtitle = styled.p`
   font-size: 18px;
   line-height: 24px;
   color: #d9ddde;
+  color: #fff;
   cursor: default;
 
   @media screen and (max-width: 480px) {
@@ -129,7 +130,12 @@ export const BtnWrap = styled.div`
 `;
 
 export const BtnResume = styled.a`
-  background: #147bc3;
+  background: rgb(31, 115, 174);
+  background: linear-gradient(
+    180deg,
+    rgba(31, 115, 174, 1) 0%,
+    rgba(97, 175, 231, 1) 100%
+  );
   white-spate: nowrap;
   padding: ${({ big }) => (big ? "14px 48px" : "12px 30px")};
   color: #fff;
@@ -145,7 +151,7 @@ export const BtnResume = styled.a`
 
   &:hover {
     transition: 0.1s ease-in-out;
-    background: #00b4d8;
+    filter: brightness(1.2);
   }
 `;
 
@@ -167,7 +173,6 @@ export const ImgWrap = styled.div`
   }
 
   @media screen and (max-width: 500px) {
-    margin-right: 40px;
   }
 `;
 
@@ -175,6 +180,7 @@ export const Img = styled.img`
   width: 80%;
   margin: 0 0 10px 0;
   padding-right: 0;
+  margin-right: 55px;
 
   @media screen and (max-width: 768px) {
     width: 100%;

@@ -32,6 +32,7 @@ export const Title = styled.h1`
   margin-top: 200px;
   z-index: 11;
   position: absolute;
+  cursor: default;
   left: 10%;
   top: -5%;
 

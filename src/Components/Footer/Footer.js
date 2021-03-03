@@ -1,6 +1,5 @@
 import React from "react";
 import { animateScroll as scroll } from "react-scroll";
-import "aos/dist/aos.css";
 
 import {
   FooterContainer,
@@ -30,7 +29,7 @@ const Footer = () => {
     <FooterContainer>
       <ArrowFromBottom onClick={toggleHome} />
       <GoUp onClick={toggleHome}>Go top!</GoUp>
-      <SocialMedia data-aos="fade-down">
+      <SocialMedia>
         <SocialMediaWrap>
           <SocialLogo onClick={toggleHome}>Radu Călin</SocialLogo>
           <DetailsWrap>
@@ -50,7 +49,7 @@ const Footer = () => {
               <Github />
             </SocialIconLink>
             <SocialIconLink
-              href="https://www.linkedin.com/in/radu-calin-485606204/"
+              href="https://www.linkedin.com/in/radu-c%C4%83lin-485606204/"
               target="_blank"
               aria-label="Github"
             >

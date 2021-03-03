@@ -39,7 +39,7 @@ export const Rocket = styled(IoMdRocket)`
   transform: translateX(-3px) rotate(-3deg) translateY(-3px);
 
   &:hover {
-    color: #147bc4;
+    color: #0d5485;
     animation: shake-rocket 0.2s alternate infinite;
   }
 

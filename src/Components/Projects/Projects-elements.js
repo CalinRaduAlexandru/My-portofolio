@@ -6,11 +6,11 @@ export const ProjectsContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: rgb(47, 151, 198);
+  background: rgb(31, 115, 174);
   background: linear-gradient(
-    90deg,
-    rgba(47, 151, 198, 1) 0%,
-    rgba(74, 172, 250, 0.9752275910364145) 100%
+    180deg,
+    rgba(31, 115, 174, 1) 0%,
+    rgba(97, 175, 231, 1) 100%
   );
 `;
 
@@ -35,8 +35,8 @@ border-bottom-right-radius: 40% 30%;
 `;
 export const ProjectsWrapper = styled.div`
   display: flex;
-  padding: 50px 0;
-  margin: 50px 0;
+  padding: 50px 0 0 0;
+  margin: 50px 0 0 0;
   justify-items: center;
   align-items: center;
 
@@ -77,6 +77,7 @@ export const ProjectInfo = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  z-index: 10;
 
   @media (max-width: 400px) {
     width: 90vw;
@@ -93,7 +94,7 @@ export const ProjectTitle = styled.h1`
 export const ProjectSubTitle = styled.h2`
   font-size: 16px;
   margin-top: 10px;
-  color: #002366;
+  color: #0d5485;
   margin-left: 10px;
 `;
 export const ProjectText = styled.p`
@@ -107,91 +108,46 @@ export const ProjectText = styled.p`
 
 export const Buttons = styled.div`
   display: flex;
-  justify-content: center;
-  align-self: center;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 10px;
+  z-index: 10;
 `;
 
 export const BtnProjectLeft = styled.a`
-  position: relative;
-  width: 80px;
-  height: 40px;
-  border-radius: 25px;
-  background: #bfcef5;
   transition: all 100ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  box-shadow: 0px -2px 5px rgba(255, 255, 255, 1),
-    0px 6px 15px rgba(0, 0, 0, 0.15);
+  margin-right: 50px;
+  text-decoration: none;
   cursor: pointer;
-  &:hover {
-    background: #d8e2fb;
-  }
-  &:after {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 17px;
-    z-index: 2;
-  }
-  &:active {
-    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.02);
-    &:after {
-      box-shadow: inset 0px 0px 2px rgb(255, 255, 255),
-        inset 0px 2px 5px rgba(0, 0, 0, 0.15);
-    }
-  }
-
-  @media screen and (max-width: 768px) {
-    box-shadow: none;
-  }
 `;
 
 export const LiveText = styled.p`
-  text-decoration: none;
-  position: absolute;
-  top: 30%;
-  left: 30%;
-  color: #002366;
+  font-size: 16px;
+  color: #0d5485;
   font-weight: bold;
+  &:hover {
+    filter: brightness(1.2);
+  }
 `;
 
 export const BtnProjectRight = styled.a`
-  position: relative;
-  width: 80px;
-  height: 40px;
-  border-radius: 25px;
-  margin-left: 20px;
-  background: #bfcef5;
-  transition: all 100ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  box-shadow: 0px -2px 5px rgba(255, 255, 255, 1),
-    0px 6px 15px rgba(0, 0, 0, 0.15);
   cursor: pointer;
-  &:hover {
-    background: #d8e2fb;
-  }
-  &:after {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 17px;
-    z-index: 2;
-  }
-  &:active {
-    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.02);
-    &:after {
-      box-shadow: inset 0px 0px 2px rgb(255, 255, 255),
-        inset 0px 2px 5px rgba(0, 0, 0, 0.15);
-    }
-  }
-  @media screen and (max-width: 768px) {
-    box-shadow: none;
-  }
 `;
 
 export const Github = styled(FaGithub)`
-  color: #002366;
+  color: #0d5485;
+  font-size: 30px;
+  &:hover {
+    filter: brightness(1.2);
+  }
+`;
+
+export const BottomImg = styled.div`
+  width: 90vw;
+  margin-top: -150px;
+  height: 400px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  z-index: 0;
 `;

@@ -14,26 +14,6 @@ export const Nav = styled.nav`
   z-index: 100;
   position: -webkit-sticky;
   position: sticky;
-  animation: slide-right 1s;
-  @keyframes slide-right {
-    0% {
-      margin-right: 5%;
-      width: 100%;
-      opacity: 0;
-    }
-
-    90% {
-      margin-right: 5%;
-      width: 100%;
-      opacity: 0;
-    }
-    100% {
-      margin-right: 0%;
-      width: 100%;
-      opacity: 1;
-    }
-  }
-
   @media screen and (max-width: 960px) {
     transition: 0.8s all ease;
   }

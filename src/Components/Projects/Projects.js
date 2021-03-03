@@ -4,6 +4,8 @@ import { CardCrown } from "./Cards/CardCrown";
 import { CardFilter } from "./Cards/CardFilter";
 import { CardSearch } from "./Cards/CardSearch";
 import { CardGrateful } from "./Cards/CardGrateful";
+import geometry from "./../../Assets/FrameLarge.png";
+import geometryTwo from "./../../Assets/right-removebg.png";
 
 import {
   ProjectsContainer,
@@ -18,6 +20,7 @@ import {
   LiveText,
   BtnProjectRight,
   Github,
+  BottomImg,
 } from "./Projects-elements";
 
 const Projects = () => {
@@ -45,14 +48,7 @@ const Projects = () => {
                 target="_blank"
                 aria-label="Github"
               >
-                <Github
-                  style={{
-                    position: "absolute",
-                    left: "28%",
-                    top: "8%",
-                    fontSize: "35px",
-                  }}
-                />
+                <Github />
               </BtnProjectRight>
             </Buttons>
           </ProjectInfo>
@@ -79,14 +75,7 @@ const Projects = () => {
                 target="_blank"
                 aria-label="Github"
               >
-                <Github
-                  style={{
-                    position: "absolute",
-                    left: "28%",
-                    top: "8%",
-                    fontSize: "35px",
-                  }}
-                />
+                <Github />
               </BtnProjectRight>
             </Buttons>
           </ProjectInfo>
@@ -113,14 +102,7 @@ const Projects = () => {
                 target="_blank"
                 aria-label="Github"
               >
-                <Github
-                  style={{
-                    position: "absolute",
-                    left: "28%",
-                    top: "8%",
-                    fontSize: "35px",
-                  }}
-                />
+                <Github />
               </BtnProjectRight>
             </Buttons>
           </ProjectInfo>
@@ -147,19 +129,15 @@ const Projects = () => {
                 target="_blank"
                 aria-label="Github"
               >
-                <Github
-                  style={{
-                    position: "absolute",
-                    left: "28%",
-                    top: "8%",
-                    fontSize: "35px",
-                  }}
-                />
+                <Github />
               </BtnProjectRight>
             </Buttons>
           </ProjectInfo>
         </ProjectWrapper>
       </ProjectsWrapper>
+      <BottomImg>
+        <img src={geometry} width="1300" height="500" alt="geometry" />
+      </BottomImg>
     </ProjectsContainer>
   );
 };

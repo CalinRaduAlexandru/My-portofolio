@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Tilt from "react-parallax-tilt";
 import polygon from "./../../Assets/Polygon.svg";
 import PolygonMob from "./../../Assets/PolygonMob.svg";
 import TechnologyImg from "./../../Assets/Technology.png";
@@ -31,7 +32,9 @@ const HeroSection = () => {
     <HeroContainer>
       <MobileBg alt="programming setup" src={PolygonMob} />
       <HeroBg>
-        <Title>Ra Web Development</Title>
+        <Title>
+          <Tilt>Ra Web Development</Tilt>
+        </Title>
         <Technology alt="programming setup" src={TechnologyImg} />
         <Container>
           <ImgBg alt="programming setup" src={polygon} />
