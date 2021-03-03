@@ -5,7 +5,6 @@ import { CardFilter } from "./Cards/CardFilter";
 import { CardSearch } from "./Cards/CardSearch";
 import { CardGrateful } from "./Cards/CardGrateful";
 import geometry from "./../../Assets/FrameLarge.png";
-import geometryTwo from "./../../Assets/right-removebg.png";
 
 import {
   ProjectsContainer,
