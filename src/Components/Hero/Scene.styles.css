@@ -21,6 +21,11 @@ body {
   position: relative;
 }
 
+@media (min-width: 1365px) {
+  min-width: 100vw;
+  min-height: 100vh;
+}
+
 .mixBlnd {
   background-blend-mode: screen;
 }

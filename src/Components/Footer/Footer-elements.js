@@ -12,9 +12,8 @@ export const FooterContainer = styled.div`
 `;
 
 export const SocialMedia = styled.section`
-  max-width: 100px;
-  width: 90vw;
   padding: 0px 20px;
+  align-self: center;
 `;
 
 export const SocialMediaWrap = styled.div`
@@ -22,7 +21,6 @@ export const SocialMediaWrap = styled.div`
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  width: 90vw;
   max-width: 1100px;
   margin: 15px auto 15px auto;
   border-radius: 5px;

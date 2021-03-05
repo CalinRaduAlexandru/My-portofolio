@@ -1,24 +1,17 @@
 import React from "react";
 import "aos/dist/aos.css";
-import { CardCrown } from "./Cards/CardCrown";
-import { CardFilter } from "./Cards/CardFilter";
-import { CardSearch } from "./Cards/CardSearch";
-import { CardGrateful } from "./Cards/CardGrateful";
 import "./../Hero/Scene.styles.css";
+import { SlideData } from "./DataPhoneView";
+import PhoneSlides from "./PhoneSlides";
+import { Project } from "../../SingleComponent/Project-component/Project-component";
+import prjimg from "./../../Assets/filtercard.jpg";
 
 import {
   ProjectsContainer,
   ProjectsWrapper,
-  ProjectWrapper,
-  ProjectInfo,
-  ProjectTitle,
-  ProjectSubTitle,
-  ProjectText,
-  Buttons,
-  BtnProjectLeft,
-  LiveText,
-  BtnProjectRight,
-  Github,
+  FirstRow,
+  SecondRow,
+  ThirdRow,
 } from "./Projects-elements";
 
 const Projects = () => {
@@ -26,113 +19,48 @@ const Projects = () => {
     <ProjectsContainer id="projects">
       <div className="container">
         <ProjectsWrapper>
-          <ProjectWrapper>
-            <CardCrown />
-            <ProjectInfo>
-              <ProjectTitle>CrownFeel Ltd.</ProjectTitle>
-              <ProjectSubTitle>React | Redux | Stripe</ProjectSubTitle>
-              <ProjectText>
-                The front-end of an e-commerce platform with online payment.
-              </ProjectText>
-              <Buttons>
-                <BtnProjectLeft
-                  href="https://crownfeelapp.herokuapp.com/"
-                  target="_blank"
-                  aria-label="herokuapp"
-                >
-                  <LiveText>Live</LiveText>
-                </BtnProjectLeft>
-                <BtnProjectRight
-                  href="https://github.com/CalinRaduAlexandru/CrownFeel/tree/masterbranch"
-                  target="_blank"
-                  aria-label="Github"
-                >
-                  <Github />
-                </BtnProjectRight>
-              </Buttons>
-            </ProjectInfo>
-          </ProjectWrapper>
-          <ProjectWrapper>
-            <CardSearch />
-            <ProjectInfo>
-              <ProjectTitle>Recognize faces</ProjectTitle>
-              <ProjectSubTitle>React | NodeJs | Postgres</ProjectSubTitle>
-              <ProjectText>
-                Full-stack app in which you can add photos URL`s and accumulate
-                points for each face.
-              </ProjectText>
-              <Buttons>
-                <BtnProjectLeft
-                  href="https://search-face-app.herokuapp.com/"
-                  target="_blank"
-                  aria-label="Heroku"
-                >
-                  <LiveText>Live</LiveText>
-                </BtnProjectLeft>
-                <BtnProjectRight
-                  href="https://github.com/CalinRaduAlexandru/Search-face"
-                  target="_blank"
-                  aria-label="Github"
-                >
-                  <Github />
-                </BtnProjectRight>
-              </Buttons>
-            </ProjectInfo>
-          </ProjectWrapper>
-          <ProjectWrapper>
-            <CardFilter />
-            <ProjectInfo>
-              <ProjectTitle>Search friends</ProjectTitle>
-              <ProjectSubTitle>React | NodeJs | Postgres</ProjectSubTitle>
-              <ProjectText>
-                Full-stack app in which you can add custom users and search
-                through them.
-              </ProjectText>
-              <Buttons>
-                <BtnProjectLeft
-                  href="https://filter-cards-app2.herokuapp.com/"
-                  target="_blank"
-                  aria-label="Heroku"
-                >
-                  <LiveText>Live</LiveText>
-                </BtnProjectLeft>
-                <BtnProjectRight
-                  href="https://github.com/CalinRaduAlexandru/Filter-cards-app"
-                  target="_blank"
-                  aria-label="Github"
-                >
-                  <Github />
-                </BtnProjectRight>
-              </Buttons>
-            </ProjectInfo>
-          </ProjectWrapper>
-          <ProjectWrapper>
-            <CardGrateful />
-            <ProjectInfo>
-              <ProjectTitle>Gratefulness</ProjectTitle>
-              <ProjectSubTitle>React | CSS</ProjectSubTitle>
-              <ProjectText>
-                Create a gratefulness list. Plus a random quote generator for
-                inspiration!
-              </ProjectText>
-              <Buttons>
-                <BtnProjectLeft
-                  href="https://greatfulness-app.herokuapp.com/"
-                  target="_blank"
-                  aria-label="Heroku"
-                >
-                  <LiveText>Live</LiveText>
-                </BtnProjectLeft>
-                <BtnProjectRight
-                  href="https://github.com/CalinRaduAlexandru/Greatfulness-app"
-                  target="_blank"
-                  aria-label="Github"
-                >
-                  <Github />
-                </BtnProjectRight>
-              </Buttons>
-            </ProjectInfo>
-          </ProjectWrapper>
+          <FirstRow>
+            <Project
+              img={prjimg}
+              title="CrownFeel Ltd."
+              subtitle="React | Redux | Stripe"
+              text="The front-end of an e-commerce platform with online payment."
+              websiteRef="https://crownfeelapp.herokuapp.com/"
+              githubRef="https://github.com/CalinRaduAlexandru/CrownFeel/tree/masterbranch"
+            />
+            <Project
+              img={prjimg}
+              title="Recognize faces"
+              subtitle="React | NodeJs | Postgres"
+              text="Full-stack app in which you can add photos URL`s and accumulate
+            points for each face."
+              websiteRef="https://search-face-app.herokuapp.com/"
+              githubRef="https://github.com/CalinRaduAlexandru/Search-face"
+            />
+          </FirstRow>
+          <SecondRow>
+            <PhoneSlides slides={SlideData} />
+          </SecondRow>
+          <ThirdRow>
+            <Project
+              img={prjimg}
+              title="Search friends"
+              subtitle="React | NodeJs | Postgres"
+              text="Full-stack app in which you can add custom users and search
+            through them."
+              websiteRef="https://filter-cards-app2.herokuapp.com/"
+              githubRef="https://github.com/CalinRaduAlexandru/Filter-cards-app"
+            />
+            <Project
+              img={prjimg}
+              title="Gratefulness"
+              subtitle="React | CSS"
+              text="Create a gratefulness list. Plus a random quote generator for
+            inspiration!"
+              websiteRef="https://greatfulness-app.herokuapp.com/"
+              githubRef="https://github.com/CalinRaduAlexandru/Greatfulness-app"
+            />
+          </ThirdRow>
         </ProjectsWrapper>
       </div>
     </ProjectsContainer>

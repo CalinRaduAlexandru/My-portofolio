@@ -8,7 +8,6 @@ import "./About-button.styles.css";
 import "./Collaborate.styles.css";
 import "./Background.styles.css";
 import HelloAustronaut from "./../../Assets/HelloAustronaut.svg";
-import ReactPlayer from "react-player";
 
 import {
   AboutContainer,
@@ -217,11 +216,12 @@ const AboutSection = ({
             </Column1>
             <Column2 data-aos="fade-right">
               <ImgWrap>
-                <ReactPlayer
-                  url="https://www.youtube.com/watch?v=ug50zmP9I7s"
-                  width="400px"
-                  heigh="auto"
-                />
+                <iframe
+                  title="music"
+                  width="420"
+                  height="315"
+                  src="https://www.youtube.com/embed/tgbNymZ7vqY"
+                ></iframe>
                 <HeroP>
                   Radu Călin | Full-stack <br /> Web Developer
                 </HeroP>
