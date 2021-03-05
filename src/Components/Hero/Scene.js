@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import Parallax from "./../../parallax.js";
 import astronaut from "./../../Assets/astronaut.png";
 import planet1 from "./../../Assets/planet1.png";
 import planet2 from "./../../Assets/planet2.png";
@@ -14,6 +13,7 @@ import {
   ArrowRight,
   ArrowForward,
 } from "./Hero-elements";
+const Parallax = require("parallax-js");
 
 const Scene = () => {
   const [hover, setHover] = useState(false);
