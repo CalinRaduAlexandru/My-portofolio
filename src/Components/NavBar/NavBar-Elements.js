@@ -3,7 +3,7 @@ import { Link } from "react-scroll";
 
 export const Nav = styled.nav`
   position: relative;
-  background: black;
+  background: ${({ scrollNav }) => (scrollNav ? "#05043d" : "transparent")};
   height: 80px;
   margin-top: -80px;
   display: flex;
@@ -101,6 +101,24 @@ export const NavMenu = styled.ul`
 
   @media screen and (max-width: 768px) {
     display: none;
+  }
+`;
+
+export const NavItemHome = styled.li`
+  height: 80px;
+  animation: appear 0.1s;
+  @keyframes appear {
+    0% {
+      opacity: 0;
+    }
+
+    40% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
   }
 `;
 

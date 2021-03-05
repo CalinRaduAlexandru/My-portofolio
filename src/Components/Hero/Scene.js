@@ -1,0 +1,94 @@
+import React, { useState, useEffect } from "react";
+import Parallax from "./../../parallax.js";
+import astronaut from "./../../Assets/astronaut.png";
+import planet1 from "./../../Assets/planet1.png";
+import planet2 from "./../../Assets/planet2.png";
+import rocket from "./../../Assets/rocket.png";
+import cloud from "./../../Assets/cloud-computing.png";
+import profile from "./../../Assets/ProfileRemoveBg.png";
+import "./Scene.styles.css";
+import {
+  Container,
+  ProfileBg,
+  ContactBtnWrapper,
+  ArrowRight,
+  ArrowForward,
+} from "./Hero-elements";
+
+const Scene = () => {
+  const [hover, setHover] = useState(false);
+  const [offsetY, setOffsetY] = useState(0);
+  const onHover = () => {
+    setHover(!hover);
+  };
+
+  const handleScroll = () => setOffsetY(window.pageYOffset);
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+  useEffect(() => {
+    var scene = document.getElementById("scene");
+    var parallaxInstance = new Parallax(scene);
+    console.log(parallaxInstance);
+  }, []);
+
+  return (
+    <div className="container" id="home">
+      <h1 className="txt">
+        Radu Calin <br /> Portfolio
+      </h1>
+      <Container>
+        <ProfileBg alt="Radu Calin" src={profile} />
+        <ContactBtnWrapper
+          to="contact"
+          smooth={true}
+          duration={500}
+          spy={true}
+          exact="true"
+          offset={-80}
+          onMouseEnter={onHover}
+          onMouseLeave={onHover}
+        >
+          <div
+            className="svg-wrapper"
+            style={{ transform: `translateY(${offsetY * 0.05}px)` }}
+          >
+            <svg height="60" width="320" xmlns="http://www.w3.org/2000/svg">
+              <rect className="shape" height="60" width="320" />
+            </svg>
+            <div className="text">
+              Contact me! {hover ? <ArrowForward /> : <ArrowRight />}
+            </div>
+          </div>
+        </ContactBtnWrapper>
+      </Container>
+      <ul id="scene">
+        <li className="layer" data-depth=".1">
+          <img
+            alt="cloud"
+            src={cloud}
+            width="75px"
+            height="75px"
+            style={{ marginLeft: "50px", marginTop: "10px" }}
+          />
+        </li>
+        <li className="layer" data-depth="1">
+          <img src={planet1} alt="planet1" />
+        </li>
+        <li className="layer" data-depth="-1">
+          <img src={planet2} alt="planet2" />
+        </li>
+        <li className="layer" data-depth="2">
+          <img src={astronaut} alt="astronaut" />
+        </li>
+        <li className="layer" data-depth="0.5">
+          <img src={rocket} alt="rocket" />
+        </li>
+      </ul>
+    </div>
+  );
+};
+
+export default Scene;

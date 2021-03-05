@@ -5,7 +5,7 @@ import { SiWhatsapp } from "react-icons/si";
 import { HiOutlineMail } from "react-icons/hi";
 
 export const FooterContainer = styled.div`
-  background: #03191f;
+  background: #05043d;
   display: flex;
   flex-direction: column;
   align-items: center;

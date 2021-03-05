@@ -18,7 +18,7 @@ export const RocketWrapper = styled.div`
   }
 
   &:hover {
-    color: #F19C1F;
+    color: #75257a;
     animation: shake-up 0.4s alternate infinite;
 
   @keyframes shake-up {
@@ -39,7 +39,7 @@ export const Rocket = styled(IoMdRocket)`
   transform: translateX(-3px) rotate(-3deg) translateY(-3px);
 
   &:hover {
-    color: #0d5485;
+    color: #61afe7;
     animation: shake-rocket 0.2s alternate infinite;
   }
 

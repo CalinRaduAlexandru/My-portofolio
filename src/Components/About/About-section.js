@@ -2,13 +2,13 @@ import React, { useState, useEffect } from "react";
 import "aos/dist/aos.css";
 import Particles from "react-particles-js";
 import { gsap } from "gsap";
-import profile from "./../../Assets/ProfileRemoveBg.png";
 import Radu_Calin_Resume from "./../../Assets/Radu_Calin_Resume.PDF";
 import { ArrowRight, ArrowForward } from "../Hero/Hero-elements";
 import "./About-button.styles.css";
 import "./Collaborate.styles.css";
 import "./Background.styles.css";
 import HelloAustronaut from "./../../Assets/HelloAustronaut.svg";
+import ReactPlayer from "react-player";
 
 import {
   AboutContainer,
@@ -25,7 +25,6 @@ import {
   Download,
   Column2,
   ImgWrap,
-  Img,
   HeroP,
 } from "./About-elements";
 
@@ -44,9 +43,12 @@ const AboutSection = ({
   dark,
 }) => {
   const [hover, setHover] = useState(false);
+  const [offsetY, setOffsetY] = useState(0);
   const onHover = () => {
     setHover(!hover);
   };
+
+  const handleScroll = () => setOffsetY(window.pageYOffset);
 
   useEffect(() => {
     gsap.to(".hello-austronaut", {
@@ -56,9 +58,15 @@ const AboutSection = ({
     });
   }, []);
 
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <>
-      <AboutContainer lightBg={lightBg} id={id}>
+      <AboutContainer id={id}>
         <Particles
           className="particles"
           params={{
@@ -190,7 +198,10 @@ const AboutSection = ({
                 onMouseEnter={onHover}
                 onMouseLeave={onHover}
               >
-                <div className="svg-wrapper">
+                <div
+                  className="svg-wrapper"
+                  style={{ transform: `translateY(${offsetY * 0.03}px)` }}
+                >
                   <svg
                     height="60"
                     width="320"
@@ -206,7 +217,11 @@ const AboutSection = ({
             </Column1>
             <Column2 data-aos="fade-right">
               <ImgWrap>
-                <Img src={profile} alt={alt} />
+                <ReactPlayer
+                  url="https://www.youtube.com/watch?v=ug50zmP9I7s"
+                  width="400px"
+                  heigh="auto"
+                />
                 <HeroP>
                   Radu Călin | Full-stack <br /> Web Developer
                 </HeroP>

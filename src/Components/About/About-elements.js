@@ -6,7 +6,13 @@ export const AboutContainer = styled.div`
   color: #fff;
   position: relative;
   padding: 0px;
-  background: #03191f;
+  background: #0b0a5a;
+  background: #391d5c;
+  background: #261140;
+  background: #190a2d;
+  background: #05043d;
+
+  min-height: 100vh;
 
   @media screen and (max-width: 768px) {
     padding: 20px 0 50px 0;
@@ -37,7 +43,7 @@ export const AboutWrapper = styled.div`
 
 export const AboutRow = styled.div`
   display: grid;
-  margin: 40px;
+  margin: 0 40px;
   grid-auto-columns: minmax(auto, 1fr);
   align-items: center;
   grid-template-areas: ${({ imgStart }) =>
@@ -82,7 +88,7 @@ export const TopLine = styled.p`
   font-weight: 700;
   letter-spacing: 1.4px;
   text-transform: uppercase;
-  margin-top: 50px;
+  margin-top: 20px;
   margin-bottom: 16px;
   cursor: default;
 
@@ -122,6 +128,7 @@ export const Subtitle = styled.p`
 
 export const ContactBtnWrapper = styled(LinkS)`
   overflow: hidden;
+  margin-top: -50px;
 `;
 
 export const BtnWrap = styled.div`

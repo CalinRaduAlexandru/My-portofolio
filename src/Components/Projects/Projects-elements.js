@@ -2,41 +2,13 @@ import styled from "styled-components";
 import { FaGithub } from "react-icons/fa";
 
 export const ProjectsContainer = styled.div`
-  height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: rgb(31, 115, 174);
-  background: linear-gradient(
-    180deg,
-    rgba(31, 115, 174, 1) 0%,
-    rgba(97, 175, 231, 1) 100%
-  );
 `;
 
-export const Header = styled.div`
-display: flex;
-justify-content: center;
-align-items: center;
-color: #fff;
-height: 70px;
-width: 100%;
-font-weight: 700;
-cursor: default;
-background: linear-gradient(
-    180deg,
-    rgba(0, 0, 0, 0.3) 0%,
-    rgba(0, 0, 0, 0.4) 60%
-  ),
-  linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, transparent 100%);
-border-bottom-left-radius: 40% 30%;
-border-bottom-right-radius: 40% 30%;
-}
-`;
 export const ProjectsWrapper = styled.div`
   display: flex;
-  padding: 50px 0 0 0;
-  margin: 50px 0 0 0;
   justify-items: center;
   align-items: center;
 
@@ -94,7 +66,7 @@ export const ProjectTitle = styled.h1`
 export const ProjectSubTitle = styled.h2`
   font-size: 16px;
   margin-top: 10px;
-  color: #0d5485;
+  color: #61afe7;
   margin-left: 10px;
 `;
 export const ProjectText = styled.p`
@@ -123,7 +95,7 @@ export const BtnProjectLeft = styled.a`
 
 export const LiveText = styled.p`
   font-size: 16px;
-  color: #0d5485;
+  color: #61afe7;
   font-weight: bold;
   &:hover {
     filter: brightness(1.2);
@@ -135,19 +107,15 @@ export const BtnProjectRight = styled.a`
 `;
 
 export const Github = styled(FaGithub)`
-  color: #0d5485;
+  color: #61afe7;
   font-size: 30px;
   &:hover {
     filter: brightness(1.2);
   }
 `;
 
-export const BottomImg = styled.div`
-  width: 90vw;
-  margin-top: -150px;
-  height: 400px;
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-around;
-  z-index: 0;
+export const Phone = styled.div`
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
 `;
