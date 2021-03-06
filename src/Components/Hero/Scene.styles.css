@@ -21,6 +21,20 @@ body {
   position: relative;
 }
 
+.cloud-left {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  position: absolute;
+  bottom: -2%;
+  left: -1%;
+}
+
+.cloud-right {
+  position: absolute;
+  bottom: -2%;
+  right: -1%;
+}
+
 @media (min-width: 1365px) {
   min-width: 100vw;
   min-height: 100vh;

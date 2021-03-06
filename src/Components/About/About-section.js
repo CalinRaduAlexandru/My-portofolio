@@ -1,13 +1,12 @@
 import React, { useState, useEffect } from "react";
 import "aos/dist/aos.css";
-import Particles from "react-particles-js";
 import { gsap } from "gsap";
 import Radu_Calin_Resume from "./../../Assets/Radu_Calin_Resume.PDF";
 import { ArrowRight, ArrowForward } from "../Hero/Hero-elements";
 import "./About-button.styles.css";
 import "./Collaborate.styles.css";
-import "./Background.styles.css";
 import HelloAustronaut from "./../../Assets/HelloAustronaut.svg";
+import ParticlesComp from "./../../SingleComponent/Particles/Particles.js";
 
 import {
   AboutContainer,
@@ -66,52 +65,7 @@ const AboutSection = ({
   return (
     <>
       <AboutContainer id={id}>
-        <Particles
-          className="particles"
-          params={{
-            particles: {
-              number: {
-                value: 60,
-                density: {
-                  enable: true,
-                  value_area: 1500,
-                },
-              },
-              line_linked: {
-                enable: true,
-                opacity: 0.1,
-              },
-              move: {
-                direction: "right",
-                speed: 0.25,
-              },
-              size: {
-                value: 2,
-              },
-              opacity: {
-                anim: {
-                  enable: true,
-                  speed: 1,
-                  opacity_min: 0.05,
-                },
-              },
-            },
-            interactivity: {
-              events: {
-                onclick: {
-                  enable: true,
-                  mode: "push",
-                },
-              },
-              modes: {
-                push: {
-                  particles_nb: 1,
-                },
-              },
-            },
-            retina_detect: true,
-          }}
-        />
+        <ParticlesComp />
         <AboutWrapper>
           <AboutRow imgStart={imgStart}>
             <Column1>

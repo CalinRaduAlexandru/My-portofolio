@@ -6,12 +6,7 @@ export const AboutContainer = styled.div`
   color: #fff;
   position: relative;
   padding: 0px;
-  background: #0b0a5a;
-  background: #391d5c;
-  background: #261140;
-  background: #190a2d;
   background: #05043d;
-
   min-height: 100vh;
 
   @media screen and (max-width: 768px) {

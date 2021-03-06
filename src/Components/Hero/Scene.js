@@ -6,6 +6,9 @@ import rocket from "./../../Assets/rocket.png";
 import cloud from "./../../Assets/cloud-computing.png";
 import profile from "./../../Assets/ProfileRemoveBg.png";
 import "./Scene.styles.css";
+import Title from "../../SingleComponent/Title-component/Title";
+import BottomCloud from "./../../Assets/VectorCloud.png";
+
 import {
   Container,
   ProfileBg,
@@ -37,7 +40,7 @@ const Scene = () => {
   return (
     <div className="container" id="home">
       <h1 className="txt">
-        Radu Calin <br /> Portfolio
+        <Title text="Radu Călin Portfolio." />
       </h1>
       <Container>
         <ProfileBg alt="Radu Calin" src={profile} />
@@ -84,9 +87,25 @@ const Scene = () => {
           <img src={astronaut} alt="astronaut" />
         </li>
         <li className="layer" data-depth="0.5">
-          <img src={rocket} alt="rocket" />
+          <img
+            width="875px"
+            height="auto"
+            style={{
+              position: "absolute",
+              marginTop: "100px",
+              marginLeft: "400px",
+            }}
+            src={rocket}
+            alt="rocket"
+          />
         </li>
       </ul>
+      <div className="cloud-left">
+        <img src={BottomCloud} alt="cloud" />
+      </div>
+      <div className="cloud-right">
+        <img src={BottomCloud} alt="cloud" />
+      </div>
     </div>
   );
 };
