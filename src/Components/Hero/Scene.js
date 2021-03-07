@@ -40,7 +40,7 @@ const Scene = () => {
   return (
     <div className="container" id="home">
       <h1 className="txt">
-        <Title text="Radu Călin Portfolio." />
+        <Title />
       </h1>
       <Container>
         <ProfileBg alt="Radu Calin" src={profile} />
@@ -80,7 +80,7 @@ const Scene = () => {
         <li className="layer" data-depth="1">
           <img src={planet1} alt="planet1" />
         </li>
-        <li className="layer" data-depth="-1">
+        <li className="layer moon" data-depth="-1">
           <img src={planet2} alt="planet2" />
         </li>
         <li className="layer" data-depth="2">
@@ -93,7 +93,7 @@ const Scene = () => {
             style={{
               position: "absolute",
               marginTop: "100px",
-              marginLeft: "400px",
+              marginLeft: "500px",
             }}
             src={rocket}
             alt="rocket"

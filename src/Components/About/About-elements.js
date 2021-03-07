@@ -191,7 +191,6 @@ export const Img = styled.img`
 
 export const HeroP = styled.p`
   margin: 20px 0;
-  font-family: "Spartan", sans-serif;
   color: white;
   font-size: 27px;
   text-align: center;

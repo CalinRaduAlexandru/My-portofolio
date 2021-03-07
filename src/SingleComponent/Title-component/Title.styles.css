@@ -35,7 +35,7 @@
 }
 .wrapper .static-txt {
   color: #fff;
-  font-size: 40px;
+  font-size: 30px;
   font-weight: 400;
 }
 .wrapper .dynamic-txts {
@@ -46,8 +46,8 @@
 }
 .dynamic-txts li {
   list-style: none;
-  color: rgba(97, 175, 231, 1);
-  font-size: 40px;
+  color: #61afe7;
+  font-size: 30px;
   font-weight: 500;
   position: relative;
   top: 0;

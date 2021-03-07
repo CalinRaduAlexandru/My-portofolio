@@ -1,7 +1,6 @@
 import React from "react";
 import "aos/dist/aos.css";
 import "./../Hero/Scene.styles.css";
-import { SlideData } from "./DataPhoneView";
 import PhoneSlides from "./PhoneSlides";
 import { Project } from "../../SingleComponent/Project-component/Project-component";
 import prjimg from "./../../Assets/filtercard.jpg";
@@ -39,7 +38,7 @@ const Projects = () => {
             />
           </FirstRow>
           <SecondRow>
-            <PhoneSlides slides={SlideData} />
+            <PhoneSlides />
           </SecondRow>
           <ThirdRow>
             <Project

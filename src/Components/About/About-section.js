@@ -170,14 +170,9 @@ const AboutSection = ({
             </Column1>
             <Column2 data-aos="fade-right">
               <ImgWrap>
-                <iframe
-                  title="music"
-                  width="420"
-                  height="315"
-                  src="https://www.youtube.com/embed/tgbNymZ7vqY"
-                ></iframe>
+                <iframe title="music" width="420" height="315" src=""></iframe>
                 <HeroP>
-                  Radu Călin | Full-stack <br /> Web Developer
+                  Radu Călin | Full-stack <br /> Web & Mobile Developer
                 </HeroP>
                 <BtnWrap>
                   <BtnResume

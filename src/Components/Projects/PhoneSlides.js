@@ -12,10 +12,15 @@ import {
   LeftArrow,
   RightArrow,
 } from "./PhoneSlides-elements.js";
-import Zoom from "react-reveal/Zoom";
 
-const PhoneSlides = ({ slides }) => {
+const PhoneSlides = () => {
   const [current, setCurrent] = useState(1);
+  const slides = [
+    {
+      title: "Crownfeel",
+    },
+    { title: "Search" },
+  ];
   const length = slides.length;
 
   const PrevSlide = () => {
@@ -40,9 +45,7 @@ const PhoneSlides = ({ slides }) => {
                   <>
                     <Title>{slide.title}</Title>
 
-                    <Zoom>
-                      <ProjectImg src={slide.image} alt="project" />
-                    </Zoom>
+                    <ProjectImg src={slide.title} alt="project" />
                   </>
                 )}
               </ProjectSlide>

@@ -29,7 +29,6 @@ export const SocialMediaWrap = styled.div`
 
 export const SocialLogo = styled.div`
   color: #1f73ae;
-  font-family: "Nunito", sans serif;
   cursor: pointer;
   text-decoration: none;
   font-size: 30px;
