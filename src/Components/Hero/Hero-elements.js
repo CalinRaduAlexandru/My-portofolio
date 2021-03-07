@@ -34,6 +34,20 @@ export const ContactBtnWrapper = styled(LinkS)`
   position: absolute;
   right: 10%;
   bottom: 15%;
+  animation: appear 1.7s;
+  @keyframes appear {
+    0% {
+      opacity: 0;
+    }
+
+    40% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
 `;
 
 export const ArrowForward = styled(MdArrowForward)`

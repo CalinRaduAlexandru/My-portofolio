@@ -62,7 +62,6 @@
     margin: 70px auto 30px auto;
   }
   .text {
-    color: #fff;
     font-size: 16px;
     letter-spacing: 2px;
     line-height: 32px;
@@ -80,20 +79,5 @@
 @media (max-width: 300px) {
   .svg-wrapper {
     width: 180px;
-  }
-  .text {
-    color: #fff;
-    font-size: 16px;
-    letter-spacing: 2px;
-    line-height: 32px;
-    position: relative;
-    top: -50px;
-  }
-  .shape {
-    fill: transparent;
-    stroke-dasharray: 140 540;
-    stroke-dashoffset: -474;
-    stroke-width: 8px;
-    stroke: #19f6e8;
   }
 }

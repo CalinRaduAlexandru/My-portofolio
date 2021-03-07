@@ -4,7 +4,7 @@ import planet1 from "./../../Assets/planet1.png";
 import planet2 from "./../../Assets/planet2.png";
 import rocket from "./../../Assets/rocket.png";
 import cloud from "./../../Assets/cloud-computing.png";
-import profile from "./../../Assets/ProfileRemoveBg.png";
+import profile from "./../../Assets/BgMinified.png";
 import "./Scene.styles.css";
 import Title from "../../SingleComponent/Title-component/Title";
 import BottomCloud from "./../../Assets/VectorCloud.png";
@@ -87,17 +87,7 @@ const Scene = () => {
           <img src={astronaut} alt="astronaut" />
         </li>
         <li className="layer" data-depth="0.5">
-          <img
-            width="875px"
-            height="auto"
-            style={{
-              position: "absolute",
-              marginTop: "100px",
-              marginLeft: "500px",
-            }}
-            src={rocket}
-            alt="rocket"
-          />
+          <img src={rocket} alt="rocket" />
         </li>
       </ul>
       <div className="cloud-left">
