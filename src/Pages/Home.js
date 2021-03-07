@@ -28,7 +28,18 @@ const Home = () => {
       <NavBar toggle={toggle} />
       <ScrollTop />
       <Scene />
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense
+        fallback={
+          <div
+            style={{
+              background: "#05043d",
+              color: "#0d5485",
+            }}
+          >
+            Loading...
+          </div>
+        }
+      >
         <section>
           <AboutSection {...homeObjOne} />
           <Projects />

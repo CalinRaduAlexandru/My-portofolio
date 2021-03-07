@@ -44,8 +44,10 @@ const Title = () => {
           </h1>
         </div>
       </div>
+      <span className="profesion">Web & Mobile Developer</span>
       <div className="wrapper">
         <div className="static-txt">I'm a</div>
+
         <ul className="dynamic-txts">
           <li>
             <span>Web Developer</span>

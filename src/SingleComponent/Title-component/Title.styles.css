@@ -30,6 +30,12 @@
   );
 }
 
+@media (max-width: 1250px) {
+  .cloneWrapper {
+    display: none;
+  }
+}
+
 .wrapper {
   display: flex;
 }
@@ -38,6 +44,13 @@
   font-size: 30px;
   font-weight: 400;
 }
+
+.profesion {
+  color: white;
+  font-size: 25px;
+  display: inline-block;
+}
+
 .wrapper .dynamic-txts {
   margin-left: 15px;
   height: 90px;
@@ -81,5 +94,25 @@
   }
   100% {
     left: 0;
+  }
+}
+
+@media (max-width: 700px) {
+  .titleContainer h1 {
+    font-size: 35px;
+  }
+
+  .static-txt {
+    font-size: 20px;
+  }
+
+  .wrapper {
+    display: none;
+  }
+}
+
+@media (min-width: 700px) {
+  .profesion {
+    display: none;
   }
 }

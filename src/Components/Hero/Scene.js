@@ -10,7 +10,7 @@ import Title from "../../SingleComponent/Title-component/Title";
 import BottomCloud from "./../../Assets/VectorCloud.png";
 
 import {
-  Container,
+  ProfileContainer,
   ProfileBg,
   ContactBtnWrapper,
   ArrowRight,
@@ -42,7 +42,7 @@ const Scene = () => {
       <h1 className="txt">
         <Title />
       </h1>
-      <Container>
+      <ProfileContainer>
         <ProfileBg alt="Radu Calin" src={profile} />
         <ContactBtnWrapper
           to="contact"
@@ -66,7 +66,7 @@ const Scene = () => {
             </div>
           </div>
         </ContactBtnWrapper>
-      </Container>
+      </ProfileContainer>
       <ul id="scene">
         <li className="layer" data-depth=".1">
           <img
