@@ -59,10 +59,18 @@ export const LeftArrow = styled(FaArrowCircleLeft)`
   font-size: 50px;
   margin-right: 100px;
   cursor: pointer;
+  color: #1f73ae;
+  &:hover {
+    filter: brightness(1.2);
+  }
 `;
 
 export const RightArrow = styled(FaArrowCircleRight)`
   font-size: 50px;
   margin-left: 100px;
   cursor: pointer;
+  color: #1f73ae;
+  &:hover {
+    filter: brightness(1.2);
+  }
 `;
