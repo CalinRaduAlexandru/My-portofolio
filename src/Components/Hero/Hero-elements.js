@@ -7,7 +7,7 @@ export const ProfileContainer = styled.div`
   height: 300px;
   position: absolute;
   background: #05043d;
-  bottom: 10%;
+  bottom: 5%;
   right: 10%;
 
   @media (max-width: 1250px) {
