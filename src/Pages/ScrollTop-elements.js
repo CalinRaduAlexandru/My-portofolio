@@ -35,7 +35,9 @@ export const RocketWrapper = styled.div`
 
 export const Rocket = styled(IoMdRocket)`
   width: 50px;
-  height: 50px;
+  height: 120px;
+  bottom: -10px;
+  position: absolute;
   transform: translateX(-3px) rotate(-3deg) translateY(-3px);
 
   &:hover {

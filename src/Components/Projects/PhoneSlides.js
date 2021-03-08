@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import phone from "./../../Assets/phone.png";
+import Tilt from "react-parallax-tilt";
+
 import {
   PhoneWrapper,
   PhoneMockWrapper,
@@ -35,25 +37,27 @@ const PhoneSlides = () => {
   return (
     <PhoneWrapper>
       <LeftArrow onClick={PrevSlide} />
-      <PhoneMockWrapper>
-        <PhoneMock src={phone} alt="phone" />
-        <SlideWrapper>
-          <BlackCover />
-          {slides.map((slide, idx) => {
-            return (
-              <ProjectSlide key={idx}>
-                {idx === current && (
-                  <>
-                    <Title>{slide.title}</Title>
+      <Tilt>
+        <PhoneMockWrapper>
+          <PhoneMock src={phone} alt="phone" />
+          <SlideWrapper>
+            <BlackCover />
+            {slides.map((slide, idx) => {
+              return (
+                <ProjectSlide key={idx}>
+                  {idx === current && (
+                    <>
+                      <Title>{slide.title}</Title>
 
-                    <ProjectImg>{slide.subtitle}</ProjectImg>
-                  </>
-                )}
-              </ProjectSlide>
-            );
-          })}
-        </SlideWrapper>
-      </PhoneMockWrapper>
+                      <ProjectImg>{slide.subtitle}</ProjectImg>
+                    </>
+                  )}
+                </ProjectSlide>
+              );
+            })}
+          </SlideWrapper>
+        </PhoneMockWrapper>
+      </Tilt>
       <RightArrow onClick={NextSlide} />
     </PhoneWrapper>
   );

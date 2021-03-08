@@ -3,7 +3,7 @@
   "name": "Radu Călin Portfolio",
   "icons": [
     {
-      "src": "favicon-512x512.ico",
+      "src": "favicon.ico",
       "sizes": "512x512",
       "type": "image/x-icon"
     },
