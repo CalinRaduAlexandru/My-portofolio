@@ -27,26 +27,28 @@ const Home = () => {
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <NavBar toggle={toggle} />
       <ScrollTop />
-      <Scene />
-      <Suspense
-        fallback={
-          <div
-            style={{
-              background: "#05043d",
-              color: "#0d5485",
-            }}
-          >
-            Loading...
-          </div>
-        }
-      >
-        <section>
-          <AboutSection {...homeObjOne} />
-          <Projects />
-          <Form id="contact" />
-        </section>
-      </Suspense>
-      <Footer />
+      <div style={{ overflowX: "hidden" }}>
+        <Scene />
+        <Suspense
+          fallback={
+            <div
+              style={{
+                background: "#05043d",
+                color: "#0d5485",
+              }}
+            >
+              Loading...
+            </div>
+          }
+        >
+          <section>
+            <AboutSection {...homeObjOne} />
+            <Projects />
+            <Form id="contact" />
+          </section>
+        </Suspense>
+        <Footer />
+      </div>
     </>
   );
 };
