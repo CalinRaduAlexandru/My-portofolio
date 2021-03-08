@@ -78,7 +78,7 @@ const Scene = () => {
               style={{ marginLeft: "50px", marginTop: "10px" }}
             />
           </li>
-          <li className="layer" data-depth="0.3">
+          <li className="layer" data-depth="0.15">
             <img src={planet1} alt="planet1" />
           </li>
           <li className="layer moon" data-depth="-0.05">

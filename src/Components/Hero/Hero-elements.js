@@ -3,10 +3,11 @@ import { Link as LinkS } from "react-scroll";
 import { MdKeyboardArrowRight, MdArrowForward } from "react-icons/md";
 
 export const ProfileContainer = styled.div`
-  width: 300px;
-  height: 300px;
+  width: 330px;
+  height: 330px;
   position: absolute;
   background: #05043d;
+  border-radius: 50%;
   bottom: 5%;
   right: 10%;
 

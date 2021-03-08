@@ -62,6 +62,7 @@ export const LeftArrow = styled(FaArrowCircleLeft)`
   color: #1f73ae;
   &:hover {
     filter: brightness(1.2);
+    transform: scale(1.1);
   }
 `;
 
@@ -72,5 +73,6 @@ export const RightArrow = styled(FaArrowCircleRight)`
   color: #1f73ae;
   &:hover {
     filter: brightness(1.2);
+    transform: scale(1.1);
   }
 `;
