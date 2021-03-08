@@ -41,9 +41,9 @@ const NavBar = ({ toggle }) => {
               <img
                 alt="logo"
                 src={cloud}
-                width="30px"
-                height="30px"
-                style={{ marginRight: "10px" }}
+                width="50px"
+                height="50px"
+                style={{ marginRight: "20px" }}
               />
             ) : null}
             Radu C.
