@@ -9,15 +9,19 @@ export const ProjectWrapper = styled.div`
   justify-content: center;
   align-items: center;
   border-radius: 10px;
-
-  @media (max-width: 768px) {
+  position: relative @media (max-width: 768px) {
     margin: 10px 0px;
   }
 `;
 
+export const ProjectCloud = styled.img`
+  position: absolute;
+  width: 300px;
+`;
+
 export const ProjectInfo = styled.div`
   font-size: 14px;
-  padding: 20px 10px;
+  padding: 0px 10px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -29,6 +33,7 @@ export const ProjectInfo = styled.div`
 `;
 
 export const ProjectImg = styled.img`
+  align-self: center;
   width: 50px;
   height: 50px;
 `;
@@ -59,6 +64,7 @@ export const Buttons = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  align-self: center;
   margin-left: 10px;
   z-index: 10;
 `;

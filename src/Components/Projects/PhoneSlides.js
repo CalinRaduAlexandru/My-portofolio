@@ -18,8 +18,9 @@ const PhoneSlides = () => {
   const slides = [
     {
       title: "Crownfeel",
+      subtitle: "img1",
     },
-    { title: "Search" },
+    { title: "Searchtest", subtitle: "img2" },
   ];
   const length = slides.length;
 
@@ -45,7 +46,7 @@ const PhoneSlides = () => {
                   <>
                     <Title>{slide.title}</Title>
 
-                    <ProjectImg src={slide.title} alt="project" />
+                    <ProjectImg>{slide.subtitle}</ProjectImg>
                   </>
                 )}
               </ProjectSlide>

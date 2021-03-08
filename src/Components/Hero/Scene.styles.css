@@ -43,9 +43,11 @@
   right: -1%;
 }
 
-@media (min-width: 1365px) {
-  min-width: 100vw;
-  min-height: 100vh;
+@media (min-width: 1400px) {
+  .container {
+    width: 100vw;
+    height: 100vh;
+  }
 }
 
 @media (max-width: 1250px) {

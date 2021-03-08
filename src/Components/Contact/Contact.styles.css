@@ -6,6 +6,7 @@
   align-items: center;
   text-align: center;
   padding: 50px 0;
+  position: relative;
 }
 
 .form-content-left {
@@ -138,6 +139,20 @@
 
 .austronaut-text {
   color: white;
+}
+
+.footer-cloud-left {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  position: absolute;
+  bottom: -2%;
+  left: -1%;
+}
+
+.footer-cloud-right {
+  position: absolute;
+  bottom: -2%;
+  right: 0%;
 }
 
 @media (min-width: 1024px) {

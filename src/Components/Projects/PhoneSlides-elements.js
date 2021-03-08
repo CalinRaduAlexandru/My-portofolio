@@ -44,11 +44,15 @@ export const Title = styled.h1`
   color: #fff;
 `;
 
-export const ProjectImg = styled.img`
-  border-radius: 20px;
+export const ProjectImg = styled.h1`
+  font-size: 20px;
+  color: white;
+  position: absolute;
+  top: 50px;
+  /* border-radius: 20px;
   width: 463px;
   height: 240px;
-  z-index: -1;
+  z-index: -1; */
 `;
 
 export const LeftArrow = styled(FaArrowCircleLeft)`

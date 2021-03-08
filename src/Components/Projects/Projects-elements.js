@@ -6,8 +6,9 @@ export const ProjectsContainer = styled.div`
 
 export const ProjectsWrapper = styled.div`
   display: flex;
-  justify-items: space-between;
+  justify-content: center;
   align-items: center;
+  margin-top: 30px;
 `;
 
 export const FirstRow = styled.div`

@@ -8,6 +8,7 @@ import "aos/dist/aos.css";
 import spaceship from "./../../Assets/img-2.svg";
 import austronaut from "./../../Assets/astronaut2.svg";
 import { FaHandRock } from "react-icons/fa";
+import FooterCloud from "./../../Assets/FooterCloud.svg";
 
 const Image = styled(motion.img)`
   cursor: grab;
@@ -86,6 +87,12 @@ const Form = () => {
           <div className="austronaut-text">
             <FaHandRock /> <p>Grab the austronaut around!</p>
           </div>
+        </div>
+        <div className="footer-cloud-left">
+          <img src={FooterCloud} alt="cloud" />
+        </div>
+        <div className="footer-cloud-right">
+          <img src={FooterCloud} alt="cloud" />
         </div>
       </div>
     </>
