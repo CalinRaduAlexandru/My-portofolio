@@ -172,9 +172,12 @@ const AboutSection = ({
               <ImgWrap>
                 <iframe
                   title="spaceship"
-                  width="549"
-                  height="326"
+                  width="500"
+                  height="300"
                   src="https://www.youtube.com/embed/v8zkBEcbkJ8"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
                 ></iframe>
                 <HeroP>
                   Radu Călin | Full-stack <br /> Web & Mobile Developer

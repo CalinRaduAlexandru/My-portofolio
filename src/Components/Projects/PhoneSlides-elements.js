@@ -25,12 +25,13 @@ export const ProjectSlide = styled.div`
 `;
 
 export const Div = styled.div`
-  width: 470px;
+  width: 413px;
   display: flex;
   flex-direction: column;
   align-items: center;
   position: absolute;
   top: -135px;
+  left: -10px;
 `;
 export const AWrap = styled.a`
   display: flex;
@@ -55,27 +56,27 @@ export const Title = styled.div`
 `;
 
 export const PhoneMock = styled.img`
-  width: 378px;
-  height: 520px;
+  width: 318px;
+  height: 460px;
   transform: rotate(90deg);
 `;
 
 export const BlackCover = styled.div`
   position: absolute;
-  top: 0%;
-  left: 0%;
+  top: 4px;
+  left: -13px;
   border-radius: 25px;
-  width: 463px;
-  height: 240px;
+  width: 417px;
+  height: 206px;
   background: black;
 `;
 export const Gif = styled.img`
   position: absolute;
-  top: 133px;
-  left: 0%;
+  top: 139.5px;
+  left: 0px;
   border-radius: 20px;
-  width: 465px;
-  height: 242px;
+  width: 412px;
+  height: 203px;
   background: black;
   animation: appear 0.7s;
   @keyframes appear {
@@ -95,14 +96,14 @@ export const Gif = styled.img`
 
 export const ProjectWrapper = styled.div`
   width: 300px;
-  top: 250px;
-  left: 90px;
-  margin-top: 250px;
+  margin-left: 30px;
+  margin-top: 230px;
+
   animation: appear 0.5s;
 `;
 
 export const LeftArrow = styled(FaArrowCircleLeft)`
-  font-size: 50px;
+  font-size: 40px;
   margin-right: 90px;
   cursor: pointer;
   color: #00b4d8;
@@ -114,7 +115,7 @@ export const LeftArrow = styled(FaArrowCircleLeft)`
 `;
 
 export const RightArrow = styled(FaArrowCircleRight)`
-  font-size: 50px;
+  font-size: 40px;
   margin-left: 90px;
   cursor: pointer;
   color: #00b4d8;

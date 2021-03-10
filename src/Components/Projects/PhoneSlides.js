@@ -54,6 +54,7 @@ const PhoneSlides = () => {
                     </AWrap>
                     <ProjectWrapper>
                       <Project
+                        cloud="true"
                         subtitle={slide.subtitle}
                         text={slide.text}
                         websiteRef={slide.websiteRef}

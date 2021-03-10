@@ -121,8 +121,7 @@ export const Linkedin = styled(FaLinkedin)`
 `;
 
 export const WebsiteRights = styled.small`
-  color: #fff;
-
+  color: #0d5485;
   padding: 10px 0;
-  border-top: 1px solid #1f73ae;
+  border-top: 3px solid #05043d;
 `;

@@ -15,8 +15,7 @@ export const ProjectsWrapper = styled.div`
   justify-content: center;
   align-items: center;
   align-self: center;
-  padding: 0 0 0 0px;
-  width: 99vw;
+  width: 100vw;
   @media (max-width: 1400px) {
     margin-top: -60px;
   }
@@ -32,6 +31,7 @@ export const ProjectsWrapper = styled.div`
 export const FirstRow = styled.div`
   display: flex;
   flex-direction: column;
+  margin: 0 30px 0 40px;
   @media (max-width: 1300px) {
     flex-direction: row;
     width: 100%;
@@ -61,7 +61,7 @@ export const SecondRow = styled.div`
 export const ThirdRow = styled.div`
   display: flex;
   flex-direction: column;
-  margin-right: -50px;
+  margin-left: 50px;
   @media (max-width: 1300px) {
     flex-direction: row;
     width: 100%;
