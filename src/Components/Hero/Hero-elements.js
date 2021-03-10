@@ -26,7 +26,7 @@ export const ProfileBg = styled.img`
   right: 15%;
   animation: slide-left 2s;
 
-  @media (max-height: 720px) {
+  @media (max-width: 720px) {
     width: 250px;
     right: 30%;
   }
