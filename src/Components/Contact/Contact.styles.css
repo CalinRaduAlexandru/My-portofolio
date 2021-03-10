@@ -152,7 +152,7 @@
 .footer-cloud-right {
   position: absolute;
   bottom: -2%;
-  right: 0%;
+  right: -1%;
 }
 
 @media (min-width: 1024px) {

@@ -32,6 +32,13 @@ export const Div = styled.div`
   position: absolute;
   top: -135px;
 `;
+export const AWrap = styled.a`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: appear 0.5s;
+  text-decoration: none;
+`;
 
 export const ProjectImg = styled.img`
   width: 60px;
@@ -39,15 +46,12 @@ export const ProjectImg = styled.img`
   color: white;
   top: -130px;
   left: 210px;
-  /* border-radius: 20px;
-width: 463px;
-height: 240px;
-z-index: -1; */
 `;
 
 export const Title = styled.div`
   font-size: 34px;
   color: #fff;
+  cursor: default;
 `;
 
 export const PhoneMock = styled.img`
@@ -73,6 +77,20 @@ export const Gif = styled.img`
   width: 465px;
   height: 242px;
   background: black;
+  animation: appear 0.7s;
+  @keyframes appear {
+    0% {
+      opacity: 0;
+    }
+
+    40% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
 `;
 
 export const ProjectWrapper = styled.div`
@@ -80,28 +98,29 @@ export const ProjectWrapper = styled.div`
   top: 250px;
   left: 90px;
   margin-top: 250px;
+  animation: appear 0.5s;
 `;
 
 export const LeftArrow = styled(FaArrowCircleLeft)`
   font-size: 50px;
-  margin-right: 100px;
+  margin-right: 90px;
   cursor: pointer;
-  color: #1f73ae;
-  transition: ease-in-out 0.3s;
+  color: #00b4d8;
+  transition: ease-in-out 0.2s;
   &:hover {
-    filter: brightness(1.2);
-    transform: scale(1.1);
+    color: #0077b6;
+    transform: scale(1.05);
   }
 `;
 
 export const RightArrow = styled(FaArrowCircleRight)`
   font-size: 50px;
-  margin-left: 100px;
+  margin-left: 90px;
   cursor: pointer;
-  color: #1f73ae;
-  transition: ease-in-out 0.3s;
+  color: #00b4d8;
+  transition: ease-in-out 0.2s;
   &:hover {
-    filter: brightness(1.2);
-    transform: scale(1.1);
+    color: #0077b6;
+    transform: scale(1.05);
   }
 `;

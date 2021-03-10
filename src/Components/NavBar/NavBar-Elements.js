@@ -184,13 +184,13 @@ export const NavLinks = styled(Link)`
   padding: 0 1rem;
   height: 100%;
   cursor: pointer;
+   transition: ease-in-out 0.2s;
 
   &.active {
     border-bottom: 3px solid #20639b;
   }
 
   &:hover {
-    transition: 0.2s ease-in-out;
     color: #0077b6;
     transform: scale(1.1);
 `;

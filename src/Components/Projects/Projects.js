@@ -21,7 +21,7 @@ const Projects = () => {
     <div className="container">
       <ProjectsContainer id="projects">
         <ProjectsWrapper>
-          <FirstRow>
+          <FirstRow data-aos="fade-right">
             <Project
               img={MagnifyingGlass}
               cloud="true"
@@ -45,7 +45,7 @@ const Projects = () => {
           <SecondRow>
             <PhoneSlides />
           </SecondRow>
-          <ThirdRow>
+          <ThirdRow data-aos="fade-left">
             <Project
               img={Lotus}
               cloud="true"

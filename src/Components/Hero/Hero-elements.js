@@ -24,28 +24,24 @@ export const ProfileBg = styled.img`
   position: absolute;
   bottom: 18%;
   right: 15%;
-
-  @media (max-width: 700px) {
-    width: 250px;
-    right: 25%;
-  }
+  animation: slide-left 2s;
 `;
 
 export const ContactBtnWrapper = styled(LinkS)`
   position: absolute;
   right: 10%;
   bottom: 15%;
-  animation: appear 1.7s;
-  @keyframes appear {
+  animation: slide-left 2s;
+  @keyframes slide-left {
     0% {
+      margin-right: -650px;
       opacity: 0;
     }
-
     40% {
       opacity: 0;
     }
-
     100% {
+      margin-right: 0px;
       opacity: 1;
     }
   }

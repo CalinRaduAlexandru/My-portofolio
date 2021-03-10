@@ -58,9 +58,7 @@ const Footer = () => {
           </SocialIcons>
         </SocialMediaWrap>
       </SocialMedia>
-      <WebsiteRights>
-        Călin Radu © {new Date().getFullYear()} All rights reserved.
-      </WebsiteRights>
+      <WebsiteRights>Călin Radu © 2021 All rights reserved.</WebsiteRights>
     </FooterContainer>
   );
 };

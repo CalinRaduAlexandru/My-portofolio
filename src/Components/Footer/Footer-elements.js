@@ -22,9 +22,6 @@ export const SocialMediaWrap = styled.div`
   flex-direction: column;
   align-items: center;
   max-width: 1100px;
-  margin: 15px auto 15px auto;
-  border-radius: 5px;
-  padding: 10px 0;
 `;
 
 export const SocialLogo = styled.div`
@@ -52,7 +49,7 @@ export const SocialIconLink = styled.a`
 `;
 
 export const ArrowFromBottom = styled(BiArrowFromBottom)`
-  font-size: 50px;
+  font-size: 40px;
   margin: 10px 0 0 0;
   cursor: pointer;
   color: #fff;
@@ -62,13 +59,13 @@ export const ArrowFromBottom = styled(BiArrowFromBottom)`
 `;
 
 export const GoUp = styled.p`
-  font-size: 16px;
+  font-size: 12px;
   cursor: pointer;
   color: #fff;
 `;
 export const DetailsWrap = styled.div`
   color: #fff;
-  padding: 10px 0px;
+  padding: 0px 0px;
   display: flex;
   flex-direction: column;
   items-align: center;
@@ -83,18 +80,17 @@ export const DetailsWrap = styled.div`
     font-size: 10px;
   }
 `;
-export const PhoneWrap = styled.div`
-  padding: 5px;
+export const PhoneWrap = styled.div``;
+export const Whatsapp = styled(SiWhatsapp)`
+  margin-right: 3px;
 `;
-export const Whatsapp = styled(SiWhatsapp)``;
 export const EmailWrap = styled.div`
-  padding: 5px;
   display: flex;
 `;
 export const OutlineMail = styled(HiOutlineMail)`
-  padding: 0 0 2px 0;
   font-size: 20px;
   margin-right: 7px;
+  margin-top: 2px;
   @media screen and (max-width: 500px) {
     font-size: 17px;
   }
@@ -105,8 +101,8 @@ export const OutlineMail = styled(HiOutlineMail)`
 `;
 
 export const Github = styled(FaGithub)`
-  font-size: 50px;
-  margin: 0 10px;
+  font-size: 40px;
+  margin: 10px;
   cursor: pointer;
   color: #1f73ae;
   &:hover {
@@ -115,8 +111,8 @@ export const Github = styled(FaGithub)`
 `;
 
 export const Linkedin = styled(FaLinkedin)`
-  font-size: 50px;
-  margin: 0 10px;
+  font-size: 40px;
+  margin: 10px;
   cursor: pointer;
   color: #1f73ae;
   &:hover {
@@ -126,5 +122,7 @@ export const Linkedin = styled(FaLinkedin)`
 
 export const WebsiteRights = styled.small`
   color: #fff;
-  margin-bottom: 16px;
+
+  padding: 10px 0;
+  border-top: 1px solid #1f73ae;
 `;

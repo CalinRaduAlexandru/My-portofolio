@@ -11,6 +11,7 @@ import {
   ProjectSlide,
   BlackCover,
   Div,
+  AWrap,
   Gif,
   Title,
   ProjectImg,
@@ -29,7 +30,6 @@ const PhoneSlides = () => {
 
   const NextSlide = () => {
     setCurrent(current === length - 1 ? 0 : current + 1);
-    console.log(NextSlide);
   };
   return (
     <PhoneWrapper>
@@ -43,9 +43,15 @@ const PhoneSlides = () => {
               <ProjectSlide key={idx}>
                 {idx === current && (
                   <Div>
-                    <ProjectImg src={slide.logo} />
-                    <Title>{slide.title}</Title>
-                    <Gif src={slide.gif} />
+                    <AWrap
+                      href={slide.websiteRef}
+                      target="_blank"
+                      aria-label="project site"
+                    >
+                      <ProjectImg src={slide.logo} />
+                      <Title>{slide.title}</Title>
+                      <Gif src={slide.gif} />
+                    </AWrap>
                     <ProjectWrapper>
                       <Project
                         subtitle={slide.subtitle}
