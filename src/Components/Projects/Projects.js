@@ -24,6 +24,7 @@ const Projects = () => {
           <FirstRow>
             <Project
               img={MagnifyingGlass}
+              cloud="true"
               title="Search friends"
               subtitle="React | NodeJs | Postgres"
               text="Full-stack app in which you can add custom users and search through them."
@@ -33,6 +34,7 @@ const Projects = () => {
 
             <Project
               img={Crownfeel}
+              cloud="true"
               title="CrownFeel Ltd."
               subtitle="React | Redux | Stripe"
               text="The front-end of an e-commerce platform with online payment."
@@ -46,6 +48,7 @@ const Projects = () => {
           <ThirdRow>
             <Project
               img={Lotus}
+              cloud="true"
               title="Gratefulness"
               subtitle="React | CSS"
               text="Create a gratefulness list. Plus a random quote generator for
@@ -56,10 +59,10 @@ const Projects = () => {
 
             <Project
               img={Face}
+              cloud="true"
               title="Recognize faces"
               subtitle="React | NodeJs | Postgres"
-              text="Full-stack app in which you can add photos URL`s and accumulate
-            points for each face."
+              text="Full-stack app in which you can add photos URL`s and accumulate points for each face."
               websiteRef="https://search-face-app.herokuapp.com/"
               githubRef="https://github.com/CalinRaduAlexandru/Search-face"
             />

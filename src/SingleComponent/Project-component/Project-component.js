@@ -22,10 +22,11 @@ export const Project = ({
   text,
   websiteRef,
   githubRef,
+  cloud,
 }) => {
   return (
     <ProjectWrapper>
-      <ProjectCloud src={BgProjectCloud} alt="cloud" />
+      {cloud ? <ProjectCloud src={BgProjectCloud} alt="cloud" /> : null}
       <ProjectInfo
         href={`${websiteRef}`}
         target="_blank"

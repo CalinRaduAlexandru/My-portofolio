@@ -9,7 +9,7 @@ import Crownfeel from "./../../Assets/Crownfeel.svg";
 
 export const SlideData = [
   {
-    img: `${MagnifyingGlass}`,
+    logo: `${MagnifyingGlass}`,
     title: "Search friends",
     subtitle: "React | NodeJs | Postgres",
     text:
@@ -19,17 +19,17 @@ export const SlideData = [
     gif: `${friends}`,
   },
   {
-    img: `${Lotus}`,
-    title: "Search friends",
-    subtitle: "React | NodeJs | Postgres",
+    logo: `${Lotus}`,
+    title: "Gratefulness",
+    subtitle: "React | CSS",
     text:
-      "Full-stack app in which you can add custom users and search through them.",
-    websiteRef: "https://filter-cards-app2.herokuapp.com/",
-    githubRef: "https://github.com/CalinRaduAlexandru/Filter-cards-app",
+      "Create a gratefulness list. Plus a random quote generator for inspiration!",
+    websiteRef: "https://greatfulness-app.herokuapp.com/",
+    githubRef: "https://github.com/CalinRaduAlexandru/Greatfulness-app",
     gif: `${gratefulGIF}`,
   },
   {
-    img: `${Crownfeel}`,
+    logo: `${Crownfeel}`,
     title: "CrownFeel Ltd.",
     subtitle: "React | Redux | Stripe",
     text: "The front-end of an e-commerce platform with online payment.",
@@ -39,13 +39,13 @@ export const SlideData = [
     gif: `${CrownGif}`,
   },
   {
-    img: `${Face}`,
-    title: "Search friends",
+    logo: `${Face}`,
+    title: "Recognize faces",
     subtitle: "React | NodeJs | Postgres",
     text:
-      "Full-stack app in which you can add custom users and search through them.",
-    websiteRef: "https://filter-cards-app2.herokuapp.com/",
-    githubRef: "https://github.com/CalinRaduAlexandru/Filter-cards-app",
+      "Full-stack app in which you can add photos URL`s and accumulate points for each face.",
+    websiteRef: "https://search-face-app.herokuapp.com/",
+    githubRef: "https://github.com/CalinRaduAlexandru/Search-face",
     gif: `${SearcFace}`,
   },
 ];

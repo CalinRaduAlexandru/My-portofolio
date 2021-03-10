@@ -19,58 +19,67 @@ export const SlideWrapper = styled.div`
   left: -11.22%;
 `;
 
+export const ProjectSlide = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
+
+export const Div = styled.div`
+  width: 470px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: -135px;
+`;
+
+export const ProjectImg = styled.img`
+  width: 60px;
+  font-size: 20px;
+  color: white;
+  top: -130px;
+  left: 210px;
+  /* border-radius: 20px;
+width: 463px;
+height: 240px;
+z-index: -1; */
+`;
+
+export const Title = styled.div`
+  font-size: 34px;
+  color: #fff;
+`;
+
 export const PhoneMock = styled.img`
   width: 378px;
   height: 520px;
   transform: rotate(90deg);
 `;
-export const ProjectSlide = styled.div``;
 
 export const BlackCover = styled.div`
   position: absolute;
   top: 0%;
   left: 0%;
-  border-radius: 20px;
+  border-radius: 25px;
   width: 463px;
   height: 240px;
   background: black;
 `;
 export const Gif = styled.img`
   position: absolute;
-  top: 0%;
+  top: 133px;
   left: 0%;
   border-radius: 20px;
-  width: 463px;
-  height: 240px;
+  width: 465px;
+  height: 242px;
   background: black;
 `;
 
-export const Title = styled.div`
-  position: absolute;
-  width: 300px;
-  top: -60px;
-  left: 100px;
-  font-size: 34px;
-  color: #fff;
-`;
-
-export const ProjectImg = styled.img`
-  font-size: 20px;
-  color: white;
-  position: absolute;
-  top: -130px;
-  left: 185px;
-  /* border-radius: 20px;
-  width: 463px;
-  height: 240px;
-  z-index: -1; */
-`;
-
 export const ProjectWrapper = styled.div`
-  position: absolute;
   width: 300px;
   top: 250px;
-  left: 85px;
+  left: 90px;
+  margin-top: 250px;
 `;
 
 export const LeftArrow = styled(FaArrowCircleLeft)`

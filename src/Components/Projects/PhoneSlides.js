@@ -10,6 +10,7 @@ import {
   SlideWrapper,
   ProjectSlide,
   BlackCover,
+  Div,
   Gif,
   Title,
   ProjectImg,
@@ -41,19 +42,19 @@ const PhoneSlides = () => {
             return (
               <ProjectSlide key={idx}>
                 {idx === current && (
-                  <>
-                    <ProjectImg src={slide.img} />
+                  <Div>
+                    <ProjectImg src={slide.logo} />
                     <Title>{slide.title}</Title>
                     <Gif src={slide.gif} />
                     <ProjectWrapper>
                       <Project
                         subtitle={slide.subtitle}
                         text={slide.text}
-                        websiteRef="https://filter-cards-app2.herokuapp.com/"
-                        githubRef="https://github.com/CalinRaduAlexandru/Filter-cards-app"
+                        websiteRef={slide.websiteRef}
+                        githubRef={slide.githubRef}
                       />
                     </ProjectWrapper>
-                  </>
+                  </Div>
                 )}
               </ProjectSlide>
             );
