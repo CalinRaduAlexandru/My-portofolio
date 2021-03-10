@@ -47,19 +47,18 @@ export const AboutRow = styled.div`
   @media screen and (max-width: 768px) {
     grid-template-areas: ${({ imgStart }) =>
       imgStart ? `'col1' 'col2'` : `'col1 col1' 'col2 col2'`};
-    margin: 0;
-    padding: 0;
   }
 
-  @media screen and (max-width: 968px) {
-    grid-template-columns: 1fr;
-    padding: 15px 20px;
+  @media screen and (max-width: 1200px) {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
   }
 `;
 
 export const Column1 = styled.div`
   margin-bottom: 15px;
-  padding: 0 15px;
+  padding: 0 5px;
   grid-area: col1;
 `;
 
@@ -67,6 +66,10 @@ export const Column2 = styled.div`
   margin-bottom: 15px;
   padding: 0 15px;
   grid-area: col2;
+
+  @media (max-width: 1200px) {
+    padding: 40px 0;
+  }
 `;
 
 export const TextWrapper = styled.div`
@@ -162,9 +165,9 @@ export const Download = styled(HiDownload)`
 `;
 
 export const ImgWrap = styled.div`
-  max-width: 405px;
-  min-height: 350px;
-  height: 100%;
+  max-width: 500px;
+  height: 500px;
+  max-height: 500px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -172,6 +175,7 @@ export const ImgWrap = styled.div`
 
   @media screen and (max-width: 768px) {
     margin-bottom: 0px;
+    z-index: 100;
   }
 
   @media screen and (max-width: 500px) {

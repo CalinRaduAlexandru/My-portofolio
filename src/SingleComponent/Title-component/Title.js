@@ -37,6 +37,7 @@ const Title = () => {
           <h1>
             Radu Călin <br /> Portfolio.
           </h1>
+          <h3 className="profesion">Web & Mobile Developer</h3>
         </div>
         <div className="titleWrapper cloneWrapper">
           <h1>
@@ -61,7 +62,6 @@ const Title = () => {
             <span>Back-end Dev</span>
           </li>
         </ul>
-        <span className="profesion">Web & Mobile Developer</span>
       </div>
     </div>
   );

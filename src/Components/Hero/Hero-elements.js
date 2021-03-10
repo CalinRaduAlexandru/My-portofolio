@@ -25,6 +25,11 @@ export const ProfileBg = styled.img`
   bottom: 18%;
   right: 15%;
   animation: slide-left 2s;
+
+  @media (max-height: 720px) {
+    width: 250px;
+    right: 30%;
+  }
 `;
 
 export const ContactBtnWrapper = styled(LinkS)`
