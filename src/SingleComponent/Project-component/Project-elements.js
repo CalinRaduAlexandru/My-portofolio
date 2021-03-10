@@ -9,26 +9,36 @@ export const ProjectWrapper = styled.div`
   justify-content: center;
   align-items: center;
   border-radius: 10px;
-  position: relative @media (max-width: 768px) {
-    margin: 10px 0px;
+  position: relative;
+  @media (max-width: 700px) {
+    margin-bottom: 150px;
+  }
+  @media (max-width: 500px) {
+    margin: 10px 0;
   }
 `;
 
 export const ProjectCloud = styled.img`
   position: absolute;
   width: 300px;
+  @media (max-width: 500px) {
+    width: 250px;
+  }
 `;
 
-export const ProjectInfo = styled.div`
+export const ProjectInfo = styled.a`
   font-size: 14px;
   padding: 0px 10px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   z-index: 10;
-
-  @media (max-width: 400px) {
-    width: 90vw;
+  text-decoration: none;
+  cursor: pointer;
+  transition: ease-in-out 0.5s;
+  &:hover {
+    filter: brightness(1.2);
+    transform: scale(1.1);
   }
 `;
 
@@ -40,9 +50,13 @@ export const ProjectImg = styled.img`
 
 export const ProjectTitle = styled.h1`
   color: #fff;
-  font-size: 23px;
+  font-size: 24px;
   margin-top: 20px;
   margin-left: 10px;
+  @media (max-width: 500px) {
+    font-size: 18px;
+    align-self: center;
+  }
 `;
 
 export const ProjectSubTitle = styled.h2`
@@ -50,6 +64,10 @@ export const ProjectSubTitle = styled.h2`
   margin-top: 10px;
   color: #61afe7;
   margin-left: 10px;
+  @media (max-width: 500px) {
+    font-size: 14px;
+    align-self: center;
+  }
 `;
 export const ProjectText = styled.p`
   max-width: 250px;
@@ -58,6 +76,12 @@ export const ProjectText = styled.p`
   margin: 20px 0 0 10px;
   color: #2c1a24;
   color: #fff;
+  @media (max-width: 500px) {
+    font-size: 12px;
+  }
+  @media (max-width: 500px) {
+    font-size: 12px;
+  }
 `;
 
 export const Buttons = styled.div`

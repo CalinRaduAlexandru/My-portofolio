@@ -45,9 +45,9 @@ const Home = () => {
             <AboutSection {...homeObjOne} />
             <Projects />
             <Form id="contact" />
+            <Footer />
           </section>
         </Suspense>
-        <Footer />
       </div>
     </>
   );

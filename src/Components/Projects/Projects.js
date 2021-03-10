@@ -26,8 +26,7 @@ const Projects = () => {
               img={MagnifyingGlass}
               title="Search friends"
               subtitle="React | NodeJs | Postgres"
-              text="Full-stack app in which you can add custom users and search
-          through them."
+              text="Full-stack app in which you can add custom users and search through them."
               websiteRef="https://filter-cards-app2.herokuapp.com/"
               githubRef="https://github.com/CalinRaduAlexandru/Filter-cards-app"
             />

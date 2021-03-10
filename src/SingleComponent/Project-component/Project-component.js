@@ -26,28 +26,32 @@ export const Project = ({
   return (
     <ProjectWrapper>
       <ProjectCloud src={BgProjectCloud} alt="cloud" />
-      <ProjectInfo>
-        <ProjectImg src={img} />
+      <ProjectInfo
+        href={`${websiteRef}`}
+        target="_blank"
+        aria-label="herokuapp"
+      >
+        {img ? <ProjectImg src={img} /> : null}
         <ProjectTitle>{title}</ProjectTitle>
         <ProjectSubTitle>{subtitle}</ProjectSubTitle>
         <ProjectText>{text}</ProjectText>
-        <Buttons>
-          <BtnProjectLeft
-            href={`${websiteRef}`}
-            target="_blank"
-            aria-label="herokuapp"
-          >
-            <LiveText>Live</LiveText>
-          </BtnProjectLeft>
-          <BtnProjectRight
-            href={`${githubRef}`}
-            target="_blank"
-            aria-label="Github"
-          >
-            <Github />
-          </BtnProjectRight>
-        </Buttons>
       </ProjectInfo>
+      <Buttons>
+        <BtnProjectLeft
+          href={`${websiteRef}`}
+          target="_blank"
+          aria-label="herokuapp"
+        >
+          <LiveText>Live</LiveText>
+        </BtnProjectLeft>
+        <BtnProjectRight
+          href={`${githubRef}`}
+          target="_blank"
+          aria-label="Github"
+        >
+          <Github />
+        </BtnProjectRight>
+      </Buttons>
     </ProjectWrapper>
   );
 };
