@@ -77,7 +77,6 @@ export const Gif = styled.img`
   border-radius: 20px;
   width: 412px;
   height: 203px;
-  background: black;
   animation: appear 0.7s;
   @keyframes appear {
     0% {
@@ -98,7 +97,6 @@ export const ProjectWrapper = styled.div`
   width: 300px;
   margin-left: 30px;
   margin-top: 230px;
-
   animation: appear 0.5s;
 `;
 
@@ -124,4 +122,11 @@ export const RightArrow = styled(FaArrowCircleRight)`
     color: #0077b6;
     transform: scale(1.05);
   }
+`;
+
+export const BgCloud = styled.img`
+  position: absolute;
+  z-index: -1;
+  left: -12%;
+  bottom: -20%;
 `;

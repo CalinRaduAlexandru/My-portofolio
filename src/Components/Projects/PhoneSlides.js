@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import phone from "./../../Assets/phone.png";
 import { Project } from "../../SingleComponent/Project-component/Project-component";
 import { SlideData } from "./DataPhoneView";
+import cloud from "./../../Assets/BgProjectCloud.svg";
 
 import {
   PhoneWrapper,
@@ -18,6 +19,7 @@ import {
   ProjectWrapper,
   LeftArrow,
   RightArrow,
+  BgCloud,
 } from "./PhoneSlides-elements.js";
 
 const PhoneSlides = () => {
@@ -54,7 +56,6 @@ const PhoneSlides = () => {
                     </AWrap>
                     <ProjectWrapper>
                       <Project
-                        cloud="true"
                         subtitle={slide.subtitle}
                         text={slide.text}
                         websiteRef={slide.websiteRef}
@@ -67,6 +68,7 @@ const PhoneSlides = () => {
             );
           })}
         </SlideWrapper>
+        <BgCloud src={cloud} alt="cloud" />
       </PhoneMockWrapper>
       <RightArrow onClick={NextSlide} />
     </PhoneWrapper>

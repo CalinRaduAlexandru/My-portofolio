@@ -7,6 +7,7 @@ import Face from "./../../Assets/Face.svg";
 import Lotus from "./../../Assets/Lotus.svg";
 import MagnifyingGlass from "./../../Assets/MagnifyingGlass.svg";
 import Crownfeel from "./../../Assets/Crownfeel.svg";
+import MobileProject from "../../SingleComponent/MobileProject/MobileProject";
 
 import {
   ProjectsContainer,
@@ -20,6 +21,7 @@ const Projects = () => {
   return (
     <div className="container">
       <ProjectsContainer id="projects">
+        <MobileProject />
         <ProjectsWrapper>
           <FirstRow data-aos="fade-right">
             <Project
