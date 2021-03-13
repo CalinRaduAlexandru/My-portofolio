@@ -77,10 +77,11 @@
 }
 
 .form-label {
-  display: inline-block;
+  display: flex;
   font-size: 0.8rem;
   margin-bottom: 6px;
   color: #fff;
+  align-self: flex-start;
 }
 
 .form-input {

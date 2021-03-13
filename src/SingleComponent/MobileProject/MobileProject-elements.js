@@ -54,7 +54,6 @@ export const Title = styled.div`
 export const Gif = styled.img`
   position: relative;
   z-index: 10;
-  border-radius: 20px;
   width: 85vw;
   margin: 15px 0;
   max-width: 400px;
