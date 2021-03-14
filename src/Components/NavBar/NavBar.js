@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { animateScroll as scroll } from "react-scroll";
 import Tilt from "react-parallax-tilt";
 import { FaBars } from "react-icons/fa";
-import cloud from "./../../Assets/cloud-computing.png";
+import cloud from "./../../Assets/cloud-computing.svg";
 
 import {
   Nav,

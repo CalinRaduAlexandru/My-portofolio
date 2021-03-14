@@ -3,7 +3,7 @@ import astronaut from "./../../Assets/astronaut.png";
 import planet1 from "./../../Assets/planet1.png";
 import planet2 from "./../../Assets/planet2.png";
 import rocket from "./../../Assets/rocket.png";
-import cloud from "./../../Assets/cloud-computing.png";
+import cloud from "./../../Assets/cloud-computing.svg";
 import profile from "./../../Assets/BgMinified.png";
 import "./Scene.styles.css";
 import Title from "../../SingleComponent/Title-component/Title";
