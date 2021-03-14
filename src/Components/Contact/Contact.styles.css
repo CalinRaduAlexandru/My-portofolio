@@ -18,6 +18,7 @@
 
 .form-img {
   width: 20%;
+  margin-left: 60px;
 }
 
 .form-content-right {
@@ -56,8 +57,12 @@
   cursor: default;
 }
 
+.form-title {
+  max-width: 340px;
+}
+
 .form {
-  width: 90%;
+  width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;

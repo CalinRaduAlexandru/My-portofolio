@@ -14,7 +14,9 @@ const Contact = ({ submitForm }) => {
     <div className="contact-section">
       <div data-aos="fade-right" className="form-content-right">
         <form className="form" onSubmit={handleSubmit}>
-          <h1>Let`s get in touch! I`ll get back to you in no time!</h1>
+          <h1 className="form-title">
+            Let`s get in touch! I`ll get back to you in no time!
+          </h1>
           <div className="form-inputs">
             <label htmlFor="name" className="form-label">
               Name{" "}
