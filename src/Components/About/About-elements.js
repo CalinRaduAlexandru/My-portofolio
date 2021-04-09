@@ -46,7 +46,6 @@ export const AboutRow = styled.div`
   display: flex;
   justify-content: space-around;
   width: 100vw;
-
   align-items: center;
 
   @media screen and (max-width: 1200px) {
@@ -67,6 +66,11 @@ export const Column2 = styled.div`
 
   @media (max-width: 1200px) {
     padding: 40px 0;
+    margin-top: 100px;
+  }
+
+  @media (max-width: 600px) {
+    padding: 20px;
   }
 `;
 
@@ -152,6 +156,7 @@ export const BtnResume = styled.a`
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-left: 30px;
   transition: 0.1s ease-in-out;
 
   &:hover {
@@ -164,10 +169,9 @@ export const Download = styled(HiDownload)`
   margin-left: 10px;
 `;
 
-export const ImgWrap = styled.div`
-  width: 500px;
+export const ImgWrapper = styled.div`
+  max-width: 500px;
   height: 500px;
-  max-height: 500px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -182,17 +186,6 @@ export const ImgWrap = styled.div`
   }
 `;
 
-export const Img = styled.img`
-  width: 80%;
-  margin: 0 0 10px 0;
-  padding-right: 0;
-  margin-right: 55px;
-
-  @media screen and (max-width: 768px) {
-    width: 100%;
-  }
-`;
-
 export const HeroP = styled.p`
   margin: 20px 0;
   color: white;
@@ -203,8 +196,10 @@ export const HeroP = styled.p`
 
   @media screen and (max-width: 768px) {
     font-size: 30px;
+    max-width: 400px;
   }
   @media screen and (max-width: 500px) {
     font-size: 17px;
+    max-width: 300px;
   }
 `;

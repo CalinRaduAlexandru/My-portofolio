@@ -25,8 +25,8 @@ export const ProjectsWrapper = styled.div`
 
 export const FirstRow = styled.div`
   display: flex;
-  margin: 0 30px 0 40px;
-
+    margin-top: 80px;
+  width: 90vw;
   }
 `;
 export const SecondRow = styled.div`

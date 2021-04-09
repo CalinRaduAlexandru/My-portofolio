@@ -1,13 +1,14 @@
 import styled from "styled-components";
 import { FaTimes } from "react-icons/fa";
 import { Link as LinkS } from "react-scroll";
+import { MainGradient } from "../../App-variables";
 
 export const SidebarContainer = styled.aside`
   position: fixed;
   z-index: 999;
   width: 100%;
   height: 100%;
-  background: #05043d;
+  background: ${MainGradient};
   display: grid;
   align-items: center;
   top: 0;

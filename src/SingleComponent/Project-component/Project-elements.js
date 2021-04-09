@@ -2,8 +2,7 @@ import styled from "styled-components";
 import { FaGithub } from "react-icons/fa";
 
 export const ProjectWrapper = styled.div`
-  margin: 10px;
-  min-width: 300px;
+  width: 300px;
   width: 80%;
   padding: 20px 0;
   display: flex;
@@ -16,24 +15,11 @@ export const ProjectWrapper = styled.div`
   border-radius: 15px;
   background: rgba(0, 44, 128, 0.075);
   cursor: pointer;
-  transition: ease-in-out 0.5s;
-  &:hover {
-    filter: brightness(1.1);
-    transform: scale(1.1);
-  }
-`;
-
-export const ProjectCloud = styled.img`
-  position: absolute;
-  width: 300px;
-  @media (max-width: 500px) {
-    width: 250px;
-  }
+  overflow: hidden;
 `;
 
 export const ProjectInfo = styled.a`
   font-size: 14px;
-  padding: 0px 10px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -51,7 +37,7 @@ export const ProjectTitle = styled.h1`
   color: #003db3;
   font-size: 24px;
   margin-top: 20px;
-  margin-left: 10px;
+  align-self: center;
   @media (max-width: 500px) {
     font-size: 18px;
     align-self: center;
@@ -62,18 +48,31 @@ export const ProjectSubTitle = styled.h2`
   font-size: 16px;
   margin-top: 10px;
   color: #61afe7;
-  margin-left: 10px;
+  align-self: center;
   @media (max-width: 500px) {
     font-size: 14px;
     align-self: center;
   }
 `;
+
+export const Photo = styled.img`
+  margin: 20px 0 10px 0;
+  transition: all 200ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  &:hover {
+    filter: brightness(1.1);
+    transform: scale(1.1);
+  }
+`;
+
 export const ProjectText = styled.p`
   max-width: 250px;
   height: 80px;
+  margin: 10px 0 0 35px;
   font-weight: 500;
-  margin: 20px 0 0 10px;
-  color: #fff;
+  font-size: 16px;
+  line-height: 25px;
+
+  color: #4954b9;
   @media (max-width: 500px) {
     font-size: 12px;
   }

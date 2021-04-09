@@ -39,6 +39,10 @@ export const NavbarContainer = styled.div`
   width: 100%;
   margin: 0 10%;
   position: sticky;
+
+  @media screen and (max-width: 450px) {
+    margin: 0 0 0 5%;
+  }
 `;
 
 export const NavLogo = styled.div`

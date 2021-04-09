@@ -7,6 +7,12 @@ import Lotus from "./../../Assets/Lotus.svg";
 import MagnifyingGlass from "./../../Assets/MagnifyingGlass.svg";
 import Crownfeel from "./../../Assets/Crownfeel.svg";
 import ProjectPoly from "./../../Assets/ProjectPoly.svg";
+import Carousel from "react-elastic-carousel";
+import crownPhoto from "./../../Assets/CrownPhoto.jpg";
+import recognizePhoto from "./../../Assets/RecignizePhoto.jpg";
+import searchPhoto from "./../../Assets/searchPhoto.jpg";
+import psiPhoto from "./../../Assets/psiPhoto.jpg";
+
 import "./../About/About.styles.css";
 import {
   ProjectsContainer,
@@ -15,51 +21,74 @@ import {
 } from "./Projects-elements";
 
 const Projects = () => {
+  const breakPoints = [
+    { width: 1, itemsToShow: 1 },
+    { width: 700, itemsToShow: 2 },
+    { width: 900, itemsToShow: 3 },
+    { width: 1200, itemsToShow: 4 },
+  ];
+
   return (
     <div className="container">
       <img src={ProjectPoly} alt="ProjectPoly" className="ProjectPoly" />
       <ProjectsContainer id="projects">
         <ProjectsWrapper>
-          <FirstRow data-aos="fade-right">
-            <Project
-              img={MagnifyingGlass}
-              cloud="true"
-              title="Search friends"
-              subtitle="React | NodeJs | Postgres"
-              text="Full-stack app in which you can add custom users and search through them."
-              websiteRef="https://filter-cards-app2.herokuapp.com/"
-              githubRef="https://github.com/CalinRaduAlexandru/Filter-cards-app"
-            />
+          <FirstRow>
+            <Carousel breakPoints={breakPoints}>
+              <Project
+                key="5"
+                img={Lotus}
+                photo={psiPhoto}
+                title="Psi-consult"
+                subtitle="NextJs | Sass | AWS"
+                text="Professional website for a psychology consultancy."
+                websiteRef="https://filter-cards-app2.herokuapp.com/"
+                githubRef="https://github.com/CalinRaduAlexandru/Filter-cards-app"
+              />
+              <Project
+                key="1"
+                img={MagnifyingGlass}
+                photo={searchPhoto}
+                title="Search friends"
+                subtitle="React | NodeJs | Postgres"
+                text="Full-stack app in which you can add custom users and search through them."
+                websiteRef="https://filter-cards-app2.herokuapp.com/"
+                githubRef="https://github.com/CalinRaduAlexandru/Filter-cards-app"
+              />
 
-            <Project
-              img={Crownfeel}
-              cloud="true"
-              title="CrownFeel Ltd."
-              subtitle="React | Redux | Stripe"
-              text="The front-end of an e-commerce platform with online payment."
-              websiteRef="https://crownfeelapp.herokuapp.com/"
-              githubRef="https://github.com/CalinRaduAlexandru/CrownFeel/tree/masterbranch"
-            />
-            <Project
-              img={Lotus}
-              cloud="true"
-              title="Gratefulness"
-              subtitle="React | CSS"
-              text="Create a gratefulness list. Plus a random quote generator for
-          inspiration!"
-              websiteRef="https://greatfulness-app.herokuapp.com/"
-              githubRef="https://github.com/CalinRaduAlexandru/Greatfulness-app"
-            />
+              <Project
+                key="2"
+                img={Crownfeel}
+                photo={crownPhoto}
+                title="CrownFeel Ltd."
+                subtitle="React | Redux | Stripe"
+                text="The front-end of an e-commerce platform with online payment."
+                websiteRef="https://crownfeelapp.herokuapp.com/"
+                githubRef="https://github.com/CalinRaduAlexandru/CrownFeel/tree/masterbranch"
+              />
+              <Project
+                key="3"
+                img={Lotus}
+                photo={crownPhoto}
+                title="Gratefulness"
+                subtitle="React | CSS"
+                text="Create a gratefulness list. Plus a random quote generator for
+        inspiration!"
+                websiteRef="https://greatfulness-app.herokuapp.com/"
+                githubRef="https://github.com/CalinRaduAlexandru/Greatfulness-app"
+              />
 
-            <Project
-              img={Face}
-              cloud="true"
-              title="Recognize faces"
-              subtitle="React | NodeJs | Postgres"
-              text="Full-stack app in which you can add photos URL`s and accumulate points for each face."
-              websiteRef="https://search-face-app.herokuapp.com/"
-              githubRef="https://github.com/CalinRaduAlexandru/Search-face"
-            />
+              <Project
+                key="4"
+                img={Face}
+                photo={recognizePhoto}
+                title="Recognize faces"
+                subtitle="React | NodeJs | Postgres"
+                text="Full-stack app in which you can add photos URL`s and accumulate points for each face."
+                websiteRef="https://search-face-app.herokuapp.com/"
+                githubRef="https://github.com/CalinRaduAlexandru/Search-face"
+              />
+            </Carousel>
           </FirstRow>
         </ProjectsWrapper>
       </ProjectsContainer>

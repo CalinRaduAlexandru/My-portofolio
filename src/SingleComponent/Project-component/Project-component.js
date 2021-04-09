@@ -5,6 +5,7 @@ import {
   ProjectImg,
   ProjectTitle,
   ProjectSubTitle,
+  Photo,
   ProjectText,
   Buttons,
   BtnProjectLeft,
@@ -17,6 +18,7 @@ export const Project = ({
   img,
   title,
   subtitle,
+  photo,
   text,
   websiteRef,
   githubRef,
@@ -32,6 +34,7 @@ export const Project = ({
         {img ? <ProjectImg src={img} /> : null}
         <ProjectTitle>{title}</ProjectTitle>
         <ProjectSubTitle>{subtitle}</ProjectSubTitle>
+        <Photo src={photo} width="300px" />
         <ProjectText>{text}</ProjectText>
       </ProjectInfo>
       <Buttons>

@@ -14,13 +14,12 @@ import {
   TextWrapper,
   TopLine,
   Heading,
-  Subtitle,
   ContactBtnWrapperSecondary,
   BtnWrap,
   BtnResume,
   Download,
   Column2,
-  ImgWrap,
+  ImgWrapper,
   HeroP,
 } from "./About-elements";
 
@@ -37,7 +36,7 @@ const AboutSection = () => {
         <AboutWrapper>
           <AboutRow>
             <Column1>
-              <ImgWrap>
+              <ImgWrapper>
                 <iframe
                   title="spaceship"
                   width="100%"
@@ -48,12 +47,10 @@ const AboutSection = () => {
                   allowFullScreen
                 ></iframe>
                 <HeroP>
-                  <Subtitle>
-                    Let`s discover and build new possibilities in which we can
-                    expand your vision!
-                  </Subtitle>
+                  Let`s discover and build new possibilities in which we can
+                  expand your vision!
                 </HeroP>
-              </ImgWrap>
+              </ImgWrapper>
             </Column1>
             <Column2>
               <TextWrapper data-aos="fade-left">

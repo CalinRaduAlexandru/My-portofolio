@@ -14,6 +14,14 @@
   left: -10%;
 }
 
+@media (min-width: 1350px) {
+  .ProjectPoly {
+    position: absolute;
+    top: -13%;
+    width: 100vw;
+  }
+}
+
 .LaptopNerd {
   justify-self: center;
   margin: 0 auto;

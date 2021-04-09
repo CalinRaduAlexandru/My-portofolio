@@ -25,10 +25,21 @@ export const ProfileBg = styled.img`
       opacity: 1;
     }
   }
+  @media (max-width: 1020px) {
+    width: 350px;
+    right: 30%;
+    bottom: 40%;
+  }
 
   @media (max-width: 720px) {
     width: 250px;
     right: 30%;
+    bottom: 40%;
+  }
+
+  @media (max-width: 450px) {
+    width: 250px;
+    right: 22%;
   }
 `;
 
