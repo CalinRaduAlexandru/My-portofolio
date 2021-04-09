@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { Link } from "react-scroll";
-import { MainGradient, Light, White, Regular } from "../../App-variables";
+import { MainGradient, Light, Regular } from "../../App-variables";
 
 export const Nav = styled.nav`
   position: relative;
@@ -13,7 +13,7 @@ export const Nav = styled.nav`
   align-item: center;
   font-size: 1rem;
   top: 0;
-  z-index: 100;
+  z-index: 999;
   position: -webkit-sticky;
   position: sticky;
   animation: appear 1s;
@@ -37,8 +37,7 @@ export const NavbarContainer = styled.div`
   height: 80px;
   z-index: 1;
   width: 100%;
-  padding: 0 24px;
-  max-width: 1100px;
+  margin: 0 10%;
   position: sticky;
 `;
 
@@ -71,7 +70,7 @@ export const MobileIcon = styled.div`
     transform: translate(-100%, 60%);
     font-size: 1.8rem;
     cursor: pointer;
-    color: ${White};
+    color: ${Regular};
     animation: appear 1.4s;
     @keyframes appear {
       0% {
@@ -95,7 +94,6 @@ export const NavMenu = styled.ul`
   list-style: none;
   text-align: center;
   margin-right: 2px;
-  color: ${Regular};
 
   @media screen and (max-width: 768px) {
     display: none;

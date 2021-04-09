@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "aos/dist/aos.css";
 import Radu_Calin_Resume from "./../../Assets/Radu_Calin_Resume.PDF";
 import { ArrowRight, ArrowForward } from "../Hero/Hero-elements";
@@ -14,7 +14,7 @@ import {
   TopLine,
   Heading,
   Subtitle,
-  ContactBtnWrapper,
+  ContactBtnWrapperSecondary,
   BtnWrap,
   BtnResume,
   Download,
@@ -25,18 +25,9 @@ import {
 
 const AboutSection = () => {
   const [hover, setHover] = useState(false);
-  const [offsetY, setOffsetY] = useState(0);
   const onHover = () => {
     setHover(!hover);
   };
-
-  const handleScroll = () => setOffsetY(window.pageYOffset);
-
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
 
   return (
     <>
@@ -58,16 +49,6 @@ const AboutSection = () => {
                 <HeroP>
                   Radu Călin | Full-stack <br /> Web & Mobile Developer
                 </HeroP>
-                <BtnWrap>
-                  <BtnResume
-                    href={Radu_Calin_Resume}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Resume
-                    <Download />
-                  </BtnResume>
-                </BtnWrap>
               </ImgWrap>
             </Column1>
             <Column2>
@@ -81,32 +62,30 @@ const AboutSection = () => {
                   expand your vision!
                 </Subtitle>
               </TextWrapper>
-              <ContactBtnWrapper
-                to="contact"
-                smooth={true}
-                duration={500}
-                spy={true}
-                exact="true"
-                offset={-80}
-                onMouseEnter={onHover}
-                onMouseLeave={onHover}
-              >
-                <div
-                  className="svg-wrapper"
-                  style={{ transform: `translateY(${offsetY * 0.03}px)` }}
+              <div style={{ display: "flex" }}>
+                <ContactBtnWrapperSecondary
+                  to="contact"
+                  smooth={true}
+                  duration={500}
+                  spy={true}
+                  exact="true"
+                  offset={-80}
+                  onMouseEnter={onHover}
+                  onMouseLeave={onHover}
                 >
-                  <svg
-                    height="60"
-                    width="320"
-                    xmlns="http://www.w3.org/2000/svg"
+                  Contact me! {hover ? <ArrowRight /> : <ArrowForward />}
+                </ContactBtnWrapperSecondary>
+                <BtnWrap>
+                  <BtnResume
+                    href={Radu_Calin_Resume}
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
-                    <rect className="shape" height="60" width="320" />
-                  </svg>
-                  <div className="text">
-                    Contact me! {hover ? <ArrowForward /> : <ArrowRight />}
-                  </div>
-                </div>
-              </ContactBtnWrapper>
+                    Resume
+                    <Download />
+                  </BtnResume>
+                </BtnWrap>
+              </div>
             </Column2>
           </AboutRow>
         </AboutWrapper>

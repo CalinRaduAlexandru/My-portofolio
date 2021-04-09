@@ -6,7 +6,8 @@ import Face from "./../../Assets/Face.svg";
 import Lotus from "./../../Assets/Lotus.svg";
 import MagnifyingGlass from "./../../Assets/MagnifyingGlass.svg";
 import Crownfeel from "./../../Assets/Crownfeel.svg";
-
+import ProjectPoly from "./../../Assets/ProjectPoly.svg";
+import "./../About/About.styles.css";
 import {
   ProjectsContainer,
   ProjectsWrapper,
@@ -16,6 +17,7 @@ import {
 const Projects = () => {
   return (
     <div className="container">
+      <img src={ProjectPoly} alt="ProjectPoly" className="ProjectPoly" />
       <ProjectsContainer id="projects">
         <ProjectsWrapper>
           <FirstRow data-aos="fade-right">

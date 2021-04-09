@@ -10,9 +10,10 @@ export const ProfileBg = styled.img`
   width: 400px;
   height: auto;
   position: absolute;
-  bottom: 16%;
-  right: 13%;
+  bottom: 60%;
+  right: 10%;
   animation: slide-left 2s;
+  z-index: -1;
 
   @keyframes slide-left {
     0% {

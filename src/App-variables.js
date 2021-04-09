@@ -1,3 +1,5 @@
+export const LightGradient =
+  "linear-gradient(180deg, #E2F0FC 0%, #80abff 100%)";
 export const MainGradient = "linear-gradient(180deg, #80abff 0%, #4d89ff 100%)";
 export const DarkGradient = "linear-gradient(180deg, #0057ff 0%, #003DB3 100%)";
 export const Black = "#002c80";

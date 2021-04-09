@@ -1,7 +1,13 @@
 import styled from "styled-components";
 import { HiDownload } from "react-icons/hi";
 import { Link as LinkS } from "react-scroll";
-import { MainGradient, White, Regular } from "../../App-variables";
+import {
+  MainGradient,
+  White,
+  Regular,
+  Dark,
+  LightGradient,
+} from "../../App-variables";
 
 export const AboutContainer = styled.div`
   color: ${White};
@@ -71,7 +77,7 @@ export const Column2 = styled.div`
 export const TextWrapper = styled.div`
   max-width: 540px;
   padding-top: 0;
-  padding-bottom: 60px;
+  padding-bottom: 30px;
 `;
 
 export const TopLine = styled.p`
@@ -107,11 +113,9 @@ export const Heading = styled.h1`
 
 export const Subtitle = styled.p`
   max-width: 440px;
-  margin-bottom: 35px;
   font-size: 18px;
   line-height: 24px;
   color: #d9ddde;
-  color: #fff;
   cursor: default;
 
   @media screen and (max-width: 480px) {
@@ -119,9 +123,20 @@ export const Subtitle = styled.p`
   }
 `;
 
-export const ContactBtnWrapper = styled(LinkS)`
-  overflow: hidden;
-  margin-top: -50px;
+export const ContactBtnWrapperSecondary = styled(LinkS)`
+  display: flex;
+  border-radius: 5px;
+  justify-content: center;
+  background: ${LightGradient};
+  color: ${Dark};
+  cursor: pointer;
+  padding: 12.5px 15px;
+  max-width: 150px;
+  transition: 0.1s ease-in-out;
+  &:hover {
+    transition: 0.1s ease-in-out;
+    filter: brightness(1.1);
+  }
 `;
 
 export const BtnWrap = styled.div`
@@ -130,12 +145,6 @@ export const BtnWrap = styled.div`
 `;
 
 export const BtnResume = styled.a`
-  background: rgb(31, 115, 174);
-  background: linear-gradient(
-    180deg,
-    rgba(31, 115, 174, 1) 0%,
-    rgba(97, 175, 231, 1) 100%
-  );
   white-spate: nowrap;
   padding: ${({ big }) => (big ? "14px 48px" : "12px 30px")};
   color: #fff;
@@ -147,11 +156,10 @@ export const BtnResume = styled.a`
   justify-content: center;
   align-items: center;
   transition: 0.1s ease-in-out;
-  text-decoration: none;
 
   &:hover {
     transition: 0.1s ease-in-out;
-    filter: brightness(1.2);
+    filter: brightness(0.9);
   }
 `;
 

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { animateScroll as scroll } from "react-scroll";
 import Tilt from "react-parallax-tilt";
 import { FaBars } from "react-icons/fa";
-import cloud from "./../../Assets/cloud-computing.svg";
+import LogoState from "./../../Assets/LogoState.svg";
 
 import {
   Nav,
@@ -37,15 +37,13 @@ const NavBar = ({ toggle }) => {
       <Nav scrollNav={scrollNav}>
         <NavbarContainer>
           <NavLogo onClick={toggleHome}>
-            {scrollNav ? (
-              <img
-                alt="logo"
-                src={cloud}
-                width="50px"
-                height="50px"
-                style={{ marginRight: "20px" }}
-              />
-            ) : null}
+            <img
+              alt="logo"
+              src={LogoState}
+              width="50px"
+              height="50px"
+              style={{ marginRight: "20px" }}
+            />
             Radu C.
           </NavLogo>
           <MobileIcon onClick={toggle}>
