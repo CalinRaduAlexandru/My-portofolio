@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { Link as LinkS } from "react-scroll";
 import { HiOutlineMail } from "react-icons/hi";
 import { BiDownArrowAlt } from "react-icons/bi";
-import { DarkGradient } from "../../App-variables";
+import { BlackGradient } from "../../App-variables";
 
 export const ProfileContainer = styled.div``;
 
@@ -34,18 +34,24 @@ export const ProfileBg = styled.img`
 
 export const ContactBtnWrapper = styled(LinkS)`
   display: flex;
+  font-size: 21px;
   border-radius: 5px;
   justify-content: center;
-  background: ${DarkGradient};
+  background: ${BlackGradient};
   color: white;
   cursor: pointer;
-  padding: 12.5px 15px;
-  max-width: 150px;
+  padding: 12.5px 15px 15px 15px;
+  width: 200px;
+  transition: 0.1s ease-in-out;
+  &:hover {
+    transition: 0.1s ease-in-out;
+    filter: brightness(1.1);
+  }
 `;
 
 export const ArrowForward = styled(HiOutlineMail)`
-  margin-left: 8px;
-  font-size: 20px;
+  margin-left: 12px;
+  font-size: 25px;
 
   @media screen and (max-width: 800px) {
     font-size: 20px;
@@ -57,8 +63,8 @@ export const ArrowForward = styled(HiOutlineMail)`
 `;
 
 export const ArrowRight = styled(BiDownArrowAlt)`
-  margin-left: 8px;
-  font-size: 20px;
+  margin-left: 12px;
+  font-size: 25px;
 
   @media screen and (max-width: 800px) {
     font-size: 20px;

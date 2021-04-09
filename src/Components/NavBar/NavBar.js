@@ -44,7 +44,7 @@ const NavBar = ({ toggle }) => {
               height="50px"
               style={{ marginRight: "20px" }}
             />
-            Radu C.
+            Radu Călin`s Portfolio
           </NavLogo>
           <MobileIcon onClick={toggle}>
             <FaBars />

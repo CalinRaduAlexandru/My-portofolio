@@ -34,7 +34,6 @@ export const AboutWrapper = styled.div`
   max-width: 1300px;
   margin-right: auto;
   margin-left: auto;
-  padding: 0 44px;
   justify-content: center;
 
   @media screen and (max-width: 768px) {
@@ -47,8 +46,7 @@ export const AboutRow = styled.div`
   display: flex;
   justify-content: space-around;
   width: 100vw;
-  margin: 0 60px;
-  padding: 0 60px;
+
   align-items: center;
 
   @media screen and (max-width: 1200px) {
@@ -59,8 +57,6 @@ export const AboutRow = styled.div`
 `;
 
 export const Column1 = styled.div`
-  margin-bottom: 15px;
-  padding: 0 5px;
   grid-area: col1;
 `;
 
@@ -83,7 +79,7 @@ export const TextWrapper = styled.div`
 export const TopLine = styled.p`
   color: ${Regular};
   padding: 5px;
-  font-size: 16px;
+  font-size: 21px;
   line-height: 16px;
   font-weight: 700;
   letter-spacing: 1.4px;
@@ -100,7 +96,7 @@ export const TopLine = styled.p`
 export const Heading = styled.h1`
   margin-bottom: 16px;
   padding: 5px 0;
-  font-size: 35px;
+  font-size: 42px;
   line-height: 1.1;
   font-weight: 600;
   cursor: default;
@@ -129,9 +125,10 @@ export const ContactBtnWrapperSecondary = styled(LinkS)`
   justify-content: center;
   background: ${LightGradient};
   color: ${Dark};
+  font-size: 21px;
   cursor: pointer;
-  padding: 12.5px 15px;
-  max-width: 150px;
+  padding: 12.5px 15px 15px 15px;
+  width: 200px;
   transition: 0.1s ease-in-out;
   &:hover {
     transition: 0.1s ease-in-out;

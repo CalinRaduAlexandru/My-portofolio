@@ -5,6 +5,7 @@ import Sidebar from "../Components/Sidebar/Sidebar";
 import Footer from "../Components/Footer/Footer";
 import { ScrollTop } from "./ScrollTop";
 import Scene from "../Components/Hero/Scene";
+import "./home.styles.css";
 
 const AboutSection = lazy(() => import("../Components/About/About-section"));
 const Projects = lazy(() => import("../Components/Projects/Projects"));
@@ -26,7 +27,7 @@ const Home = () => {
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <NavBar toggle={toggle} />
       <ScrollTop />
-      <div style={{ overflowX: "hidden" }}>
+      <div className="home">
         <Scene />
         <Suspense
           fallback={

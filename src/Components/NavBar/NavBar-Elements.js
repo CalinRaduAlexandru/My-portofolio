@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { Link } from "react-scroll";
-import { MainGradient, Light, Regular } from "../../App-variables";
+import { MainGradient, Regular, Dark } from "../../App-variables";
 
 export const Nav = styled.nav`
   position: relative;
@@ -13,7 +13,7 @@ export const Nav = styled.nav`
   align-item: center;
   font-size: 1rem;
   top: 0;
-  z-index: 999;
+  z-index: 200;
   position: -webkit-sticky;
   position: sticky;
   animation: appear 1s;
@@ -44,7 +44,7 @@ export const NavbarContainer = styled.div`
 export const NavLogo = styled.div`
   justify-self: flex-start;
   cursor: pointer;
-  font-size: 26px;
+  font-size: 21px;
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -140,7 +140,7 @@ export const NavLinks = styled(Link)`
    transition: ease-in-out 0.2s;
 
   &.active {
-    border-bottom: 3px solid ${Light};
+    border-bottom: 3px solid ${Dark};
   }
 
   &:hover {

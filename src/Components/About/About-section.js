@@ -4,6 +4,7 @@ import Radu_Calin_Resume from "./../../Assets/Radu_Calin_Resume.PDF";
 import { ArrowRight, ArrowForward } from "../Hero/Hero-elements";
 import "./About-button.styles.css";
 import ParticlesComp from "./../../SingleComponent/Particles/Particles.js";
+import LaptopNerd from "./../../Assets/LaptopNerd.png";
 
 import {
   AboutContainer,
@@ -47,20 +48,20 @@ const AboutSection = () => {
                   allowFullScreen
                 ></iframe>
                 <HeroP>
-                  Radu Călin | Full-stack <br /> Web & Mobile Developer
+                  <Subtitle>
+                    Let`s discover and build new possibilities in which we can
+                    expand your vision!
+                  </Subtitle>
                 </HeroP>
               </ImgWrap>
             </Column1>
             <Column2>
               <TextWrapper data-aos="fade-left">
+                <img src={LaptopNerd} className="LaptopNerd" alt="LaptopNerd" />
                 <TopLine>Excited to bring life to your project!</TopLine>
                 <Heading>
                   Creative, proactive and passionate about my work
                 </Heading>
-                <Subtitle>
-                  Let`s discover and build new possibilities in which we can
-                  expand your vision!
-                </Subtitle>
               </TextWrapper>
               <div style={{ display: "flex" }}>
                 <ContactBtnWrapperSecondary

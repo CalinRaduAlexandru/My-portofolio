@@ -1,8 +1,6 @@
 import React from "react";
-import BgProjectCloud from "./../../Assets/BgProjectCloud.svg";
 import {
   ProjectWrapper,
-  ProjectCloud,
   ProjectInfo,
   ProjectImg,
   ProjectTitle,
@@ -26,7 +24,6 @@ export const Project = ({
 }) => {
   return (
     <ProjectWrapper>
-      {cloud ? <ProjectCloud src={BgProjectCloud} alt="cloud" /> : null}
       <ProjectInfo
         href={`${websiteRef}`}
         target="_blank"

@@ -56,9 +56,9 @@ const Footer = () => {
               <Linkedin />
             </SocialIconLink>
           </SocialIcons>
+          <WebsiteRights>Călin Radu © 2021 All rights reserved.</WebsiteRights>
         </SocialMediaWrap>
       </SocialMedia>
-      <WebsiteRights>Călin Radu © 2021 All rights reserved.</WebsiteRights>
     </FooterContainer>
   );
 };

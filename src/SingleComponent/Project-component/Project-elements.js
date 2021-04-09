@@ -3,18 +3,23 @@ import { FaGithub } from "react-icons/fa";
 
 export const ProjectWrapper = styled.div`
   margin: 10px;
+  min-width: 300px;
   width: 80%;
+  padding: 20px 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   border-radius: 10px;
   position: relative;
-  @media (max-width: 700px) {
-    margin-bottom: 150px;
-  }
-  @media (max-width: 500px) {
-    margin: 10px 0;
+  box-shadow: 5px 5px 2px 0px rgba(0, 44, 128, 0.1);
+  border-radius: 15px;
+  background: rgba(0, 44, 128, 0.075);
+  cursor: pointer;
+  transition: ease-in-out 0.5s;
+  &:hover {
+    filter: brightness(1.1);
+    transform: scale(1.1);
   }
 `;
 
@@ -34,12 +39,6 @@ export const ProjectInfo = styled.a`
   align-items: flex-start;
   z-index: 10;
   text-decoration: none;
-  cursor: pointer;
-  transition: ease-in-out 0.5s;
-  &:hover {
-    filter: brightness(1.2);
-    transform: scale(1.1);
-  }
 `;
 
 export const ProjectImg = styled.img`
@@ -49,7 +48,7 @@ export const ProjectImg = styled.img`
 `;
 
 export const ProjectTitle = styled.h1`
-  color: #fff;
+  color: #003db3;
   font-size: 24px;
   margin-top: 20px;
   margin-left: 10px;
@@ -74,7 +73,6 @@ export const ProjectText = styled.p`
   height: 80px;
   font-weight: 500;
   margin: 20px 0 0 10px;
-  color: #2c1a24;
   color: #fff;
   @media (max-width: 500px) {
     font-size: 12px;

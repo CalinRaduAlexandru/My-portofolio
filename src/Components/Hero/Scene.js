@@ -41,7 +41,7 @@ const Scene = () => {
             onMouseEnter={onHover}
             onMouseLeave={onHover}
           >
-            Contact me! {hover ? <ArrowForward /> : <ArrowRight />}
+            Contact me! {hover ? <ArrowRight /> : <ArrowForward />}
           </ContactBtnWrapper>
         </div>
 
