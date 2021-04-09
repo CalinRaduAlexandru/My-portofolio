@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import { Link as LinkS } from "react-scroll";
-import { MdKeyboardArrowRight, MdArrowForward } from "react-icons/md";
 import { HiOutlineMail } from "react-icons/hi";
 import { BiDownArrowAlt } from "react-icons/bi";
 import { MainGradient } from "../../App-variables";

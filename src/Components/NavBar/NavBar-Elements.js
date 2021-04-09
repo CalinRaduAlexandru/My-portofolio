@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { Link } from "react-scroll";
-import { MainGradient, Light, Regular, White } from "../../App-variables";
+import { MainGradient, Light, White } from "../../App-variables";
 
 export const Nav = styled.nav`
   position: relative;

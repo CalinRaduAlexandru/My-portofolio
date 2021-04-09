@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { HiDownload } from "react-icons/hi";
 import { Link as LinkS } from "react-scroll";
-import { MainGradient, Regular, White } from "../../App-variables";
+import { MainGradient, White } from "../../App-variables";
 
 export const AboutContainer = styled.div`
   color: ${White};

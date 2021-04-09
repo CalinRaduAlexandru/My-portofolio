@@ -11,8 +11,6 @@ import {
   ProjectsContainer,
   ProjectsWrapper,
   FirstRow,
-  SecondRow,
-  ThirdRow,
 } from "./Projects-elements";
 
 const Projects = () => {

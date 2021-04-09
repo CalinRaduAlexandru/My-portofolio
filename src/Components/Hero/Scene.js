@@ -25,6 +25,7 @@ const Scene = () => {
     setHover(!hover);
   };
   const handleScroll = () => setOffsetY(window.pageYOffset);
+  console.log(offsetY);
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
