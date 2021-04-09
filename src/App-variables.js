@@ -1,4 +1,6 @@
-export const MainGradient = "linear-gradient(180deg, #8490fa 0%, #2f3fce 100%)";
-export const Regular = "#19258e";
-export const Light = "#98c9f4";
+export const MainGradient = "linear-gradient(180deg, #4d89ff 0%, #0057ff 100%)";
+export const Regular = "#0057ff";
+export const Light = "#80abff";
 export const White = "#E2F0FC";
+
+const colors = ["80abff", "#4d89ff", "#0057ff", "#003DB3", "#002c80"];

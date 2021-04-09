@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { HiDownload } from "react-icons/hi";
 import { Link as LinkS } from "react-scroll";
-import { MainGradient, White } from "../../App-variables";
+import { MainGradient, White, Light } from "../../App-variables";
 
 export const AboutContainer = styled.div`
   color: ${White};
@@ -75,7 +75,7 @@ export const TextWrapper = styled.div`
 `;
 
 export const TopLine = styled.p`
-  color: #98c9f4;
+  color: ${Light};
   padding: 5px;
   font-size: 16px;
   line-height: 16px;

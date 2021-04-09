@@ -5,7 +5,7 @@ import { MainGradient, Light, White } from "../../App-variables";
 export const Nav = styled.nav`
   position: relative;
   background: ${({ scrollNav }) => (scrollNav ? MainGradient : "transparent")};
-  color: ${({ scrollNav }) => (scrollNav ? "White" : "#19258e")};
+  color: ${({ scrollNav }) => (scrollNav ? "White" : "#0057ff")};
   height: 80px;
   margin-top: -80px;
   display: flex;
