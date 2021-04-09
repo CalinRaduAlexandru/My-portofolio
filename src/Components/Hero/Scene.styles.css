@@ -1,23 +1,19 @@
-.txt {
+.heroDetails {
   position: absolute;
-  color: #fff;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 30%;
+  left: 10%;
+  cursor: default;
 }
 
-@media (max-width: 1250px) {
-  .txt {
-    top: 40%;
-    left: 35%;
-  }
+.txt {
+  color: #19258e;
+  font-size: 50px;
+  margin-bottom: 5px;
 }
 
-@media (max-width: 700px) {
-  .txt {
-    top: 30%;
-    left: 35%;
-  }
+.heroSubheader {
+  color: #8490fa;
+  margin-bottom: 20px;
 }
 
 .container {
@@ -25,23 +21,15 @@
   min-height: 100vh;
   height: auto;
   background: url(backgroundPS.jpg);
-  background-attachment: fixed;
+
   position: relative;
   overflow: hidden;
 }
 
-.cloud-left {
-  -webkit-transform: scaleX(-1);
-  transform: scaleX(-1);
+.HeroPolyghon {
   position: absolute;
-  bottom: -2%;
-  left: -1%;
-}
-
-.cloud-right {
-  position: absolute;
-  bottom: -2%;
-  right: -1%;
+  width: 100vw;
+  bottom: -8%;
 }
 
 @media (min-width: 1400px) {

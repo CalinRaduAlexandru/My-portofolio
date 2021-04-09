@@ -1,12 +1,13 @@
 import styled from "styled-components";
 import { HiDownload } from "react-icons/hi";
 import { Link as LinkS } from "react-scroll";
+import { MainGradient, Regular, White } from "../../App-variables";
 
 export const AboutContainer = styled.div`
-  color: #fff;
+  color: ${White};
   position: relative;
   padding: 0px;
-  background: #05043d;
+  background: ${MainGradient};
   min-height: 100vh;
 
   @media screen and (max-width: 768px) {
@@ -37,17 +38,12 @@ export const AboutWrapper = styled.div`
 `;
 
 export const AboutRow = styled.div`
-  display: grid;
-  margin: 0 40px;
-  grid-auto-columns: minmax(auto, 1fr);
+  display: flex;
+  justify-content: space-around;
+  width: 100vw;
+  margin: 0 60px;
+  padding: 0 60px;
   align-items: center;
-  grid-template-areas: ${({ imgStart }) =>
-    imgStart ? `'col2 col1'` : `'col1 col2'`};
-
-  @media screen and (max-width: 768px) {
-    grid-template-areas: ${({ imgStart }) =>
-      imgStart ? `'col1' 'col2'` : `'col1 col1' 'col2 col2'`};
-  }
 
   @media screen and (max-width: 1200px) {
     display: flex;
@@ -79,7 +75,7 @@ export const TextWrapper = styled.div`
 `;
 
 export const TopLine = styled.p`
-  color: #0d5485;
+  color: #98c9f4;
   padding: 5px;
   font-size: 16px;
   line-height: 16px;
@@ -98,12 +94,11 @@ export const TopLine = styled.p`
 export const Heading = styled.h1`
   margin-bottom: 16px;
   padding: 5px 0;
-  font-size: 30px;
+  font-size: 35px;
   line-height: 1.1;
   font-weight: 600;
   cursor: default;
-
-  color: ${({ lightText }) => (lightText ? "#f7f8fa" : "#010606")};
+  color: ${White};
 
   @media screen and (max-width: 480px) {
     font-size: 26px;
@@ -165,7 +160,7 @@ export const Download = styled(HiDownload)`
 `;
 
 export const ImgWrap = styled.div`
-  max-width: 500px;
+  width: 500px;
   height: 500px;
   max-height: 500px;
   display: flex;

@@ -1,9 +1,11 @@
 import styled from "styled-components";
 import { Link } from "react-scroll";
+import { MainGradient, Light, Regular, White } from "../../App-variables";
 
 export const Nav = styled.nav`
   position: relative;
-  background: ${({ scrollNav }) => (scrollNav ? "#05043d" : "transparent")};
+  background: ${({ scrollNav }) => (scrollNav ? MainGradient : "transparent")};
+  color: ${({ scrollNav }) => (scrollNav ? "White" : "#19258e")};
   height: 80px;
   margin-top: -80px;
   display: flex;
@@ -31,7 +33,6 @@ export const NavbarContainer = styled.div`
 `;
 
 export const NavLogo = styled.div`
-  color: #0077b6;
   justify-self: flex-start;
   cursor: pointer;
   font-size: 26px;
@@ -55,7 +56,7 @@ export const NavLogo = styled.div`
 
   &:hover {
     transition: 0.2s ease-in-out;
-    color: #00b4d8;
+    filter: brightness(1.1);
   }
 
   @media (max-width: 768px) {
@@ -74,7 +75,7 @@ export const MobileIcon = styled.div`
     transform: translate(-100%, 60%);
     font-size: 1.8rem;
     cursor: pointer;
-    color: #0077b6;
+    color: ${White};
     animation: appear 1.4s;
     @keyframes appear {
       0% {
@@ -124,60 +125,17 @@ export const NavItemHome = styled.li`
 
 export const NavItemFirst = styled.li`
   height: 80px;
-  animation: appear 1.4s;
-  @keyframes appear {
-    0% {
-      opacity: 0;
-    }
-
-    40% {
-      opacity: 0;
-    }
-
-    100% {
-      opacity: 1;
-    }
-  }
 `;
 
 export const NavItemSecond = styled.li`
   height: 80px;
-  animation: appear 1.6s;
-  @keyframes appear {
-    0% {
-      opacity: 0;
-    }
-
-    40% {
-      opacity: 0;
-    }
-
-    100% {
-      opacity: 1;
-    }
-  }
 `;
 
 export const NavItemThird = styled.li`
   height: 80px;
-  animation: appear 1.8s;
-  @keyframes appear {
-    0% {
-      opacity: 0;
-    }
-
-    40% {
-      opacity: 0;
-    }
-
-    100% {
-      opacity: 1;
-    }
-  }
 `;
 
 export const NavLinks = styled(Link)`
-  color: #00b4d8;
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -187,10 +145,10 @@ export const NavLinks = styled(Link)`
    transition: ease-in-out 0.2s;
 
   &.active {
-    border-bottom: 3px solid #20639b;
+    border-bottom: 3px solid ${Light};
   }
 
   &:hover {
-    color: #0077b6;
+    filter: brightness(1.1);
     transform: scale(1.1);
 `;

@@ -4,8 +4,6 @@ import { gsap } from "gsap";
 import Radu_Calin_Resume from "./../../Assets/Radu_Calin_Resume.PDF";
 import { ArrowRight, ArrowForward } from "../Hero/Hero-elements";
 import "./About-button.styles.css";
-import "./Collaborate.styles.css";
-import HelloAustronaut from "./../../Assets/HelloAustronaut.svg";
 import ParticlesComp from "./../../SingleComponent/Particles/Particles.js";
 
 import {
@@ -26,20 +24,7 @@ import {
   HeroP,
 } from "./About-elements";
 
-const AboutSection = ({
-  lightBg,
-  id,
-  imgStart,
-  topLine,
-  lightText,
-  headline,
-  darkText,
-  description,
-  buttonLabel,
-  alt,
-  primary,
-  dark,
-}) => {
+const AboutSection = () => {
   const [hover, setHover] = useState(false);
   const [offsetY, setOffsetY] = useState(0);
   const onHover = () => {
@@ -49,14 +34,6 @@ const AboutSection = ({
   const handleScroll = () => setOffsetY(window.pageYOffset);
 
   useEffect(() => {
-    gsap.to(".hello-austronaut", {
-      duration: 20,
-      rotation: 360,
-      repeat: -1,
-    });
-  }, []);
-
-  useEffect(() => {
     window.addEventListener("scroll", handleScroll);
 
     return () => window.removeEventListener("scroll", handleScroll);
@@ -64,83 +41,47 @@ const AboutSection = ({
 
   return (
     <>
-      <AboutContainer id={id}>
+      <AboutContainer id="about">
         <ParticlesComp />
         <AboutWrapper>
-          <AboutRow imgStart={imgStart}>
+          <AboutRow>
             <Column1>
-              <TextWrapper data-aos="fade-up">
+              <ImgWrap>
+                <iframe
+                  title="spaceship"
+                  width="100%"
+                  height="100%"
+                  src="https://www.youtube.com/embed/v8zkBEcbkJ8"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                ></iframe>
+                <HeroP>
+                  Radu Călin | Full-stack <br /> Web & Mobile Developer
+                </HeroP>
+                <BtnWrap>
+                  <BtnResume
+                    href={Radu_Calin_Resume}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Resume
+                    <Download />
+                  </BtnResume>
+                </BtnWrap>
+              </ImgWrap>
+            </Column1>
+            <Column2>
+              <TextWrapper data-aos="fade-left">
                 <TopLine>Excited to bring life to your project!</TopLine>
-                <Heading lightText={lightText}>{headline}</Heading>
-                <Subtitle darkText={darkText}>
+                <Heading>
+                  Creative, proactive and passionate about my work
+                </Heading>
+                <Subtitle>
                   Let`s discover and build new possibilities in which we can
                   expand your vision!
                 </Subtitle>
               </TextWrapper>
-              <div className="collaborate">
-                <div
-                  className="collab-text"
-                  onClick={() =>
-                    gsap.to(".bubble, .hello-austronaut", {
-                      duration: 3,
-                      rotate: 720,
-                      ease: "ease-in-out",
-                    })
-                  }
-                >
-                  <div className="first-row">
-                    <div className="bubble x1">
-                      <h1>L</h1>
-                    </div>
-                    <div className="bubble x2">
-                      <h1>E</h1>
-                    </div>
-                    <div className="bubble x3">
-                      <h1>T</h1>
-                    </div>
-                    <div className="bubble x4">
-                      <h1>`</h1>
-                    </div>
-                    <div className="bubble x5">
-                      <h1>S</h1>
-                    </div>
-                    <img
-                      src={HelloAustronaut}
-                      alt="austronaut"
-                      width="150px"
-                      height="150px"
-                      className="hello-austronaut"
-                      onClick={() =>
-                        gsap.to(".bubble, .hello-austronaut", {
-                          duration: 3,
-                          rotation: 720,
-                          ease: "ease-in-out",
-                        })
-                      }
-                    />
-                  </div>
-                  <div className="second-row">
-                    <div className="bubble x6">
-                      <h1>C</h1>
-                    </div>
-                    <div className="bubble x7">
-                      <h1>O</h1>
-                    </div>
-                    <div className="bubble x8">
-                      <h1>L</h1>
-                    </div>
-                    <div className="bubble x9">
-                      <h1>L</h1>
-                    </div>
-                    <div className="bubble x10">
-                      <h1>A</h1>
-                    </div>
-                    <div className="bubble x11">
-                      <h1>B</h1>
-                    </div>
-                  </div>
-                </div>
-              </div>
               <ContactBtnWrapper
                 to="contact"
                 smooth={true}
@@ -167,32 +108,6 @@ const AboutSection = ({
                   </div>
                 </div>
               </ContactBtnWrapper>
-            </Column1>
-            <Column2 data-aos="fade-right">
-              <ImgWrap>
-                <iframe
-                  title="spaceship"
-                  width="100%"
-                  height="100%"
-                  src="https://www.youtube.com/embed/v8zkBEcbkJ8"
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                ></iframe>
-                <HeroP>
-                  Radu Călin | Full-stack <br /> Web & Mobile Developer
-                </HeroP>
-                <BtnWrap>
-                  <BtnResume
-                    href={Radu_Calin_Resume}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Resume
-                    <Download />
-                  </BtnResume>
-                </BtnWrap>
-              </ImgWrap>
             </Column2>
           </AboutRow>
         </AboutWrapper>

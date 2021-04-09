@@ -1,13 +1,11 @@
 import React from "react";
 import "aos/dist/aos.css";
 import "./../Hero/Scene.styles.css";
-import PhoneSlides from "./PhoneSlides";
 import { Project } from "../../SingleComponent/Project-component/Project-component";
 import Face from "./../../Assets/Face.svg";
 import Lotus from "./../../Assets/Lotus.svg";
 import MagnifyingGlass from "./../../Assets/MagnifyingGlass.svg";
 import Crownfeel from "./../../Assets/Crownfeel.svg";
-import MobileProject from "../../SingleComponent/MobileProject/MobileProject";
 
 import {
   ProjectsContainer,
@@ -21,7 +19,6 @@ const Projects = () => {
   return (
     <div className="container">
       <ProjectsContainer id="projects">
-        <MobileProject />
         <ProjectsWrapper>
           <FirstRow data-aos="fade-right">
             <Project
@@ -43,11 +40,6 @@ const Projects = () => {
               websiteRef="https://crownfeelapp.herokuapp.com/"
               githubRef="https://github.com/CalinRaduAlexandru/CrownFeel/tree/masterbranch"
             />
-          </FirstRow>
-          <SecondRow>
-            <PhoneSlides />
-          </SecondRow>
-          <ThirdRow data-aos="fade-left">
             <Project
               img={Lotus}
               cloud="true"
@@ -68,7 +60,7 @@ const Projects = () => {
               websiteRef="https://search-face-app.herokuapp.com/"
               githubRef="https://github.com/CalinRaduAlexandru/Search-face"
             />
-          </ThirdRow>
+          </FirstRow>
         </ProjectsWrapper>
       </ProjectsContainer>
     </div>

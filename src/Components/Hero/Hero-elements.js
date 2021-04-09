@@ -1,30 +1,30 @@
 import styled from "styled-components";
 import { Link as LinkS } from "react-scroll";
 import { MdKeyboardArrowRight, MdArrowForward } from "react-icons/md";
+import { HiOutlineMail } from "react-icons/hi";
+import { BiDownArrowAlt } from "react-icons/bi";
+import { MainGradient } from "../../App-variables";
 
-export const ProfileContainer = styled.div`
-  width: 330px;
-  height: 330px;
-  position: absolute;
-  background: #05043d;
-  border-radius: 50%;
-  bottom: 5%;
-  right: 10%;
-
-  @media (max-width: 1250px) {
-    width: 250px;
-    height: 250px;
-    right: 5%;
-  }
-`;
+export const ProfileContainer = styled.div``;
 
 export const ProfileBg = styled.img`
-  width: 350px;
+  width: 400px;
   height: auto;
   position: absolute;
-  bottom: 18%;
-  right: 15%;
+  bottom: 16%;
+  right: 13%;
   animation: slide-left 2s;
+
+  @keyframes slide-left {
+    0% {
+      margin-right: -100px;
+      opacity: 0;
+    }
+    100% {
+      margin-right: 0px;
+      opacity: 1;
+    }
+  }
 
   @media (max-width: 720px) {
     width: 250px;
@@ -33,26 +33,17 @@ export const ProfileBg = styled.img`
 `;
 
 export const ContactBtnWrapper = styled(LinkS)`
-  position: absolute;
-  right: 10%;
-  bottom: 15%;
-  animation: slide-left 2s;
-  @keyframes slide-left {
-    0% {
-      margin-right: -650px;
-      opacity: 0;
-    }
-    40% {
-      opacity: 0;
-    }
-    100% {
-      margin-right: 0px;
-      opacity: 1;
-    }
-  }
+  display: flex;
+  border-radius: 5px;
+  justify-content: center;
+  background: ${MainGradient};
+  color: white;
+  cursor: pointer;
+  padding: 12.5px 15px;
+  max-width: 150px;
 `;
 
-export const ArrowForward = styled(MdArrowForward)`
+export const ArrowForward = styled(HiOutlineMail)`
   margin-left: 8px;
   font-size: 20px;
 
@@ -65,7 +56,7 @@ export const ArrowForward = styled(MdArrowForward)`
   }
 `;
 
-export const ArrowRight = styled(MdKeyboardArrowRight)`
+export const ArrowRight = styled(BiDownArrowAlt)`
   margin-left: 8px;
   font-size: 20px;
 

@@ -29,7 +29,7 @@ export const ProjectsWrapper = styled.div`
 
 export const FirstRow = styled.div`
   display: flex;
-  flex-direction: column;
+
   margin: 0 30px 0 40px;
   @media (max-width: 1250px) {
     display: none;

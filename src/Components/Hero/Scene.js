@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from "react";
-import astronaut from "./../../Assets/astronaut.png";
-import planet1 from "./../../Assets/planet1.png";
-import planet2 from "./../../Assets/planet2.png";
-import rocket from "./../../Assets/rocket.png";
+import geometryIcon from "./../../Assets/geometryIcon.png";
+import designIcon from "./../../Assets/designIcon.png";
+import serverIcon from "./../../Assets/serverIcon.png";
+import databaseIcon from "./../../Assets/databaseIcon.png";
 import cloud from "./../../Assets/cloud-computing.svg";
 import profile from "./../../Assets/BgMinified.png";
+import profileSmile from "./../../Assets/BgMinifiedSmile.png";
 import "./Scene.styles.css";
-import Title from "../../SingleComponent/Title-component/Title";
-import BottomCloud from "./../../Assets/VectorCloud.png";
+import HeroPolyghon from "./../../Assets/HeroPolyghon.svg";
 
 import {
   ProfileContainer,
@@ -19,12 +19,11 @@ import {
 const Parallax = require("parallax-js");
 
 const Scene = () => {
-  const [hover, setHover] = useState(false);
   const [offsetY, setOffsetY] = useState(0);
+  const [hover, setHover] = useState(false);
   const onHover = () => {
     setHover(!hover);
   };
-
   const handleScroll = () => setOffsetY(window.pageYOffset);
 
   useEffect(() => {
@@ -40,11 +39,15 @@ const Scene = () => {
   return (
     <div className="container-wrapper">
       <div className="container" id="home">
-        <h1 className="txt">
-          <Title />
-        </h1>
-        <ProfileContainer>
-          <ProfileBg alt="Radu Calin" src={profile} />
+        <div className="heroDetails">
+          <h1 className="txt">
+            Full-stack <br />
+            Web and mobile <br />
+            Developer and designer
+          </h1>
+          <h3 className="heroSubheader">
+            Here to bring solutions into your thriving bussiness!{" "}
+          </h3>
           <ContactBtnWrapper
             to="contact"
             smooth={true}
@@ -55,18 +58,15 @@ const Scene = () => {
             onMouseEnter={onHover}
             onMouseLeave={onHover}
           >
-            <div
-              className="svg-wrapper"
-              style={{ transform: `translateY(${offsetY * 0.05}px)` }}
-            >
-              <svg height="60" width="320" xmlns="http://www.w3.org/2000/svg">
-                <rect className="shape" height="60" width="320" />
-              </svg>
-              <div className="text">
-                Contact me! {hover ? <ArrowForward /> : <ArrowRight />}
-              </div>
-            </div>
+            Contact me! {hover ? <ArrowForward /> : <ArrowRight />}
           </ContactBtnWrapper>
+        </div>
+        <ProfileContainer>
+          {hover ? (
+            <ProfileBg alt="Radu Calin" src={profileSmile} />
+          ) : (
+            <ProfileBg alt="Radu Calin" src={profile} />
+          )}
         </ProfileContainer>
         <ul id="scene">
           <li className="layer" data-depth=".1">
@@ -78,24 +78,22 @@ const Scene = () => {
               style={{ marginLeft: "50px", marginTop: "10px" }}
             />
           </li>
-          <li className="layer" data-depth="0.05">
-            <img src={planet1} alt="planet1" />
+          <li className="layer" data-depth="-0.05">
+            <img src={designIcon} alt="designIcon" />
           </li>
-          <li className="layer moon" data-depth="-0.15">
-            <img src={planet2} alt="planet2" />
+          <li className="layer moon" data-depth="0.15">
+            <img src={serverIcon} alt="serverIcon" />
           </li>
-          <li className="layer" data-depth="2">
-            <img src={astronaut} alt="astronaut" />
+          <li className="layer" data-depth="-0.15">
+            <img src={geometryIcon} alt="geometryIcon" />
           </li>
-          <li className="layer" data-depth="0.5">
-            <img src={rocket} alt="rocket" />
+          <li className="layer" data-depth="0.1">
+            <img src={databaseIcon} alt="databaseIcon" />
           </li>
         </ul>
-        <div className="cloud-left">
-          <img src={BottomCloud} alt="cloud" />
-        </div>
-        <div className="cloud-right">
-          <img src={BottomCloud} alt="cloud" />
+
+        <div className="HeroPolyghon">
+          <img src={HeroPolyghon} alt="polygon" />
         </div>
       </div>
     </div>

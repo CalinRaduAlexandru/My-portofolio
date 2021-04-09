@@ -3,7 +3,6 @@ import Aos from "aos";
 import NavBar from "../Components/NavBar/NavBar";
 import Sidebar from "../Components/Sidebar/Sidebar";
 import Footer from "../Components/Footer/Footer";
-import { homeObjOne } from "../Components/About/Data";
 import { ScrollTop } from "./ScrollTop";
 import Scene from "../Components/Hero/Scene";
 
@@ -42,7 +41,7 @@ const Home = () => {
           }
         >
           <section>
-            <AboutSection {...homeObjOne} />
+            <AboutSection />
             <Projects />
             <Form id="contact" />
             <Footer />
