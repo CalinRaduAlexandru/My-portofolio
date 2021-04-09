@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { Link as LinkS } from "react-scroll";
 import { HiOutlineMail } from "react-icons/hi";
 import { BiDownArrowAlt } from "react-icons/bi";
-import { MainGradient } from "../../App-variables";
+import { DarkGradient } from "../../App-variables";
 
 export const ProfileContainer = styled.div``;
 
@@ -35,7 +35,7 @@ export const ContactBtnWrapper = styled(LinkS)`
   display: flex;
   border-radius: 5px;
   justify-content: center;
-  background: ${MainGradient};
+  background: ${DarkGradient};
   color: white;
   cursor: pointer;
   padding: 12.5px 15px;

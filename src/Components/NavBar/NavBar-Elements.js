@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { Link } from "react-scroll";
-import { MainGradient, Light, White } from "../../App-variables";
+import { MainGradient, Light, White, Regular } from "../../App-variables";
 
 export const Nav = styled.nav`
   position: relative;
@@ -16,6 +16,16 @@ export const Nav = styled.nav`
   z-index: 100;
   position: -webkit-sticky;
   position: sticky;
+  animation: appear 1s;
+
+  @keyframes appear {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
   @media screen and (max-width: 960px) {
     transition: 0.8s all ease;
   }
@@ -39,20 +49,6 @@ export const NavLogo = styled.div`
   display: flex;
   align-items: center;
   text-decoration: none;
-  animation: appear 1s;
-  @keyframes appear {
-    0% {
-      opacity: 0;
-    }
-
-    40% {
-      opacity: 0;
-    }
-
-    100% {
-      opacity: 1;
-    }
-  }
 
   &:hover {
     transition: 0.2s ease-in-out;
@@ -99,6 +95,7 @@ export const NavMenu = styled.ul`
   list-style: none;
   text-align: center;
   margin-right: 2px;
+  color: ${Regular};
 
   @media screen and (max-width: 768px) {
     display: none;
