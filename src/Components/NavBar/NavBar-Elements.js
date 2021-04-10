@@ -61,6 +61,7 @@ export const NavLogo = styled.div`
 
   @media (max-width: 768px) {
     font-size: 18px;
+    color: ${({ scrollNav }) => (scrollNav ? "#E2F0FC" : "#4d89ff")};
   }
   @media (max-width: 368px) {
     font-size: 14px;
