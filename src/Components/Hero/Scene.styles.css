@@ -32,6 +32,7 @@
   cursor: default;
   margin-left: 10%;
   min-width: 600px;
+  z-index: 110;
 }
 
 .txt {
@@ -97,6 +98,25 @@
   .heroSubheader {
     font-size: 12px;
     max-width: 300px;
+  }
+
+  .staticIcons {
+    left: 15%;
+    width: 80%;
+  }
+}
+
+@media (min-height: 600px) {
+  .heroDetails {
+    padding: 0 auto;
+    margin-top: 150px;
+  }
+}
+
+@media (max-height: 900px) {
+  .heroDetails {
+    padding: 0 auto;
+    margin-top: 100px;
   }
 }
 

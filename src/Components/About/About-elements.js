@@ -215,11 +215,10 @@ export const HeroP = styled.div`
   cursor: default;
 
   @media screen and (max-width: 768px) {
-    font-size: 30px;
+    font-size: 21px;
     max-width: 400px;
   }
   @media screen and (max-width: 500px) {
-    font-size: 17px;
-    max-width: 300px;
+    font-size: 13px;
   }
 `;
