@@ -36,7 +36,7 @@ const NavBar = ({ toggle }) => {
     <>
       <Nav scrollNav={scrollNav}>
         <NavbarContainer>
-          <NavLogo onClick={toggleHome}>
+          <NavLogo onClick={toggleHome} scrollNav={scrollNav}>
             <img
               alt="logo"
               src={LogoState}

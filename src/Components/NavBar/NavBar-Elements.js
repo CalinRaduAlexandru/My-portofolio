@@ -52,10 +52,11 @@ export const NavLogo = styled.div`
   display: flex;
   align-items: center;
   text-decoration: none;
+  color: ${({ scrollNav }) => (scrollNav ? "#E2F0FC" : "#0057ff")};
 
   &:hover {
     transition: 0.2s ease-in-out;
-    filter: brightness(1.1);
+    filter: brightness(0.9);
   }
 
   @media (max-width: 768px) {
