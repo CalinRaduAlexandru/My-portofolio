@@ -1,0 +1,57 @@
+.ProjectPoly {
+  position: absolute;
+  bottom: 0;
+}
+
+.rec-arrow {
+  color: #e2f0fc !important;
+  background: linear-gradient(180deg, #4d89ff 0%, #002c80 100%);
+}
+
+.rec-arrow-right {
+}
+
+.rec-arrow-left {
+}
+
+.rec-arrow:hover {
+  filter: brightness(1.1) !important;
+}
+
+.rec-arrow:disabled {
+  background: linear-gradient(180deg, #e2f0fc 0%, #80abff 100%);
+  color: #003db3 !important;
+}
+
+.cJeRRR {
+  background: linear-gradient(180deg, #003db3 0%, #002c80 100%);
+  opacity: 0.8 !important;
+  border: #4d89ff !important;
+  box-shadow: 0 0 1px 3px #002c80 !important;
+  z-index: 100 !important;
+}
+
+.rec-dot_active {
+  background: linear-gradient(180deg, #003db3 0%, #002c80 100%);
+  border: 3px solid #4d89ff;
+}
+
+.rec-dot {
+  z-index: 99;
+}
+
+.rec-dot:hover {
+  box-shadow: 1px 1px 1px #4d89ff !important;
+  border: 1px solid #4d89ff !important;
+}
+.rec-dot_active:hover {
+  box-shadow: none !important;
+  border: none !important;
+}
+
+@media (max-width: 768px) {
+  .rec-arrow-right,
+  .rec-arrow-left {
+    display: none;
+  }
+}

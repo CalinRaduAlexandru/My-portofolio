@@ -13,12 +13,17 @@ export const ProjectWrapper = styled.div`
   position: relative;
   box-shadow: 5px 5px 2px 0px rgba(0, 44, 128, 0.1);
   border-radius: 15px;
-  background: rgba(0, 44, 128, 0.075);
+  background: rgba(255, 255, 255, 0.475);
   cursor: pointer;
   overflow: hidden;
+  margin-bottom: 10px;
+
+  @media (max-width: 768px) {
+    width: 70vw;
+  }
 `;
 
-export const ProjectInfo = styled.a`
+export const ProjectInfo = styled.div`
   font-size: 14px;
   display: flex;
   flex-direction: column;
@@ -47,13 +52,15 @@ export const ProjectTitle = styled.h1`
 export const ProjectSubTitle = styled.h2`
   font-size: 16px;
   margin-top: 10px;
-  color: #61afe7;
+  color: #e2f0fc;
   align-self: center;
   @media (max-width: 500px) {
     font-size: 14px;
     align-self: center;
   }
 `;
+
+export const AphotoLink = styled.a``;
 
 export const Photo = styled.img`
   margin: 20px 0 10px 0;
@@ -64,15 +71,19 @@ export const Photo = styled.img`
   }
 `;
 
+export const ProjectTextWrap = styled.div`
+  align-self: center;
+`;
+
 export const ProjectText = styled.p`
   max-width: 250px;
   height: 80px;
-  margin: 10px 0 0 35px;
+  margin: 10px 0 0 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: 25px;
-
   color: #4954b9;
+  padding: 0 20px;
   @media (max-width: 500px) {
     font-size: 12px;
   }
@@ -99,7 +110,7 @@ export const BtnProjectLeft = styled.a`
 
 export const LiveText = styled.p`
   font-size: 16px;
-  color: #61afe7;
+  color: #003db3;
   font-weight: bold;
   &:hover {
     filter: brightness(1.2);
@@ -111,7 +122,7 @@ export const BtnProjectRight = styled.a`
 `;
 
 export const Github = styled(FaGithub)`
-  color: #61afe7;
+  color: #003db3;
   font-size: 30px;
   &:hover {
     filter: brightness(1.2);

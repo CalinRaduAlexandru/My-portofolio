@@ -5,7 +5,9 @@ import {
   ProjectImg,
   ProjectTitle,
   ProjectSubTitle,
+  AphotoLink,
   Photo,
+  ProjectTextWrap,
   ProjectText,
   Buttons,
   BtnProjectLeft,
@@ -34,8 +36,16 @@ export const Project = ({
         {img ? <ProjectImg src={img} /> : null}
         <ProjectTitle>{title}</ProjectTitle>
         <ProjectSubTitle>{subtitle}</ProjectSubTitle>
-        <Photo src={photo} width="300px" />
-        <ProjectText>{text}</ProjectText>
+        <AphotoLink
+          href={`${websiteRef}`}
+          target="_blank"
+          aria-label="herokuapp"
+        >
+          <Photo src={photo} width="300px" />
+        </AphotoLink>
+        <ProjectTextWrap>
+          <ProjectText>{text}</ProjectText>
+        </ProjectTextWrap>
       </ProjectInfo>
       <Buttons>
         <BtnProjectLeft

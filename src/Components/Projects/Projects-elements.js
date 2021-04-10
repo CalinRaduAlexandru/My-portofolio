@@ -6,6 +6,7 @@ export const ProjectsContainer = styled.div`
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  background: linear-gradient(180deg, #4d89ff 0%, #80abff 100%);
 `;
 
 export const ProjectsWrapper = styled.div`
@@ -14,27 +15,17 @@ export const ProjectsWrapper = styled.div`
   justify-content: center;
   align-items: center;
   align-self: center;
-  width: 100vw;
-
-  @media (max-width: 1300px) {
-    flex-direction: column;
-    margin-top: 0;
-    padding: 0;
-  }
+  width: 80vw;
+  z-index: 10;
 `;
 
 export const FirstRow = styled.div`
   display: flex;
-    margin-top: 80px;
+  margin-bottom: 10px;
   width: 90vw;
-  }
-`;
-export const SecondRow = styled.div`
-  margin-top: -80px;
-`;
+  cursor: grab;
 
-export const ThirdRow = styled.div`
-  display: flex;
-  flex-direction: column;
-  margin-left: 50px;
+  @media (max-width: 700px) {
+    width: 100vw;
+  }
 `;

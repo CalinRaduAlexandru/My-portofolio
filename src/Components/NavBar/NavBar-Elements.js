@@ -1,10 +1,10 @@
 import styled from "styled-components";
 import { Link } from "react-scroll";
-import { MainGradient, Regular, Dark } from "../../App-variables";
+import { DarkGradient, Regular, Light } from "../../App-variables";
 
 export const Nav = styled.nav`
   position: relative;
-  background: ${({ scrollNav }) => (scrollNav ? MainGradient : "transparent")};
+  background: ${({ scrollNav }) => (scrollNav ? DarkGradient : "transparent")};
   color: ${({ scrollNav }) => (scrollNav ? "White" : "#0057ff")};
   height: 80px;
   margin-top: -80px;
@@ -61,6 +61,9 @@ export const NavLogo = styled.div`
   @media (max-width: 768px) {
     font-size: 18px;
   }
+  @media (max-width: 368px) {
+    font-size: 14px;
+  }
 `;
 
 export const MobileIcon = styled.div`
@@ -74,7 +77,7 @@ export const MobileIcon = styled.div`
     transform: translate(-100%, 60%);
     font-size: 1.8rem;
     cursor: pointer;
-    color: ${Regular};
+    color: ${Light};
     animation: appear 1.4s;
     @keyframes appear {
       0% {
@@ -88,6 +91,9 @@ export const MobileIcon = styled.div`
       100% {
         opacity: 1;
       }
+    }
+    @media (max-width: 368px) {
+      right: -10px;
     }
   }
 `;
@@ -141,10 +147,11 @@ export const NavLinks = styled(Link)`
   padding: 0 1rem;
   height: 100%;
   cursor: pointer;
-   transition: ease-in-out 0.2s;
+  transition: ease-in-out 0.2s;
 
   &.active {
-    border-bottom: 3px solid ${Dark};
+    border-bottom: 3px solid ${Light};
+    filter: brightness(0.9);
   }
 
   &:hover {

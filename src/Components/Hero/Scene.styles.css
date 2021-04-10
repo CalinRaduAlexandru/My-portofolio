@@ -9,6 +9,11 @@
   align-items: center;
 }
 
+.containers {
+  position: relative;
+  overflow: hidden;
+}
+
 @media (min-width: 1450px) {
   .sceneMedium {
     display: none;
@@ -79,9 +84,10 @@
   }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 800px) {
   .heroDetails {
-    margin-left: 7%;
+    padding: 0 auto;
+    margin-top: 100px;
   }
 
   .txt {
@@ -89,7 +95,17 @@
   }
 
   .heroSubheader {
-    font-size: 16px;
+    font-size: 12px;
     max-width: 300px;
+  }
+}
+
+@media (max-width: 360px) {
+  .txt {
+    font-size: 24px;
+  }
+  .heroSubheader {
+    font-size: 14px;
+    max-width: 200px;
   }
 }

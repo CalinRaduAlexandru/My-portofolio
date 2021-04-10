@@ -19,7 +19,7 @@ const Form = () => {
   return (
     <>
       <div className="form-container" id="contact">
-        <div className="handWrap" data-aos="fade-right" data-aos-delay="200">
+        <div className="handWrap">
           <img src={hand} alt="hand" width="585px" className="hand" />
         </div>
         <img src={splash} alt="splash" className="splash" />

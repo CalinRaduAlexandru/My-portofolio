@@ -5,21 +5,6 @@
   background-attachment: fixed;
   position: relative;
   z-index: 10;
-  background: red;
-}
-
-.ProjectPoly {
-  position: absolute;
-  top: -22%;
-  left: -10%;
-}
-
-@media (min-width: 1350px) {
-  .ProjectPoly {
-    position: absolute;
-    top: -13%;
-    width: 100vw;
-  }
 }
 
 .LaptopNerd {
@@ -28,4 +13,17 @@
   display: flex;
   margin-top: -100px;
   margin-bottom: 50px;
+}
+
+.heroP {
+  font-size: 100px;
+  color: #0057ff;
+}
+
+.heroP.left {
+  padding-bottom: 30px;
+}
+
+.heroP.right {
+  margin-bottom: -130px;
 }

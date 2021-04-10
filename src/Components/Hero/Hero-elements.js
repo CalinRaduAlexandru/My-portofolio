@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { Link as LinkS } from "react-scroll";
 import { HiOutlineMail } from "react-icons/hi";
 import { BiDownArrowAlt } from "react-icons/bi";
-import { BlackGradient } from "../../App-variables";
+import { BlackGradient, FooterGradient } from "../../App-variables";
 
 export const ProfileContainer = styled.div``;
 
@@ -26,19 +26,16 @@ export const ProfileBg = styled.img`
     }
   }
   @media (max-width: 1020px) {
-    width: 350px;
-    right: 30%;
-    bottom: 40%;
+    bottom: 50%;
   }
 
-  @media (max-width: 720px) {
-    width: 250px;
+  @media (max-width: 800px) {
+    width: 220px;
     right: 30%;
     bottom: 40%;
   }
 
   @media (max-width: 450px) {
-    width: 250px;
     right: 22%;
   }
 `;
@@ -48,7 +45,7 @@ export const ContactBtnWrapper = styled(LinkS)`
   font-size: 21px;
   border-radius: 5px;
   justify-content: center;
-  background: ${BlackGradient};
+  background: ${FooterGradient};
   color: white;
   cursor: pointer;
   padding: 12.5px 15px 15px 15px;

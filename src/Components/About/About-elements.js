@@ -15,6 +15,7 @@ export const AboutContainer = styled.div`
   padding: 0px;
   background: ${MainGradient};
   min-height: 100vh;
+  padding: 0 30px;
 
   @media screen and (max-width: 768px) {
     padding: 20px 0 50px 0;
@@ -26,6 +27,11 @@ export const AboutContainer = styled.div`
     justify-content: center;
     align-items: center;
   }
+
+  @media (min-height: 900px) {
+    min-height: 50vh;
+    padding-top: 100px;
+  }
 `;
 
 export const AboutWrapper = styled.div`
@@ -35,6 +41,7 @@ export const AboutWrapper = styled.div`
   margin-right: auto;
   margin-left: auto;
   justify-content: center;
+  padding-bottom: 50px;
 
   @media screen and (max-width: 768px) {
     height: 100%;
@@ -44,8 +51,9 @@ export const AboutWrapper = styled.div`
 
 export const AboutRow = styled.div`
   display: flex;
-  justify-content: space-around;
-  width: 100vw;
+  justify-content: space-between;
+  max-width: 1600px;
+  width: 80vw;
   align-items: center;
 
   @media screen and (max-width: 1200px) {
@@ -57,10 +65,14 @@ export const AboutRow = styled.div`
 
 export const Column1 = styled.div`
   grid-area: col1;
+  margin-right: 100px;
+
+  @media (max-width: 1200px) {
+    margin-right: 0;
+  }
 `;
 
 export const Column2 = styled.div`
-  margin-bottom: 15px;
   padding: 0 15px;
   grid-area: col2;
 
@@ -69,8 +81,8 @@ export const Column2 = styled.div`
     margin-top: 100px;
   }
 
-  @media (max-width: 600px) {
-    padding: 20px;
+  @media (max-width: 400px) {
+    padding-left: 40px;
   }
 `;
 
@@ -91,6 +103,11 @@ export const TopLine = styled.p`
   margin-top: 20px;
   margin-bottom: 16px;
   cursor: default;
+
+  @media screen and (max-width: 1400px) {
+    font-size: 16px;
+    line-height: 40px;
+  }
 
   @media screen and (max-width: 480px) {
     line-height: 1.1;
@@ -156,7 +173,7 @@ export const BtnResume = styled.a`
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 30px;
+  margin-left: 10px;
   transition: 0.1s ease-in-out;
 
   &:hover {
@@ -186,11 +203,14 @@ export const ImgWrapper = styled.div`
   }
 `;
 
-export const HeroP = styled.p`
+export const HeroP = styled.div`
+  display: flex;
   margin: 20px 0;
   color: white;
-  font-size: 27px;
+  font-size: 21px;
   text-align: center;
+  justify-content: center;
+  align-items: center;
   max-width: 700px;
   cursor: default;
 

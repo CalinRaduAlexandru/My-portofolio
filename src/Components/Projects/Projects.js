@@ -12,7 +12,8 @@ import crownPhoto from "./../../Assets/CrownPhoto.jpg";
 import recognizePhoto from "./../../Assets/RecignizePhoto.jpg";
 import searchPhoto from "./../../Assets/searchPhoto.jpg";
 import psiPhoto from "./../../Assets/psiPhoto.jpg";
-
+import GratfulPhoto from "./../../Assets/GratfulPhoto.jpg";
+import "./Projects.css";
 import "./../About/About.styles.css";
 import {
   ProjectsContainer,
@@ -29,8 +30,7 @@ const Projects = () => {
   ];
 
   return (
-    <div className="container">
-      <img src={ProjectPoly} alt="ProjectPoly" className="ProjectPoly" />
+    <div className="containers">
       <ProjectsContainer id="projects">
         <ProjectsWrapper>
           <FirstRow>
@@ -42,8 +42,8 @@ const Projects = () => {
                 title="Psi-consult"
                 subtitle="NextJs | Sass | AWS"
                 text="Professional website for a psychology consultancy."
-                websiteRef="https://filter-cards-app2.herokuapp.com/"
-                githubRef="https://github.com/CalinRaduAlexandru/Filter-cards-app"
+                websiteRef="https://psi-consult.vercel.app/"
+                githubRef="https://github.com/CalinRaduAlexandru/psi-consultant"
               />
               <Project
                 key="1"
@@ -69,7 +69,7 @@ const Projects = () => {
               <Project
                 key="3"
                 img={Lotus}
-                photo={crownPhoto}
+                photo={GratfulPhoto}
                 title="Gratefulness"
                 subtitle="React | CSS"
                 text="Create a gratefulness list. Plus a random quote generator for
@@ -91,6 +91,7 @@ const Projects = () => {
             </Carousel>
           </FirstRow>
         </ProjectsWrapper>
+        <img src={ProjectPoly} alt="ProjectPoly" className="ProjectPoly" />
       </ProjectsContainer>
     </div>
   );

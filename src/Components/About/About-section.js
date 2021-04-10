@@ -5,6 +5,8 @@ import { ArrowRight, ArrowForward } from "../Hero/Hero-elements";
 import "./About-button.styles.css";
 import ParticlesComp from "./../../SingleComponent/Particles/Particles.js";
 import LaptopNerd from "./../../Assets/LaptopNerd.png";
+import ProjectPoly from "./../../Assets/ProjectPoly.svg";
+import "./About.styles.css";
 
 import {
   AboutContainer,
@@ -47,8 +49,10 @@ const AboutSection = () => {
                   allowFullScreen
                 ></iframe>
                 <HeroP>
-                  Let`s discover and build new possibilities in which we can
-                  expand your vision!
+                  <p className="heroP left">&#8220;</p>
+                  Let`s discover and build <br /> new possibilities in which we
+                  can <br /> expand your vision!{" "}
+                  <p className="heroP right">&#8221;</p>
                 </HeroP>
               </ImgWrapper>
             </Column1>
