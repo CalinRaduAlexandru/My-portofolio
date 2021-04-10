@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { Link as LinkS } from "react-scroll";
 import { HiOutlineMail } from "react-icons/hi";
 import { BiDownArrowAlt } from "react-icons/bi";
-import { BlackGradient, FooterGradient } from "../../App-variables";
+import { FooterGradient } from "../../App-variables";
 
 export const ProfileContainer = styled.div``;
 

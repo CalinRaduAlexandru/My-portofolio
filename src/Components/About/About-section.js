@@ -5,7 +5,6 @@ import { ArrowRight, ArrowForward } from "../Hero/Hero-elements";
 import "./About-button.styles.css";
 import ParticlesComp from "./../../SingleComponent/Particles/Particles.js";
 import LaptopNerd from "./../../Assets/LaptopNerd.png";
-import ProjectPoly from "./../../Assets/ProjectPoly.svg";
 import "./About.styles.css";
 
 import {
