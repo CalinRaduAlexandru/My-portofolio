@@ -52,16 +52,16 @@ export const NavLogo = styled.div`
   display: flex;
   align-items: center;
   text-decoration: none;
-  color: ${({ scrollNav }) => (scrollNav ? "#E2F0FC" : "#0057ff")};
+  color: ${({ scrollNav }) => (scrollNav ? "#ebebff" : "#0057ff")};
 
   &:hover {
     transition: 0.2s ease-in-out;
-    filter: brightness(0.9);
+    filter: brightness(1.1);
   }
 
   @media (max-width: 768px) {
     font-size: 18px;
-    color: ${({ scrollNav }) => (scrollNav ? "#E2F0FC" : "#4d89ff")};
+    color: ${({ scrollNav }) => (scrollNav ? "#ebebff" : "#4d89ff")};
   }
   @media (max-width: 368px) {
     font-size: 14px;
