@@ -14,7 +14,7 @@ export const Black = "#170854";
 export const Dark = "#3014a3";
 export const Regular = "#0057ff";
 export const Medium = "#4d89ff";
-export const Light = "#80abff";
+export const Light = "#cacde6";
 export const White = "#ebebff";
 
 export const colors = ["#80abff", "#4d89ff", "#0057ff", "#003DB3", "#002c80"];

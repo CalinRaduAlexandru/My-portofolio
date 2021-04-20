@@ -19,6 +19,12 @@
   width: 100vw;
 }
 
+@media (max-width: 768px) {
+  .whiteWave {
+    top: 0%;
+  }
+}
+
 @media (min-width: 1300px) {
   .handWrap {
     display: inline-block;
@@ -61,12 +67,6 @@
 @media (min-width: 1300px) {
   .form-content-right {
     margin-left: 400px;
-  }
-}
-
-@media (max-width: 768px) {
-  .form-content-right {
-    padding: 20px;
   }
 }
 

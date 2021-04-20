@@ -8,7 +8,7 @@ export const RocketWrapper = styled.div`
   align-items: center;
   bottom: 5%;
   right: 2%;
-  color: #e2f0fc;
+  color: #cacde6;
   cursor: pointer;
   z-index: 100;
 
@@ -18,7 +18,7 @@ export const RocketWrapper = styled.div`
   }
 
   &:hover {
-    color: #0057ff;
+    color: #3014a3;
     animation: shake-up 0.4s alternate infinite;
 
   @keyframes shake-up {
@@ -41,7 +41,7 @@ export const Rocket = styled(IoMdRocket)`
   transform: translateX(-3px) rotate(-3deg) translateY(-3px);
 
   &:hover {
-    color: #0057ff;
+    color: #3014a3;
     animation: shake-rocket 0.2s alternate infinite;
   }
 
@@ -57,5 +57,6 @@ export const Rocket = styled(IoMdRocket)`
 `;
 
 export const Up = styled.h3`
-  color: #e2f0fc;
+  color: #3014a3;
+  font-family: "Montserrat", sans-serif;
 `;

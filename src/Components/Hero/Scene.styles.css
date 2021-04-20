@@ -26,20 +26,6 @@
   margin-bottom: 40px;
 }
 
-@media (min-width: 1450px) {
-  .sceneMedium {
-    display: none;
-  }
-}
-
-.staticIcons {
-  display: inline-block;
-  position: absolute;
-  top: -420px;
-  right: 3%;
-  opacity: 0.2;
-}
-
 .heroDetails {
   cursor: default;
   margin-left: 10%;
@@ -80,14 +66,6 @@
 }
 
 @media (max-width: 1020px) {
-  .container {
-    align-items: flex-start;
-  }
-
-  .heroDetails {
-    margin-top: 200px;
-  }
-
   .txt {
     font-size: 35px;
   }
@@ -95,6 +73,12 @@
   .heroSubheader {
     font-size: 16px;
     max-width: 400px;
+  }
+}
+@media (min-height: 600px) {
+  .heroDetails {
+    padding: 0 auto;
+    margin-top: 150px;
   }
 }
 
@@ -111,19 +95,6 @@
   .heroSubheader {
     font-size: 12px;
     max-width: 300px;
-  }
-
-  .staticIcons {
-    left: 15%;
-    width: 80%;
-    margin-top: 280px;
-  }
-}
-
-@media (min-height: 600px) {
-  .heroDetails {
-    padding: 0 auto;
-    margin-top: 150px;
   }
 }
 

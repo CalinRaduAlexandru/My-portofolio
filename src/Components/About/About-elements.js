@@ -66,6 +66,16 @@ export const Column1 = styled.div`
   }
 `;
 
+export const VideoWrapper = styled.div`
+  width: 522px;
+  height: 294px;
+  background: red;
+
+  @media (max-width: 600px) {
+    width: 90vw;
+  }
+`;
+
 export const Column2 = styled.div`
   padding: 0 15px;
   grid-area: col2;
@@ -149,7 +159,7 @@ export const BtnWrap = styled.div`
 export const BtnResume = styled.a`
   white-spate: nowrap;
   padding: ${({ big }) => (big ? "14px 48px" : "12px 30px")};
-  color: #fff;
+  color: #3014a3;
   font-size: ${({ fontBig }) => (fontBig ? "20px" : "16px")};
   outline: none;
   border: none;

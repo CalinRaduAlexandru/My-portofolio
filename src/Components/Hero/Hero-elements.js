@@ -10,7 +10,7 @@ export const ProfileBg = styled.img`
   height: auto;
   position: absolute;
   bottom: 20%;
-  right: 10%;
+  right: 5%;
   animation: slide-left 2s;
   z-index: -1;
 
@@ -24,18 +24,9 @@ export const ProfileBg = styled.img`
       opacity: 1;
     }
   }
-  @media (max-width: 1020px) {
-    bottom: 50%;
-  }
 
-  @media (max-width: 800px) {
-    width: 220px;
-    right: 30%;
-    bottom: 40%;
-  }
-
-  @media (max-width: 450px) {
-    right: 22%;
+  @media (max-width: 850px) {
+    display: none;
   }
 `;
 

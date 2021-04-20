@@ -3,7 +3,6 @@ import profile from "./../../Assets/ProfileBasicPhoto.png";
 import profileSmile from "./../../Assets/ProfileSmilePhoto.png";
 import "./Scene.styles.css";
 import heroGuy from "./../../Assets/hero-guy.png";
-import ProfileBGicons from "./../../Assets/ProfileBGicons.png";
 import splash from "./../../Assets/splash.png";
 
 import {
@@ -55,11 +54,6 @@ const Scene = () => {
               <ProfileBg alt="Radu Calin" src={profile} />
             )}
           </ProfileContainer>
-          <img
-            src={ProfileBGicons}
-            alt="programing icons"
-            className="staticIcons"
-          />{" "}
           <img src={heroGuy} alt="hero-guy" width="100%" className="heroGuy" />
         </div>
       </div>

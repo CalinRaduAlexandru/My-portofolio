@@ -11,6 +11,7 @@ import {
   AboutWrapper,
   AboutRow,
   Column1,
+  VideoWrapper,
   TextWrapper,
   TopLine,
   Heading,
@@ -36,14 +37,16 @@ const AboutSection = () => {
           <AboutRow>
             <Column1>
               <ImgWrapper>
-                <iframe
-                  width="522"
-                  height="294"
-                  src="https://www.youtube.com/embed/gFIcgp9fQl4"
-                  title="Radu Călin`s Portfolio"
-                  frameBorder="0"
-                  allowFullscreen
-                ></iframe>
+                <VideoWrapper>
+                  <iframe
+                    width="100%"
+                    height="100%"
+                    src="https://www.youtube.com/embed/gFIcgp9fQl4"
+                    title="Radu Călin`s Portfolio"
+                    frameBorder="0"
+                    allowFullScreen
+                  ></iframe>
+                </VideoWrapper>
                 <HeroP>
                   <p className="heroP left">&#8220;</p>
                   Let`s discover and build new possibilities in which we can

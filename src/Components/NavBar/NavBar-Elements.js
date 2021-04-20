@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { Link } from "react-scroll";
-import { HeroGradientReverse, Light, Dark } from "../../App-variables";
+import { HeroGradientReverse, Dark } from "../../App-variables";
 
 export const Nav = styled.nav`
   position: relative;
@@ -41,7 +41,7 @@ export const NavbarContainer = styled.div`
   margin: 0 10%;
   position: sticky;
 
-  @media screen and (max-width: 450px) {
+  @media screen and (max-width: 768px) {
     margin: 0 0 0 5%;
   }
 `;
@@ -62,7 +62,7 @@ export const NavLogo = styled.div`
 
   @media (max-width: 768px) {
     font-size: 18px;
-    color: ${({ scrollNav }) => (scrollNav ? "#ebebff" : "#4d89ff")};
+    color: ${({ scrollNav }) => (scrollNav ? "#ebebff" : "#ebebff")};
   }
   @media (max-width: 368px) {
     font-size: 14px;
@@ -80,7 +80,7 @@ export const MobileIcon = styled.div`
     transform: translate(-100%, 60%);
     font-size: 1.8rem;
     cursor: pointer;
-    color: ${Light};
+    color: #3014a3;
     animation: appear 1.4s;
     @keyframes appear {
       0% {
