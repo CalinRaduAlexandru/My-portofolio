@@ -62,7 +62,8 @@ const AboutSection = () => {
                   Creative, proactive and passionate about my work
                 </Heading>
               </TextWrapper>
-              <div style={{ display: "flex" }}>
+
+              <BtnWrap>
                 <ContactBtnWrapperSecondary
                   to="contact"
                   smooth={true}
@@ -75,17 +76,15 @@ const AboutSection = () => {
                 >
                   Contact me! {hover ? <ArrowRight /> : <ArrowForward />}
                 </ContactBtnWrapperSecondary>
-                <BtnWrap>
-                  <BtnResume
-                    href={Radu_Calin_Resume}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Resume
-                    <Download />
-                  </BtnResume>
-                </BtnWrap>
-              </div>
+                <BtnResume
+                  href={Radu_Calin_Resume}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Resume
+                  <Download />
+                </BtnResume>
+              </BtnWrap>
             </Column2>
           </AboutRow>
         </AboutWrapper>

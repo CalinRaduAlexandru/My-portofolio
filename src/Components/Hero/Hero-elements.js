@@ -47,6 +47,11 @@ export const ContactBtnWrapper = styled(LinkS)`
     transition: 0.1s ease-in-out;
     transform: scale(1.1);
   }
+
+  @media (max-width: 768px) {
+    font-size: 14px;
+    padding: 15px 10px 12.5px 10px;
+  }
 `;
 
 export const ArrowForward = styled(HiOutlineMail)`

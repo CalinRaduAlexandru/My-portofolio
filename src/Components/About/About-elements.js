@@ -69,7 +69,6 @@ export const Column1 = styled.div`
 export const VideoWrapper = styled.div`
   width: 522px;
   height: 294px;
-  background: red;
 
   @media (max-width: 600px) {
     width: 90vw;
@@ -83,10 +82,6 @@ export const Column2 = styled.div`
   @media (max-width: 1200px) {
     padding: 40px 0;
     margin-top: 100px;
-  }
-
-  @media (max-width: 400px) {
-    padding-left: 40px;
   }
 `;
 
@@ -149,11 +144,21 @@ export const ContactBtnWrapperSecondary = styled(LinkS)`
     filter: brightness(1.1);
     transform: scale(1.1);
   }
+  @media (max-width: 768px) {
+    font-size: 14px;
+    padding: 15px 10px 12.5px 10px;
+  }
 `;
 
 export const BtnWrap = styled.div`
   display: flex;
   justify-content: flex-start;
+
+  @media (max-width: 400px) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 `;
 
 export const BtnResume = styled.a`
