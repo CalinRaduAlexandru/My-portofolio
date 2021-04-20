@@ -1,9 +1,10 @@
 import React, { useState } from "react";
-import profile from "./../../Assets/BgMinified.png";
-import profileSmile from "./../../Assets/BgMinifiedSmile.png";
+import profile from "./../../Assets/ProfileBasicPhoto.png";
+import profileSmile from "./../../Assets/ProfileSmilePhoto.png";
 import "./Scene.styles.css";
-import HeroPolyghon from "./../../Assets/HeroPolyghon.svg";
+import heroGuy from "./../../Assets/hero-guy.png";
 import ProfileBGicons from "./../../Assets/ProfileBGicons.png";
+import splash from "./../../Assets/splash.png";
 
 import {
   ProfileContainer,
@@ -22,6 +23,7 @@ const Scene = () => {
   return (
     <div className="container-wrapper">
       <div className="container" id="home">
+        <img src={splash} alt="splash" className="splash" />
         <div className="heroDetails">
           <h1 className="txt">
             Full-stack <br />
@@ -58,7 +60,7 @@ const Scene = () => {
             alt="programing icons"
             className="staticIcons"
           />{" "}
-          <img src={HeroPolyghon} alt="polygon" />
+          <img src={heroGuy} alt="hero-guy" width="100%" className="heroGuy" />
         </div>
       </div>
     </div>

@@ -17,7 +17,7 @@
 
 .heroP {
   font-size: 100px;
-  color: #0057ff;
+  color: var(--main-color);
 }
 
 .heroP.left {

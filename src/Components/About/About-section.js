@@ -3,7 +3,6 @@ import "aos/dist/aos.css";
 import Radu_Calin_Resume from "./../../Assets/Radu_Calin_Resume.PDF";
 import { ArrowRight, ArrowForward } from "../Hero/Hero-elements";
 import "./About-button.styles.css";
-import ParticlesComp from "./../../SingleComponent/Particles/Particles.js";
 import LaptopNerd from "./../../Assets/LaptopNerd.png";
 import "./About.styles.css";
 
@@ -33,25 +32,22 @@ const AboutSection = () => {
   return (
     <>
       <AboutContainer id="about">
-        <ParticlesComp />
         <AboutWrapper>
           <AboutRow>
             <Column1>
               <ImgWrapper>
                 <iframe
-                  title="spaceship"
-                  width="100%"
-                  height="100%"
-                  src="https://www.youtube.com/embed/v8zkBEcbkJ8"
+                  width="522"
+                  height="294"
+                  src="https://www.youtube.com/embed/gFIcgp9fQl4"
+                  title="Radu Călin`s Portfolio"
                   frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
+                  allowFullscreen
                 ></iframe>
                 <HeroP>
                   <p className="heroP left">&#8220;</p>
-                  Let`s discover and build <br /> new possibilities in which we
-                  can <br /> expand your vision!{" "}
-                  <p className="heroP right">&#8221;</p>
+                  Let`s discover and build new possibilities in which we can
+                  expand your vision! <p className="heroP right">&#8221;</p>
                 </HeroP>
               </ImgWrapper>
             </Column1>

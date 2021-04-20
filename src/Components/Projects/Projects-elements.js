@@ -6,7 +6,7 @@ export const ProjectsContainer = styled.div`
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: linear-gradient(180deg, #4d89ff 0%, #80abff 100%);
+  background: white;
 `;
 
 export const ProjectsWrapper = styled.div`
@@ -17,6 +17,8 @@ export const ProjectsWrapper = styled.div`
   align-self: center;
   width: 80vw;
   z-index: 10;
+  margin-top: -100px;
+  /* margin-bottom: 200px; */
 `;
 
 export const FirstRow = styled.div`

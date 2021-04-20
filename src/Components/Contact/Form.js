@@ -5,6 +5,7 @@ import Contact from "./Contact";
 import "aos/dist/aos.css";
 import hand from "./../../Assets/HandLetter.png";
 import splash from "./../../Assets/splash.png";
+import whiteWave from "./../../Assets/footer-white-mask.png";
 
 const Form = () => {
   const [isSubmitted, setIsSubmitted] = useState(false);
@@ -19,6 +20,7 @@ const Form = () => {
   return (
     <>
       <div className="form-container" id="contact">
+        <img src={whiteWave} alt="whiteWave" className="whiteWave" />
         <div className="handWrap">
           <img src={hand} alt="hand" width="585px" className="hand" />
         </div>

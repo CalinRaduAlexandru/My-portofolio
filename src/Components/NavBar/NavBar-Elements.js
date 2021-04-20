@@ -1,11 +1,12 @@
 import styled from "styled-components";
 import { Link } from "react-scroll";
-import { DarkGradient, Light } from "../../App-variables";
+import { HeroGradientReverse, Light, Dark } from "../../App-variables";
 
 export const Nav = styled.nav`
   position: relative;
-  background: ${({ scrollNav }) => (scrollNav ? DarkGradient : "transparent")};
-  color: ${({ scrollNav }) => (scrollNav ? "White" : "#0057ff")};
+  background: ${({ scrollNav }) =>
+    scrollNav ? HeroGradientReverse : "transparent"};
+  color: ${({ scrollNav }) => (scrollNav ? "White" : "White")};
   height: 80px;
   margin-top: -80px;
   display: flex;
@@ -52,7 +53,7 @@ export const NavLogo = styled.div`
   display: flex;
   align-items: center;
   text-decoration: none;
-  color: ${({ scrollNav }) => (scrollNav ? "#ebebff" : "#0057ff")};
+  color: ${({ scrollNav }) => (scrollNav ? "#ebebff" : "#ebebff")};
 
   &:hover {
     transition: 0.2s ease-in-out;
@@ -152,7 +153,7 @@ export const NavLinks = styled(Link)`
   transition: ease-in-out 0.2s;
 
   &.active {
-    border-bottom: 3px solid ${Light};
+    border-bottom: 3px solid ${Dark};
     filter: brightness(0.9);
   }
 

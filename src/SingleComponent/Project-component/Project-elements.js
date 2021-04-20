@@ -13,7 +13,7 @@ export const ProjectWrapper = styled.div`
   position: relative;
   box-shadow: 5px 5px 2px 0px rgba(0, 44, 128, 0.1);
   border-radius: 15px;
-  background: rgba(255, 255, 255, 0.475);
+  background: linear-gradient(360deg, #2f3fce 0%, #7155e2 100%);
   cursor: pointer;
   overflow: hidden;
   margin-bottom: 10px;
@@ -39,7 +39,7 @@ export const ProjectImg = styled.img`
 `;
 
 export const ProjectTitle = styled.h1`
-  color: #003db3;
+  color: white;
   font-size: 24px;
   margin-top: 20px;
   align-self: center;
@@ -52,7 +52,7 @@ export const ProjectTitle = styled.h1`
 export const ProjectSubTitle = styled.h2`
   font-size: 16px;
   margin-top: 10px;
-  color: #e2f0fc;
+  color: #cacde6;
   align-self: center;
   @media (max-width: 500px) {
     font-size: 14px;
@@ -82,7 +82,7 @@ export const ProjectText = styled.p`
   font-weight: 500;
   font-size: 16px;
   line-height: 25px;
-  color: #4954b9;
+  color: #fff;
   padding: 0 20px;
   @media (max-width: 500px) {
     font-size: 12px;
@@ -98,6 +98,7 @@ export const Buttons = styled.div`
   align-items: center;
   align-self: center;
   margin-left: 10px;
+  margin-top: 10px;
   z-index: 10;
 `;
 
@@ -110,10 +111,11 @@ export const BtnProjectLeft = styled.a`
 
 export const LiveText = styled.p`
   font-size: 16px;
-  color: #003db3;
+  color: #fff;
   font-weight: bold;
+  transition: 0.1s ease-in-out;
   &:hover {
-    filter: brightness(1.2);
+    transform: scale(1.1);
   }
 `;
 
@@ -122,10 +124,12 @@ export const BtnProjectRight = styled.a`
 `;
 
 export const Github = styled(FaGithub)`
-  color: #003db3;
+  color: #fff;
   font-size: 30px;
+  transition: 0.1s ease-in-out;
+
   &:hover {
-    filter: brightness(1.2);
+    transform: scale(1.1);
   }
 `;
 

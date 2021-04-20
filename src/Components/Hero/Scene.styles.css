@@ -2,7 +2,7 @@
   width: 100%;
   min-height: 100vh;
   height: auto;
-  background: url(backgroundPS.jpg);
+  background: linear-gradient(180deg, #2f3fce 0%, #7155e2 100%);
   position: relative;
   overflow: hidden;
   display: flex;
@@ -12,6 +12,18 @@
 .containers {
   position: relative;
   overflow: hidden;
+}
+
+.splash {
+  position: absolute;
+  left: 5%;
+  bottom: -60%;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+.heroGuy {
+  margin-bottom: 40px;
 }
 
 @media (min-width: 1450px) {
@@ -33,16 +45,17 @@
   margin-left: 10%;
   min-width: 600px;
   z-index: 110;
+  margin-bottom: 150px;
 }
 
 .txt {
-  color: #003db3;
+  color: white;
   font-size: 50px;
   margin-bottom: 5px;
 }
 
 .heroSubheader {
-  color: #80abff;
+  color: #cacde6;
   font-size: 21px;
   margin-bottom: 30px;
 }

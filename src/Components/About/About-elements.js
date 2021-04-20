@@ -1,19 +1,13 @@
 import styled from "styled-components";
 import { HiDownload } from "react-icons/hi";
 import { Link as LinkS } from "react-scroll";
-import {
-  MainGradient,
-  White,
-  Regular,
-  Dark,
-  LightGradient,
-} from "../../App-variables";
+import { Regular, HeroGradientReverse } from "../../App-variables";
 
 export const AboutContainer = styled.div`
-  color: ${White};
+  color: black;
   position: relative;
   padding: 0px;
-  background: ${MainGradient};
+  background: white;
   min-height: 100vh;
   padding: 0 30px;
 
@@ -101,7 +95,7 @@ export const TopLine = styled.p`
   letter-spacing: 1.4px;
   text-transform: uppercase;
   margin-top: 20px;
-  margin-bottom: 16px;
+  margin-bottom: 0px;
   cursor: default;
 
   @media screen and (max-width: 1400px) {
@@ -119,41 +113,31 @@ export const Heading = styled.h1`
   padding: 5px 0;
   font-size: 42px;
   line-height: 1.1;
-  font-weight: 600;
+  font-weight: bold;
   cursor: default;
-  color: ${White};
+  color: ${Regular};
 
   @media screen and (max-width: 480px) {
     font-size: 26px;
   }
 `;
 
-export const Subtitle = styled.p`
-  max-width: 440px;
-  font-size: 18px;
-  line-height: 24px;
-  color: #d9ddde;
-  cursor: default;
-
-  @media screen and (max-width: 480px) {
-    font-size: 15px;
-  }
-`;
-
 export const ContactBtnWrapperSecondary = styled(LinkS)`
   display: flex;
-  border-radius: 5px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  border-radius: 25px;
   justify-content: center;
-  background: ${LightGradient};
-  color: ${Dark};
-  font-size: 21px;
+  background: ${HeroGradientReverse};
+  color: white;
   cursor: pointer;
-  padding: 12.5px 15px 15px 15px;
+  padding: 15px 25px 12.5px 25px;
   width: 200px;
   transition: 0.1s ease-in-out;
   &:hover {
     transition: 0.1s ease-in-out;
     filter: brightness(1.1);
+    transform: scale(1.1);
   }
 `;
 
@@ -206,8 +190,10 @@ export const ImgWrapper = styled.div`
 export const HeroP = styled.div`
   display: flex;
   margin: 20px 0;
-  color: white;
+  color: ${Regular};
   font-size: 21px;
+  font-family: "Montserrat";
+  font-weight: bold;
   text-align: center;
   justify-content: center;
   align-items: center;

@@ -6,7 +6,6 @@ import Face from "./../../Assets/Face.svg";
 import Lotus from "./../../Assets/Lotus.svg";
 import MagnifyingGlass from "./../../Assets/MagnifyingGlass.svg";
 import Crownfeel from "./../../Assets/Crownfeel.svg";
-import ProjectPoly from "./../../Assets/ProjectPoly.svg";
 import Carousel from "react-elastic-carousel";
 import crownPhoto from "./../../Assets/CrownPhoto.jpg";
 import recognizePhoto from "./../../Assets/RecignizePhoto.jpg";
@@ -91,7 +90,6 @@ const Projects = () => {
             </Carousel>
           </FirstRow>
         </ProjectsWrapper>
-        <img src={ProjectPoly} alt="ProjectPoly" className="ProjectPoly" />
       </ProjectsContainer>
     </div>
   );
