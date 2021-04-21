@@ -1,14 +1,14 @@
 import styled from "styled-components";
 import { FaTimes } from "react-icons/fa";
 import { Link as LinkS } from "react-scroll";
-import { MainGradient } from "../../App-variables";
+import { HeroGradient } from "../../App-variables";
 
 export const SidebarContainer = styled.aside`
   position: fixed;
   z-index: 999;
   width: 100%;
   height: 100%;
-  background: ${MainGradient};
+  background: ${HeroGradient};
   display: grid;
   align-items: center;
   top: 0;
@@ -59,7 +59,7 @@ export const SidebarLink = styled(LinkS)`
   cursor: pointer;
 
   &:hover {
-    color: #00b4d8;
+    color: #3014a3;
     transition: 0.2s ease-in-out;
   }
 `;
