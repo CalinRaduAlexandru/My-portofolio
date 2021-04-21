@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "aos/dist/aos.css";
-import Radu_Calin_Resume from "./../../Assets/Radu_Calin_Resume.pdf";
+import Radu_Calin_Resume from "./Radu_Calin_Resume.pdf";
 import { ArrowRight, ArrowForward } from "../Hero/Hero-elements";
 import "./About-button.styles.css";
 import LaptopNerd from "./../../Assets/LaptopNerd.png";
