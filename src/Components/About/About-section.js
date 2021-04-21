@@ -45,6 +45,7 @@ const AboutSection = () => {
                     title="Radu Călin`s Portfolio"
                     frameBorder="0"
                     allowFullScreen
+                    style={{ borderRadius: "15px" }}
                   ></iframe>
                 </VideoWrapper>
                 <HeroP>
