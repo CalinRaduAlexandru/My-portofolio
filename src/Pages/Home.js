@@ -44,7 +44,7 @@ const Home = () => {
           <section>
             <AboutSection />
             <Projects />
-            <Form id="contact" />
+            <Form />
             <Footer />
           </section>
         </Suspense>

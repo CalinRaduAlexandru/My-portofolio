@@ -13,7 +13,7 @@ const Contact = ({ submitForm }) => {
   return (
     <div className="contact-section">
       <div data-aos="fade-left" className="form-content-right">
-        <form className="form" onSubmit={handleSubmit}>
+        <form className="form" onSubmit={handleSubmit} id="contact">
           <h1 className="form-title">Tell me how I can be at your service</h1>
           <div className="form-inputs">
             <label htmlFor="name" className="form-label">
