@@ -2,7 +2,7 @@ export const LightGradient =
   "linear-gradient(180deg, #E2F0FC 0%, #80abff 100%)";
 export const MainGradient = "linear-gradient(180deg, #80abff 0%, #4d89ff 100%)";
 export const FooterGradient =
-  "linear-gradient(180deg, #2f3fce 0%, #002c80 100%)";
+  "linear-gradient(180deg, #2f3fce 0%, #3014a3 100%)";
 export const DarkGradient = "linear-gradient(180deg, #0057ff 0%, #003DB3 100%)";
 export const BlackGradient =
   "linear-gradient(180deg, #003DB3 0%, #170854 100%)";
