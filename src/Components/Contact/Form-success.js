@@ -4,7 +4,10 @@ import success from "./../../Assets/img-3.svg";
 
 const FormSuccess = ({ toggleForm }) => {
   return (
-    <div className="form-content-right">
+    <div
+      className="form-content-right"
+      style={{ color: "#3014a3", zIndex: "11" }}
+    >
       <h1 className="form-success">I have received your request!</h1>
       <img className="form-img-2" src={success} alt="success" />
       <span className="close-btn" onClick={toggleForm}>
