@@ -3,7 +3,7 @@ import { BiArrowFromBottom } from "react-icons/bi";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { SiWhatsapp } from "react-icons/si";
 import { HiOutlineMail } from "react-icons/hi";
-import { FooterGradient, BlackGradient } from "../../App-variables";
+import { FooterGradient } from "../../App-variables";
 
 export const FooterContainer = styled.div`
   background: ${FooterGradient};
