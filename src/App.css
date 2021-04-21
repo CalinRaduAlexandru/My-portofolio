@@ -21,7 +21,7 @@
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #7155e2;
+  background: linear-gradient(360deg, #2f3fce 0%, #7155e2 100%);
   border-radius: 10px;
 }
 

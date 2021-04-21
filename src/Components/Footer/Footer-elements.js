@@ -41,7 +41,7 @@ export const SocialLogo = styled.div`
   font-weight: bold;
   margin-bottom: 20px;
   &:hover {
-    color: #80abff;
+    color: #fff;
   }
 `;
 
@@ -117,7 +117,7 @@ export const Github = styled(FaGithub)`
   font-size: 40px;
   margin: 10px;
   cursor: pointer;
-  color: #80abff;
+  color: #cacde6;
   &:hover {
     filter: brightness(1.2);
   }
@@ -127,7 +127,7 @@ export const Linkedin = styled(FaLinkedin)`
   font-size: 40px;
   margin: 10px;
   cursor: pointer;
-  color: #80abff;
+  color: #cacde6;
   &:hover {
     filter: brightness(1.2);
   }
