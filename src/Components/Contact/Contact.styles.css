@@ -30,15 +30,17 @@
     display: inline-block;
     position: absolute;
     left: 13%;
-    bottom: -85%;
+    bottom: -65%;
     z-index: 1;
   }
 }
 
-.splash {
+.splash-contact {
   position: absolute;
-  bottom: -60%;
-  left: -5%;
+  bottom: -55%;
+  left: -2%;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
 }
 
 .form-content-left {
@@ -54,7 +56,7 @@
 }
 
 .form-content-right {
-  margin-top: 0px;
+  margin-top: 200px;
   color: #fff;
   padding: 50px;
   max-width: 600px;
@@ -98,7 +100,7 @@
 }
 
 .form > h1 {
-  color: #002c80;
+  color: var(--dark-color);
   margin: -20px 0 20px 0;
   font-size: 24px;
   cursor: default;
@@ -133,7 +135,7 @@
   display: flex;
   font-size: 0.8rem;
   margin-bottom: 6px;
-  color: #002c80;
+  color: var(--dark-color);
   align-self: flex-start;
 }
 

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "aos/dist/aos.css";
-import Radu_Calin_Resume from "./../../Assets/Radu_Calin_Resume.PDF";
+import Radu_Calin_Resume from "./../../Assets/Radu_Calin_Resume.pdf";
 import { ArrowRight, ArrowForward } from "../Hero/Hero-elements";
 import "./About-button.styles.css";
 import LaptopNerd from "./../../Assets/LaptopNerd.png";
@@ -49,8 +49,8 @@ const AboutSection = () => {
                 </VideoWrapper>
                 <HeroP>
                   <p className="heroP left">&#8220;</p>
-                  Let`s discover and build new possibilities in which we can
-                  expand your vision! <p className="heroP right">&#8221;</p>
+                  There are no problems, only functions!{" "}
+                  <p className="heroP right">&#8221;</p>
                 </HeroP>
               </ImgWrapper>
             </Column1>

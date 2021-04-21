@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { HiDownload } from "react-icons/hi";
 import { Link as LinkS } from "react-scroll";
-import { Regular, HeroGradientReverse } from "../../App-variables";
+import { HeroGradientReverse, Dark } from "../../App-variables";
 
 export const AboutContainer = styled.div`
   color: black;
@@ -92,9 +92,10 @@ export const TextWrapper = styled.div`
 `;
 
 export const TopLine = styled.p`
-  color: ${Regular};
+  color: ${Dark};
   padding: 5px;
   font-size: 21px;
+  font-family: "Montserrat", sans serif;
   line-height: 16px;
   font-weight: 700;
   letter-spacing: 1.4px;
@@ -120,7 +121,7 @@ export const Heading = styled.h1`
   line-height: 1.1;
   font-weight: bold;
   cursor: default;
-  color: ${Regular};
+  color: ${Dark};
 
   @media screen and (max-width: 480px) {
     font-size: 26px;
@@ -205,9 +206,9 @@ export const ImgWrapper = styled.div`
 export const HeroP = styled.div`
   display: flex;
   margin: 20px 0;
-  color: ${Regular};
+  color: ${Dark};
   font-size: 21px;
-  font-family: "Montserrat";
+
   font-weight: bold;
   text-align: center;
   justify-content: center;

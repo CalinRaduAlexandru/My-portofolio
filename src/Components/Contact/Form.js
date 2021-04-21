@@ -24,7 +24,7 @@ const Form = () => {
         <div className="handWrap">
           <img src={hand} alt="hand" width="585px" className="hand" />
         </div>
-        <img src={splash} alt="splash" className="splash" />
+        <img src={splash} alt="splash" className="splash-contact" />
         <div className="form-content-left">
           {!isSubmitted ? (
             <Contact submitForm={submitForm} />

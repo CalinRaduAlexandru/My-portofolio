@@ -15,11 +15,12 @@
 }
 
 .splash {
+  width: 100vw;
   position: absolute;
-  left: 5%;
-  bottom: -60%;
-  -webkit-transform: scaleX(-1);
-  transform: scaleX(-1);
+  left: 0% !important;
+  bottom: 15% !important;
+  /* -webkit-transform: scaleX(-1);
+  transform: scaleX(-1); */
 }
 
 .heroGuy {
