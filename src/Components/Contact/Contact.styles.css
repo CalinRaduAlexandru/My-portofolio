@@ -29,9 +29,11 @@
   .handWrap {
     display: inline-block;
     position: absolute;
-    left: 13%;
-    bottom: -65%;
+    right: 10%;
+    bottom: -69%;
     z-index: 1;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
   }
 }
 
@@ -56,7 +58,7 @@
 }
 
 .form-content-right {
-  margin-top: 200px;
+  margin-top: 10px;
   color: #fff;
   padding: 50px;
   max-width: 600px;
@@ -68,7 +70,7 @@
 
 @media (min-width: 1300px) {
   .form-content-right {
-    margin-left: 400px;
+    margin-right: 420px;
   }
 }
 

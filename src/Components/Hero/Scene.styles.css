@@ -17,8 +17,8 @@
 .splash {
   width: 100vw;
   position: absolute;
-  left: 0% !important;
-  bottom: 15% !important;
+  left: 0%;
+  bottom: 15%;
 }
 
 .heroGuy {
@@ -81,7 +81,7 @@
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 820px) {
   .heroDetails {
     padding: 0 auto;
     margin-top: 100px;
@@ -95,12 +95,24 @@
     font-size: 12px;
     max-width: 300px;
   }
+  .splash {
+    height: 100vw;
+  }
 }
 
 @media (max-height: 900px) {
   .heroDetails {
     padding: 0 auto;
     margin-top: 100px;
+  }
+}
+
+@media (max-width: 500px) {
+  .splash {
+    transform: rotate(45deg);
+    left: -25%;
+    height: 1200px;
+    top: -30%;
   }
 }
 
