@@ -76,17 +76,6 @@ const Projects = () => {
                 websiteRef="https://greatfulness-app.herokuapp.com/"
                 githubRef="https://github.com/CalinRaduAlexandru/Greatfulness-app"
               />
-
-              <Project
-                key="4"
-                img={Face}
-                photo={recognizePhoto}
-                title="Recognize faces"
-                subtitle="React | NodeJs | Postgres"
-                text="Full-stack app in which you can add photos URL`s and accumulate points for each face."
-                websiteRef="https://search-face-app.herokuapp.com/"
-                githubRef="https://github.com/CalinRaduAlexandru/Search-face"
-              />
             </Carousel>
           </FirstRow>
         </ProjectsWrapper>

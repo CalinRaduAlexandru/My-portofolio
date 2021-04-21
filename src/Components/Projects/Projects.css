@@ -55,3 +55,11 @@
     display: none;
   }
 }
+
+@media (min-width: 1525px) {
+  .rec-arrow-right,
+  .rec-arrow-left,
+  .rec-dot {
+    display: none;
+  }
+}
