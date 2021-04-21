@@ -210,7 +210,6 @@ export const HeroP = styled.div`
   margin: 20px 0;
   color: ${Dark};
   font-size: 21px;
-
   font-weight: bold;
   text-align: center;
   justify-content: center;
@@ -219,10 +218,9 @@ export const HeroP = styled.div`
   cursor: default;
 
   @media screen and (max-width: 768px) {
-    font-size: 21px;
     max-width: 400px;
   }
   @media screen and (max-width: 500px) {
-    font-size: 13px;
+    /* font-size: 13px; */
   }
 `;

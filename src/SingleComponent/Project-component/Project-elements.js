@@ -11,7 +11,6 @@ export const ProjectWrapper = styled.div`
   align-items: center;
   border-radius: 10px;
   position: relative;
-  box-shadow: 5px 5px 2px 0px rgba(0, 44, 128, 0.1);
   border-radius: 15px;
   background: linear-gradient(360deg, #2f3fce 0%, #7155e2 100%);
   cursor: pointer;

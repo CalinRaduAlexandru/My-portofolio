@@ -5,7 +5,7 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding-top: 50px;
+  padding-top: 100px;
   position: relative;
 }
 
@@ -25,24 +25,14 @@
   }
 }
 
-@media (min-width: 1300px) {
-  .handWrap {
-    display: inline-block;
-    position: absolute;
-    right: 10%;
-    bottom: -69%;
-    z-index: 1;
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
-  }
-}
-
 .splash-contact {
+  width: 1500px;
   position: absolute;
-  bottom: -55%;
-  left: -2%;
-  -webkit-transform: scaleX(-1);
-  transform: scaleX(-1);
+  bottom: -5%;
+  left: 18%;
+  /* -webkit-transform: scaleX(-1);
+  transform: scaleX(-1); */
+  /* display: none; */
 }
 
 .form-content-left {
@@ -58,19 +48,34 @@
 }
 
 .form-content-right {
-  margin-top: 10px;
+  margin-top: 0px;
   color: #fff;
   padding: 50px;
   max-width: 600px;
   margin-bottom: 0px;
   background: rgba(234, 234, 255, 0.95);
-  box-shadow: 3px 10px 20px #19258e;
   border-radius: 15px;
 }
 
-@media (min-width: 1300px) {
+@media (min-width: 1500px) {
   .form-content-right {
     margin-right: 420px;
+    margin-top: 130px;
+  }
+  .handWrap {
+    display: inline-block;
+    position: absolute;
+    right: 23%;
+    top: -25%;
+    z-index: 1;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+  }
+  .splash-contact {
+    width: 1500px;
+    position: absolute;
+    bottom: -25%;
+    left: 18%;
   }
 }
 
@@ -88,16 +93,17 @@
 .contact-section {
   max-width: 800px;
   margin-top: 10px;
-  padding: 10px 0 30px 40px;
+  /* padding: 10px 0 30px 40px; */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 0 auto;
 }
 
-@media (max-width: 1300px) {
-  .contact-section {
-    padding: 0 10px;
+@media (min-width: 1300px) {
+  .whiteWave {
+    display: none;
   }
 }
 
@@ -160,7 +166,7 @@
   width: 80%;
   height: 50px;
   margin-top: 20px;
-  border-radius: 2px;
+  border-radius: 25px;
   cursor: pointer;
   transition: all 0.2s ease-out;
   background: linear-gradient(360deg, #2f3fce 0%, #7155e2 100%);
@@ -171,5 +177,5 @@
 }
 
 .form-input-btn:hover {
-  filter: brightness(1.2);
+  filter: brightness(1.1);
 }

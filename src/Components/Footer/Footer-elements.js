@@ -13,12 +13,11 @@ export const FooterContainer = styled.div`
 `;
 
 export const SocialMedia = styled.section`
-  margin: 25px 0;
-  padding: 25px 50px;
+  margin: 0px auto;
+  padding: 25px 50px 0 50px;
   align-self: center;
+  width: 100vw;
   background: linear-gradient(180deg, #1c2bb3 0%, #3619aa 100%);
-  box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.25);
-  border-radius: 50px;
   z-index: 2;
 `;
 
@@ -28,6 +27,7 @@ export const SocialMediaWrap = styled.div`
   flex-direction: column;
   align-items: center;
   max-width: 1100px;
+  margin: 0 auto;
 `;
 
 export const SocialLogo = styled.div`
@@ -70,6 +70,7 @@ export const GoUp = styled.p`
   font-size: 12px;
   cursor: pointer;
   color: #fff;
+  margin-bottom: 10px;
 `;
 export const DetailsWrap = styled.div`
   color: #fff;

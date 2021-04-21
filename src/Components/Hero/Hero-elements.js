@@ -28,6 +28,10 @@ export const ProfileBg = styled.img`
   @media (max-width: 850px) {
     display: none;
   }
+
+  @media (min-width: 1500px) {
+    width: 800px;
+  }
 `;
 
 export const ContactBtnWrapper = styled(LinkS)`
