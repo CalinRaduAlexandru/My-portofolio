@@ -34,7 +34,6 @@ export const ContactBtnWrapper = styled(LinkS)`
   display: flex;
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
-  font-weight: bold;
   border-radius: 25px;
   justify-content: center;
   background: white;

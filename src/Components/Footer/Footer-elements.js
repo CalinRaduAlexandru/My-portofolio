@@ -62,7 +62,7 @@ export const ArrowFromBottom = styled(BiArrowFromBottom)`
   color: #fff;
   z-index: 3;
   &:hover {
-    color: #0057ff;
+    color: #3014a3;
   }
 `;
 
@@ -88,18 +88,21 @@ export const DetailsWrap = styled.div`
     font-size: 10px;
   }
 `;
-export const PhoneWrap = styled.div``;
+export const PhoneWrap = styled.div`
+  font-family: "Montserrat", sans-serif;
+`;
 export const Whatsapp = styled(SiWhatsapp)`
   margin-right: 3px;
 `;
 export const EmailWrap = styled.div`
   display: flex;
   margin: 10px 0;
+  font-family: "Montserrat", sans-serif;
 `;
 export const OutlineMail = styled(HiOutlineMail)`
   font-size: 20px;
   margin-right: 7px;
-  margin-top: 2px;
+  margin-top: -1px;
   @media screen and (max-width: 500px) {
     font-size: 17px;
   }

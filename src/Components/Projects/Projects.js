@@ -37,7 +37,7 @@ const Projects = () => {
                 img={Lotus}
                 photo={psiPhoto}
                 title="Psi-consult"
-                subtitle="NextJs | Sass | AWS"
+                subtitle="NextJs | Scss"
                 text="Professional website for a psychology consultancy."
                 websiteRef="https://psi-consult.vercel.app/"
                 githubRef="https://github.com/CalinRaduAlexandru/psi-consultant"

@@ -20,6 +20,7 @@ export const ProjectWrapper = styled.div`
 
   @media (max-width: 768px) {
     width: 70vw;
+    margin-top: 100px;
   }
 `;
 

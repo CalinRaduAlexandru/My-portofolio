@@ -10,6 +10,7 @@ export const AboutContainer = styled.div`
   background: white;
   min-height: 100vh;
   padding: 0 30px;
+  z-index: 1;
 
   @media screen and (max-width: 768px) {
     padding: 20px 0 50px 0;
@@ -95,7 +96,7 @@ export const TopLine = styled.p`
   color: ${Dark};
   padding: 5px;
   font-size: 21px;
-  font-family: "Montserrat", sans serif;
+  font-family: "Montserrat", sans-serif;
   line-height: 16px;
   font-weight: 700;
   letter-spacing: 1.4px;
@@ -111,6 +112,7 @@ export const TopLine = styled.p`
 
   @media screen and (max-width: 480px) {
     line-height: 1.1;
+    font-size: 12px;
   }
 `;
 

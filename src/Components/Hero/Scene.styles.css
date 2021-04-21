@@ -23,6 +23,7 @@
 
 .heroGuy {
   margin-bottom: 40px;
+  z-index: 11;
 }
 
 .heroDetails {
@@ -55,12 +56,6 @@
 @media (min-width: 1400px) {
   .container {
     background-size: cover;
-  }
-}
-
-@media (max-width: 1250px) {
-  #scene {
-    display: none;
   }
 }
 
@@ -109,19 +104,23 @@
 
 @media (max-width: 500px) {
   .splash {
-    transform: rotate(45deg);
-    left: -25%;
+    transform: rotate(245deg);
+    left: 3%;
     height: 1200px;
-    top: -30%;
+    top: -35%;
   }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 400px) {
   .txt {
     font-size: 24px;
   }
   .heroSubheader {
     font-size: 14px;
     max-width: 200px;
+  }
+  .heroGuy {
+    margin-bottom: 48px;
+    z-index: 11;
   }
 }
