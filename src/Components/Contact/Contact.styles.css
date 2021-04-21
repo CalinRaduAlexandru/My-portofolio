@@ -7,22 +7,13 @@
   text-align: center;
   padding-top: 100px;
   position: relative;
+  border-top-left-radius: 40% 10%;
+  border-top-right-radius: 40% 10%;
+  margin-top: -50px;
 }
 
 .handWrap {
   display: none;
-}
-
-.whiteWave {
-  position: absolute;
-  top: -2%;
-  width: 100vw;
-}
-
-@media (max-width: 768px) {
-  .whiteWave {
-    top: 0%;
-  }
 }
 
 .splash-contact {
@@ -55,6 +46,9 @@
 }
 
 @media (min-width: 1500px) {
+  .form-container {
+    padding-top: 150px;
+  }
   .form-content-right {
     margin-right: 420px;
     margin-top: 130px;
@@ -63,7 +57,7 @@
     display: inline-block;
     position: absolute;
     right: 23%;
-    top: -25%;
+    top: -5%;
     z-index: 1;
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1);
@@ -96,12 +90,6 @@
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-}
-
-@media (min-width: 1300px) {
-  .whiteWave {
-    display: none;
-  }
 }
 
 .form > h1 {

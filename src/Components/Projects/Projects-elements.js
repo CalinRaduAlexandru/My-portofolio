@@ -6,7 +6,6 @@ export const ProjectsContainer = styled.div`
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: white;
 `;
 
 export const ProjectsWrapper = styled.div`

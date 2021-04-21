@@ -101,7 +101,7 @@ const NavBar = ({ toggle }) => {
                   duration={500}
                   spy={true}
                   exact="true"
-                  offset={-80}
+                  offset={-30}
                 >
                   Contact
                 </NavLinks>
