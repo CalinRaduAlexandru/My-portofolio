@@ -109,15 +109,15 @@
     height: 1200px;
     top: -35%;
   }
+  .heroSubheader {
+    font-size: 14px;
+    max-width: 300px;
+  }
 }
 
 @media (max-width: 400px) {
   .txt {
     font-size: 24px;
-  }
-  .heroSubheader {
-    font-size: 14px;
-    max-width: 250px;
   }
   .heroGuy {
     z-index: 11;

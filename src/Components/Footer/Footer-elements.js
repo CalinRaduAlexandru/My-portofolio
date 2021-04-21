@@ -19,6 +19,8 @@ export const SocialMedia = styled.section`
   width: 100vw;
   background: linear-gradient(180deg, #1c2bb3 0%, #3619aa 100%);
   z-index: 2;
+  border-top-left-radius: 40% 30%;
+  border-top-right-radius: 40% 30%;
 `;
 
 export const SocialMediaWrap = styled.div`
