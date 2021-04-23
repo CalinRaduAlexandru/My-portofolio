@@ -49,15 +49,15 @@ const Contact = ({ submitForm }) => {
             <label htmlFor="text" className="form-label">
               Message{" "}
             </label>
-            <input
+            <textarea
               id="text"
               type="text"
               name="message"
-              className="form-input"
+              className="form-input form-input-message"
               placeholder="Tell me more"
               value={values.message}
               onChange={handleChange}
-            />
+            ></textarea>
             {errors.message && <p>{errors.message}</p>}
           </div>
           <button className="form-input-btn" type="submit">

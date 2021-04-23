@@ -19,7 +19,7 @@ const Home = () => {
   };
 
   useEffect(() => {
-    Aos.init({ dureaction: 4000, easing: "ease" });
+    Aos.init({ duration: 500, easing: "ease" });
   }, []);
 
   return (
@@ -33,8 +33,8 @@ const Home = () => {
           fallback={
             <div
               style={{
-                background: "#05043d",
-                color: "#0d5485",
+                background: "#7155e2",
+                color: "#3014a3",
               }}
             >
               Loading...

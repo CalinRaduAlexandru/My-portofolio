@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import { db } from "../../Firebase";
 
 const useForm = (callback, validateInfo) => {
   const [values, setValues] = useState({
@@ -20,13 +19,15 @@ const useForm = (callback, validateInfo) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
-    db.collection("contact").add({
-      name: values.name,
-      email: values.email,
-      message: values.message,
-      date: new Date(),
-    });
+    fetch("https://afternoon-inlet-95107.herokuapp.com", {
+      method: "post",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        name: values.name,
+        email: values.email,
+        message: values.message,
+      }),
+    }).then((response) => response.json());
 
     setErrors(validateInfo(values));
     setIsSubmitting(true);
