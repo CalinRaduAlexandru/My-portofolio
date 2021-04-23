@@ -38,7 +38,7 @@ const Scene = () => {
             duration={500}
             spy={true}
             exact="true"
-            offset={-80}
+            offset={-30}
             onMouseEnter={onHover}
             onMouseLeave={onHover}
           >
