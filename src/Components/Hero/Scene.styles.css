@@ -37,12 +37,13 @@
 .txt {
   color: white;
   font-size: 50px;
-  margin-bottom: 5px;
+  margin-bottom: 15px;
+  font-family: "Playfair Display", sans-serif;
 }
 
 .heroSubheader {
   color: #cacde6;
-  font-size: 21px;
+  font-size: 19px;
   margin-bottom: 30px;
 }
 

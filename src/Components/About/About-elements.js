@@ -121,6 +121,7 @@ export const Heading = styled.h1`
   padding: 5px 0;
   font-size: 42px;
   line-height: 1.1;
+  font-family: "Playfair Display", sans-serif;
   font-weight: bold;
   cursor: default;
   color: ${Dark};
